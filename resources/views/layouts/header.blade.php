@@ -20,22 +20,20 @@
             <div class="header-navbar header-navbar-s1">
                 <nav class="header-menu" id="header-menu">
                     <ul class="menu animated" data-animate="fadeInDown" data-delay=".75">
-                        <li class="menu-item"><a class="menu-link nav-link" href="#about">About</a></li>
-                        <li class="menu-item"><a class="menu-link nav-link" href="#why">Why</a></li>
-                        <li class="menu-item"><a class="menu-link nav-link" href="#benifits">Benifits</a></li>
-                        <li class="menu-item"><a class="menu-link nav-link" href="#token">Token Sale</a></li>
-                        <li class="menu-item"><a class="menu-link nav-link" href="#roadmap">Roadmap</a></li>
-                        <li class="menu-item"><a class="menu-link nav-link" href="#team">Team</a></li>
-                        <li class="menu-item"><a class="menu-link nav-link" href="#faqs">Faqs</a></li>
-                        <li class="menu-item"><a class="menu-link nav-link" href="#contact">Contact</a></li>
+                        <li class="menu-item"><a class="menu-link nav-link" href="/">Inicio</a></li>
+                        <li class="menu-item"><a class="menu-link nav-link" href="#about">Quienes Somos</a></li>
+                        <li class="menu-item"><a class="menu-link nav-link" href="#why">Eventos</a></li>
+                        <li class="menu-item"><a class="menu-link nav-link" href="#benifits">Nuestro Equipo</a></li>
+                        <li class="menu-item"><a class="menu-link nav-link" href="#token">Árticulos</a></li>
                         <li class="menu-item has-sub">
-                            <a class="menu-link nav-link menu-toggle" href="#">More</a>
+                            <a class="menu-link nav-link menu-toggle" href="#">Membresía</a>
                             <ul class="menu-sub menu-drop">
                                 <li class="menu-item"><a class="menu-link nav-link" href="#media-partner">Media Partner</a></li>
                                 <li class="menu-item"><a class="menu-link nav-link" href="#blog">Blogs</a></li>
                                 <li class="menu-item"><a class="menu-link nav-link" href="#faqs">Faqs</a></li>
                             </ul>
                         </li>
+                        <li class="menu-item"><a class="menu-link nav-link" href="#contact">Contacto</a></li>
                     </ul>
                     {{-- <ul class="menu-btns menu-btns-s3 align-items-center animated fadeInDown" data-animate="fadeInDown" data-delay=".85" style="visibility: visible; animation-delay: 0.85s;">
                         <li>

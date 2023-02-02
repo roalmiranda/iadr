@@ -41,15 +41,15 @@
                         </div><!-- .col -->
                         <div class="col-lg-6 col-xl-7 col-md-8 col-sm-9">
                             <div class="banner-caption wide-auto text-center text-lg-start">
-                                <div class="slider">
+                                <div class="slider img_move">
                                     <div class="slide">
-                                    <img src="https://img.freepik.com/psd-gratis/plantilla-banner-redes-sociales-dentista-cuidado-dental_120329-1318.jpg?w=826&t=st=1675302991~exp=1675303591~hmac=cafd442814f6943448f707d1b1ec113aa6e1525d8f6aa4afe13fac435c68ff4a" alt="Image 1">
+                                    <img src="../../imagesiadr/img1.jpg" alt="Imagen 1">
                                     </div>
                                     <div class="slide">
-                                    <img src="https://img.freepik.com/fotos-premium/investigadora-equipo-vidrio-laboratorio-imagen-tonificante_488220-33990.jpg?w=1380" alt="Image 2">
+                                    <img src="../../imagesiadr/img2.jpg" alt="Imagen 2">
                                     </div>
                                     <div class="slide">
-                                    <img src="https://img.freepik.com/foto-gratis/joven-atractivo-pelo-oscuro-glassess-trabajando-computadora-escribiendo-cuaderno-oficina-viste-camisa-azul-barba_197531-531.jpg?w=1380&t=st=1675301472~exp=1675302072~hmac=3e434a9fbfcda7a2dd0b1b28a3bd48ca91270cbd253fd7efd6b08583fba900c3" alt="Image 3">
+                                    <img src="../../imagesiadr/img3.jpg" alt="Imagen 3">
                                     </div>
                                 </div>
                             </div>
@@ -72,8 +72,8 @@
         <div class="nk-block nk-block-features-s2">
             <div class="row align-items-center gutter-vr-30px">
                 <div class="col-md-6">
-                    <div class="gfx mx-auto mx-lg-0 animated img_move" data-animate="fadeInUp" data-delay=".1">
-                        <img src="imagesiadr/iadr1.jpg" alt="IADR_PRESENTACION">
+                    <div class="gfx mx-auto mx-lg-0 animated zoom-animation" data-animate="fadeInUp" data-delay=".1">
+                        <img src="https://www.iadr.org/sites/default/files/styles/50_50/public/2021-11/grid-doctors-smaller.jpg?h=e5734912&itok=rAhSYGkR" alt="IADR_PRESENTACION">
                     </div>
                 </div><!-- .col -->
                 <div class="col-md-6">

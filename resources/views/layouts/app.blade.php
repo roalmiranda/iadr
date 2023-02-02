@@ -19,17 +19,33 @@
         /* Movimiento de imagenes */
         
         .img_move {
-              animation: moveUpDown 4s ease-in-out infinite;
-            }
+            animation: moveUpDown 4s ease-in-out infinite;
+        }
 
-            @keyframes moveUpDown {
-              0%, 100% {
-                transform: translateY(-5%);
-              }
-              50% {
-                transform: translateY(5%);
-              }
+        @keyframes moveUpDown {
+            0%, 100% {
+            transform: translateY(-4%);
             }
+            50% {
+            transform: translateY(4%);
+            }
+        }
+        
+        .zoom-animation {
+            animation: zoom 4s ease-in-out infinite;
+        }
+
+        @keyframes zoom {
+            from {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
         /* SLIDER */
         .slider {
         position: relative;
