@@ -22,7 +22,7 @@
                     <ul class="menu animated" data-animate="fadeInDown" data-delay=".75">
                         <li class="menu-item"><a class="menu-link nav-link" href="/">Inicio</a></li>
                         <li class="menu-item"><a class="menu-link nav-link" href="#about">Quienes Somos</a></li>
-                        <li class="menu-item"><a class="menu-link nav-link" href="#why">Eventos</a></li>
+                        <li class="menu-item"><a class="menu-link nav-link" href="/eventos">Eventos</a></li>
                         <li class="menu-item"><a class="menu-link nav-link" href="#token">Árticulos</a></li>
                         <li class="menu-item has-sub">
                             <a class="menu-link nav-link menu-toggle" href="#">Membresía</a>
