@@ -55,12 +55,12 @@
         }
 
         .slide {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 100%;
-        transition: left 0.5s;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 100%;
+            transition: left 2s;
         }
 
         .slide img {

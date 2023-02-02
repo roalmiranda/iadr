@@ -81,7 +81,223 @@
                     <div class="nk-block-text text-center text-md-start">
                         <h6 class="title title-xs title-s1 tc-primary animated" data-animate="fadeInUp" data-delay=".2">International Association for Dental Research</h6>
                         <h2 class="title animated" data-animate="fadeInUp" data-delay=".3">IADR – División Bolivia</h2>
-                        <p class="animated" data-animate="fadeInUp" data-delay=".4">La IADR (International Association for Dental Research) es una organización internacional sin fines de lucro dedicada a la promoción de la investigación dental y la mejora de la salud oral. Fundada en 1920, cuenta con más de 11,000 miembros en todo el mundo y organiza una conferencia anual donde se presentan los últimos avances en investigación dental.</p>
+                        <p class="animated" data-animate="fadeInUp" data-delay=".4">La Asociación Internacional para la Investigación Dental (IADR) es una asociación sin fines de lucro, fundada en 1920 que promueve la investigación en odontología y ciencias afines, estimula el desarrollo de nuevos métodos para la prevención y tratamiento de enfermedades orales, facilita la cooperación entre investigadores y divulga los resultados de investigaciones científicas por medio de sus revista oficiales, Journal of Dental Research (JDR) y JDR Clinical & Translational Research.</p>
+                    </div>
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .block @e -->
+    </div>
+</section>
+<!-- // --><section class="section section-team bg-light pt-0" id="team-members">
+    <div class="container">
+        <!-- Section Head @s -->
+        <div class="section-head section-head-s9 wide-md">
+            <h6 class="title title-xs title-s1 tc-primary animated" data-animate="fadeInUp" data-delay=".1">Conoce al equipo</h6>
+            <h2 class="title animated" data-animate="fadeInUp" data-delay=".2">Directorio IADR</h2>
+        </div><!-- .section-head @e -->
+        <!-- Block @s -->
+        <div class="nk-block nk-block-team-list">
+            <div class="row justify-content-center">
+                <div class="col-md-3 col-6">
+                    <div class="team animated  bg-white fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">
+                        <div class="team-photo">
+                            <img src="images/team/a.jpg" alt="team">
+                            <a href="#team-popup-1" class="team-show content-popup"></a>
+                            <ul class="team-social">
+                                <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
+                                <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
+                            </ul>
+                        </div>
+                        <h5 class="team-name title title-sm">Louis Baker</h5>
+                        <span class="team-position pb-2">CEO &amp; Lead Blockchain</span>
+                    </div>
+                    <!-- Start .team-profile  -->
+                    <div id="team-popup-1" class="team-popup mfp-hide">
+                        <a title="Close" class="mfp-close">×</a>
+                        <div class="row align-items-start">
+                            <div class="col-md-6">
+                                <div class="team-photo">
+                                    <img src="images/team/a.jpg" alt="team">
+                                </div>
+                            </div><!-- .col  -->
+                            <div class="col-md-6">
+                                <div class="team-popup-info ps-md-3">
+                                    <h3 class="team-name title title-lg pt-4">Ivan Rojas</h3>
+                                    <p class="team-position">CEO &amp; Lead Blockchain </p>
+                                    <ul class="team-social mb-4">
+                                        <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
+                                        <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
+                                    </ul>
+                                    <p>He is a great man to work Lorem ipsum dolor sit amet, consec tetur adipis icing elit. Simi lique, autem. </p>
+                                    <p>Tenetur quos facere magnam volupt ates quas esse Sedrep ell endus mole stiae tates quas esse Sed repell endus molesti aela uda ntium quis quam iusto minima thanks.</p>
+                                    <div class="progress-list">
+                                        <div class="progress-wrap">
+                                            <div class="progress-title">Blockchain <span class="progress-amount">85%</span></div>
+                                            <div class="progress-bar progress-bar-xs bg-black-10">
+                                                <div class="progress-percent bg-primary" data-percent="85" style="width: 85%;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="progress-wrap">
+                                            <div class="progress-title">Decentralization <span class="progress-amount">68%</span></div>
+                                            <div class="progress-bar progress-bar-xs bg-black-10">
+                                                <div class="progress-percent bg-primary" data-percent="68" style="width: 68%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- .col  -->
+                        </div><!-- .row  -->
+                    </div><!-- .team-profile  -->
+                </div>
+            </div><!-- .row -->
+            <div class="text-center animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.5s;">
+                <a href="#" class="btn btn-grad">See All Team Member</a>
+            </div>
+        </div>
+        <!-- Block @r -->
+    </div>
+</section>
+
+
+
+
+<section class="section bg-light-alt" id="team">
+    <div class="background-shape bs-right"></div>
+    <div class="container">
+        <div class="section-head section-head-s9 wide-md">
+            <h6 class="title title-xs title-s1 tc-primary animated" data-animate="fadeInUp" data-delay=".1">MEET THE TEAM</h6>
+            <h2 class="title animated" data-animate="fadeInUp" data-delay=".2">Executive team</h2>
+            <div class="wide-sm">
+                <p class="animated" data-animate="fadeInUp" data-delay=".3">The ICO Crypto Team combines a passion for esports, industry experise &amp; proven record in finance, development, marketing &amp; licensing.</p>
+            </div>
+        </div>
+        <!-- Block @s -->
+        <div class="nk-block nk-block-left nk-block-team-list team-list">
+            <div class="row justify-content-start">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team team-s4 round bg-white ms-0 animated" data-animate="fadeInUp" data-delay=".4">
+                        <div class="team-photo team-photo-s1 round-full">
+                            <img src="images/team/sq-a.jpg" alt="team" class="round-full">
+                        </div>
+                        <h5 class="team-name">Waylon Dalton</h5>
+                        <span class="team-position tc-primary">CEO &amp; Lead Blockchain</span>
+                        <div class="team-desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incide.</p>
+                        </div>
+                        <ul class="team-social team-social-s2">
+                            <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
+                            <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
+                            <li><a href="#"><em class="fab fa-twitter"></em></a></li>
+                        </ul>
+                    </div>
+                </div><!-- .col -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team team-s4 round bg-white ms-0 animated" data-animate="fadeInUp" data-delay=".5">
+                        <div class="team-photo team-photo-s1 round-full">
+                            <img src="images/team/sq-b.jpg" alt="team" class="round-full">
+                        </div>
+                        <h5 class="team-name">Stefan Harary</h5>
+                        <span class="team-position tc-primary">CEO &amp; Lead Blockchain</span>
+                        <div class="team-desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incide.</p>
+                        </div>
+                        <ul class="team-social team-social-s2">
+                            <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
+                            <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
+                            <li><a href="#"><em class="fab fa-twitter"></em></a></li>
+                        </ul>
+                    </div>
+                </div><!-- .col -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team team-s4 round bg-white ms-0 animated" data-animate="fadeInUp" data-delay=".6">
+                        <div class="team-photo team-photo-s1 round-full">
+                            <img src="images/team/sq-c.jpg" alt="team" class="round-full">
+                        </div>
+                        <h5 class="team-name">Moises Teare</h5>
+                        <span class="team-position tc-primary">CEO &amp; Lead Blockchain</span>
+                        <div class="team-desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incide.</p>
+                        </div>
+                        <ul class="team-social team-social-s2">
+                            <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
+                            <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
+                            <li><a href="#"><em class="fab fa-twitter"></em></a></li>
+                        </ul>
+                    </div>
+                </div><!-- .col -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team team-s4 round bg-white ms-0 animated" data-animate="fadeInUp" data-delay=".7">
+                        <div class="team-photo team-photo-s1 round-full">
+                            <img src="images/team/sq-d.jpg" alt="team" class="round-full">
+                        </div>
+                        <h5 class="team-name">Gabriel Bernal</h5>
+                        <span class="team-position tc-primary">CEO &amp; Lead Blockchain</span>
+                        <div class="team-desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incide.</p>
+                        </div>
+                        <ul class="team-social team-social-s2">
+                            <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
+                            <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
+                            <li><a href="#"><em class="fab fa-twitter"></em></a></li>
+                        </ul>
+                    </div>
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .block @e -->
+        <div class="nk-block nk-block-left nk-block-team-list">
+            <div class="section-head section-head-sm">
+                <h2 class="title-lg-2 animated" data-animate="fadeInUp" data-delay=".8">ADVISORS</h2>
+            </div>
+            <div class="row justify-content-start">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team team-s4 round bg-white ms-0 animated" data-animate="fadeInUp" data-delay=".9">
+                        <div class="team-photo team-photo-s1 round-full">
+                            <img src="images/team/sq-a.jpg" alt="team" class="round-full">
+                        </div>
+                        <h5 class="team-name">Waylon Dalton</h5>
+                        <span class="team-position tc-primary">CEO &amp; Lead Blockchain</span>
+                        <div class="team-desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incide.</p>
+                        </div>
+                        <ul class="team-social team-social-s2">
+                            <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
+                            <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
+                            <li><a href="#"><em class="fab fa-twitter"></em></a></li>
+                        </ul>
+                    </div>
+                </div><!-- .col -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team team-s4 round bg-white ms-0 animated" data-animate="fadeInUp" data-delay="1">
+                        <div class="team-photo team-photo-s1 round-full">
+                            <img src="images/team/sq-b.jpg" alt="team" class="round-full">
+                        </div>
+                        <h5 class="team-name">Stefan Harary</h5>
+                        <span class="team-position tc-primary">CEO &amp; Lead Blockchain</span>
+                        <div class="team-desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incide.</p>
+                        </div>
+                        <ul class="team-social team-social-s2">
+                            <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
+                            <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
+                            <li><a href="#"><em class="fab fa-twitter"></em></a></li>
+                        </ul>
+                    </div>
+                </div><!-- .col -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team team-s4 round bg-white ms-0 animated" data-animate="fadeInUp" data-delay="1.1">
+                        <div class="team-photo team-photo-s1 round-full">
+                            <img src="images/team/sq-c.jpg" alt="team" class="round-full">
+                        </div>
+                        <h5 class="team-name">Moises Teare</h5>
+                        <span class="team-position tc-primary">CEO &amp; Lead Blockchain</span>
+                        <div class="team-desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incide.</p>
+                        </div>
+                        <ul class="team-social team-social-s2">
+                            <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
+                            <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
+                            <li><a href="#"><em class="fab fa-twitter"></em></a></li>
+                        </ul>
                     </div>
                 </div><!-- .col -->
             </div><!-- .row -->
@@ -729,150 +945,6 @@
                     </div><!-- .row -->
                 </div>
             </div>
-        </div><!-- .block @e -->
-    </div>
-</section>
-<!-- // -->
-<section class="section bg-light-alt" id="team">
-    <div class="background-shape bs-right"></div>
-    <div class="container">
-        <div class="section-head section-head-s9 wide-md">
-            <h6 class="title title-xs title-s1 tc-primary animated" data-animate="fadeInUp" data-delay=".1">MEET THE TEAM</h6>
-            <h2 class="title animated" data-animate="fadeInUp" data-delay=".2">Executive team</h2>
-            <div class="wide-sm">
-                <p class="animated" data-animate="fadeInUp" data-delay=".3">The ICO Crypto Team combines a passion for esports, industry experise &amp; proven record in finance, development, marketing &amp; licensing.</p>
-            </div>
-        </div>
-        <!-- Block @s -->
-        <div class="nk-block nk-block-left nk-block-team-list team-list">
-            <div class="row justify-content-start">
-                <div class="col-lg-3 col-sm-6">
-                    <div class="team team-s4 round bg-white ms-0 animated" data-animate="fadeInUp" data-delay=".4">
-                        <div class="team-photo team-photo-s1 round-full">
-                            <img src="images/team/sq-a.jpg" alt="team" class="round-full">
-                        </div>
-                        <h5 class="team-name">Waylon Dalton</h5>
-                        <span class="team-position tc-primary">CEO &amp; Lead Blockchain</span>
-                        <div class="team-desc">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incide.</p>
-                        </div>
-                        <ul class="team-social team-social-s2">
-                            <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
-                            <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
-                            <li><a href="#"><em class="fab fa-twitter"></em></a></li>
-                        </ul>
-                    </div>
-                </div><!-- .col -->
-                <div class="col-lg-3 col-sm-6">
-                    <div class="team team-s4 round bg-white ms-0 animated" data-animate="fadeInUp" data-delay=".5">
-                        <div class="team-photo team-photo-s1 round-full">
-                            <img src="images/team/sq-b.jpg" alt="team" class="round-full">
-                        </div>
-                        <h5 class="team-name">Stefan Harary</h5>
-                        <span class="team-position tc-primary">CEO &amp; Lead Blockchain</span>
-                        <div class="team-desc">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incide.</p>
-                        </div>
-                        <ul class="team-social team-social-s2">
-                            <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
-                            <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
-                            <li><a href="#"><em class="fab fa-twitter"></em></a></li>
-                        </ul>
-                    </div>
-                </div><!-- .col -->
-                <div class="col-lg-3 col-sm-6">
-                    <div class="team team-s4 round bg-white ms-0 animated" data-animate="fadeInUp" data-delay=".6">
-                        <div class="team-photo team-photo-s1 round-full">
-                            <img src="images/team/sq-c.jpg" alt="team" class="round-full">
-                        </div>
-                        <h5 class="team-name">Moises Teare</h5>
-                        <span class="team-position tc-primary">CEO &amp; Lead Blockchain</span>
-                        <div class="team-desc">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incide.</p>
-                        </div>
-                        <ul class="team-social team-social-s2">
-                            <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
-                            <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
-                            <li><a href="#"><em class="fab fa-twitter"></em></a></li>
-                        </ul>
-                    </div>
-                </div><!-- .col -->
-                <div class="col-lg-3 col-sm-6">
-                    <div class="team team-s4 round bg-white ms-0 animated" data-animate="fadeInUp" data-delay=".7">
-                        <div class="team-photo team-photo-s1 round-full">
-                            <img src="images/team/sq-d.jpg" alt="team" class="round-full">
-                        </div>
-                        <h5 class="team-name">Gabriel Bernal</h5>
-                        <span class="team-position tc-primary">CEO &amp; Lead Blockchain</span>
-                        <div class="team-desc">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incide.</p>
-                        </div>
-                        <ul class="team-social team-social-s2">
-                            <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
-                            <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
-                            <li><a href="#"><em class="fab fa-twitter"></em></a></li>
-                        </ul>
-                    </div>
-                </div><!-- .col -->
-            </div><!-- .row -->
-        </div><!-- .block @e -->
-        <div class="nk-block nk-block-left nk-block-team-list">
-            <div class="section-head section-head-sm">
-                <h2 class="title-lg-2 animated" data-animate="fadeInUp" data-delay=".8">ADVISORS</h2>
-            </div>
-            <div class="row justify-content-start">
-                <div class="col-lg-3 col-sm-6">
-                    <div class="team team-s4 round bg-white ms-0 animated" data-animate="fadeInUp" data-delay=".9">
-                        <div class="team-photo team-photo-s1 round-full">
-                            <img src="images/team/sq-a.jpg" alt="team" class="round-full">
-                        </div>
-                        <h5 class="team-name">Waylon Dalton</h5>
-                        <span class="team-position tc-primary">CEO &amp; Lead Blockchain</span>
-                        <div class="team-desc">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incide.</p>
-                        </div>
-                        <ul class="team-social team-social-s2">
-                            <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
-                            <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
-                            <li><a href="#"><em class="fab fa-twitter"></em></a></li>
-                        </ul>
-                    </div>
-                </div><!-- .col -->
-                <div class="col-lg-3 col-sm-6">
-                    <div class="team team-s4 round bg-white ms-0 animated" data-animate="fadeInUp" data-delay="1">
-                        <div class="team-photo team-photo-s1 round-full">
-                            <img src="images/team/sq-b.jpg" alt="team" class="round-full">
-                        </div>
-                        <h5 class="team-name">Stefan Harary</h5>
-                        <span class="team-position tc-primary">CEO &amp; Lead Blockchain</span>
-                        <div class="team-desc">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incide.</p>
-                        </div>
-                        <ul class="team-social team-social-s2">
-                            <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
-                            <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
-                            <li><a href="#"><em class="fab fa-twitter"></em></a></li>
-                        </ul>
-                    </div>
-                </div><!-- .col -->
-                <div class="col-lg-3 col-sm-6">
-                    <div class="team team-s4 round bg-white ms-0 animated" data-animate="fadeInUp" data-delay="1.1">
-                        <div class="team-photo team-photo-s1 round-full">
-                            <img src="images/team/sq-c.jpg" alt="team" class="round-full">
-                        </div>
-                        <h5 class="team-name">Moises Teare</h5>
-                        <span class="team-position tc-primary">CEO &amp; Lead Blockchain</span>
-                        <div class="team-desc">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incide.</p>
-                        </div>
-                        <ul class="team-social team-social-s2">
-                            <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
-                            <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
-                            <li><a href="#"><em class="fab fa-twitter"></em></a></li>
-                        </ul>
-                    </div>
-                </div><!-- .col -->
-            </div><!-- .row -->
         </div><!-- .block @e -->
     </div>
 </section>

@@ -23,25 +23,22 @@
                         <li class="menu-item"><a class="menu-link nav-link" href="/">Inicio</a></li>
                         <li class="menu-item"><a class="menu-link nav-link" href="#about">Quienes Somos</a></li>
                         <li class="menu-item"><a class="menu-link nav-link" href="#why">Eventos</a></li>
-                        <li class="menu-item"><a class="menu-link nav-link" href="#benifits">Nuestro Equipo</a></li>
                         <li class="menu-item"><a class="menu-link nav-link" href="#token">Árticulos</a></li>
                         <li class="menu-item has-sub">
                             <a class="menu-link nav-link menu-toggle" href="#">Membresía</a>
                             <ul class="menu-sub menu-drop">
-                                <li class="menu-item"><a class="menu-link nav-link" href="#media-partner">Media Partner</a></li>
-                                <li class="menu-item"><a class="menu-link nav-link" href="#blog">Blogs</a></li>
-                                <li class="menu-item"><a class="menu-link nav-link" href="#faqs">Faqs</a></li>
+                                <li class="menu-item"><a class="menu-link nav-link" href="#media-partner">Como ser Miembro</a></li>
+                                <li class="menu-item"><a class="menu-link nav-link" href="#blog">Beneficios de la membresía</a></li>
                             </ul>
                         </li>
-                        <li class="menu-item"><a class="menu-link nav-link" href="#contact">Contacto</a></li>
                     </ul>
-                    {{-- <ul class="menu-btns menu-btns-s3 align-items-center animated fadeInDown" data-animate="fadeInDown" data-delay=".85" style="visibility: visible; animation-delay: 0.85s;">
+                    <ul class="menu-btns menu-btns-s3 align-items-center animated fadeInDown" data-animate="fadeInDown" data-delay=".85" style="visibility: visible; animation-delay: 0.85s;">
                         <li>
                             <a href="#" data-bs-toggle="modal" data-bs-target="#register-popup" class="btn btn-md btn-primary btn-outline">
-                                <span>Registrarse</span>
+                                <span>Contacto</span>
                             </a>
                         </li>
-                    </ul> --}}
+                    </ul>
                 </nav>
             </div><!-- .header-navbar @e -->
         </div>
