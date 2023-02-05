@@ -1,25 +1,23 @@
 <footer class="nk-footer">
     <section class="section py-0">
         <div class="container">
-            <!-- Block @s -->
             <div class="nk-block overflow-hidden">
                 <div class="bg-grad-alt round subscribe-wrap tc-light animated" data-animate="fadeInUp" data-delay=".2">
                     <div class="row text-center text-md-start justify-content-center align-items-center gutter-vr-25px">
                         <div class="col-lg-6">
                             <div class="wide-auto-sm">
                                 <h4 class="title-sm">
-                                    No te lo pierdas, mantente actualizado</h4>
+                                    No te pierdas nada, mantente actualizado</h4>
                                 <p>
-                                    Regístrese para recibir actualizaciones y noticias del mercado. Suscríbase a nuestro boletín y reciba actualizaciones sobre ICO y consejos sobre criptomonedas.</p>
+                                    Regístrese para recibir actualizaciones y noticias del mercado. Suscríbase a nuestro boletín y reciba actualizaciones sobre IADR BOLIVIA y consejos sobre criptomonedas.</p>
                             </div>
-                        </div><!-- .col -->
+                        </div> 
                         <div class="col-lg-6">
                             <div class="gap-3x d-none d-lg-block"></div>
                             <form action="form/subscribe.php" class="nk-form-submit" method="post">
                                 <div class="field-inline field-inline-s2 field-inline-s2-sm bg-white shadow-soft">
                                     <div class="field-wrap">
                                         <input class="input-solid input-solid-md required email" type="text" name="contact-email" placeholder="Ingresa tu correo">
-                                        <input type="text" class="d-none" name="form-anti-honeypot" value="">
                                     </div>
                                     <div class="submit-wrap">
                                         <button class="btn btn-md btn-secondary">Subscribirse</button>
@@ -27,17 +25,15 @@
                                 </div>
                                 <div class="form-results"></div>
                             </form>
-                        </div><!-- .col -->
+                        </div> 
                     </div>
                 </div>
             </div>
-            <!-- .block @e -->
         </div>
-        <div class="nk-ovm ovm-top ovm-h-50 bg-white bdb ov-h"></div><!-- .nk-ovm -->
+        <div class="nk-ovm ovm-top ovm-h-50 bg-white bdb ov-h"></div>
     </section>
     <div class="section section-footer section-m bg-transparent">
         <div class="container">
-            <!-- Block @s -->
             <div class="nk-block block-footer">
                 <div class="row">
                     <div class="col">
@@ -55,9 +51,9 @@
                                 <p><span class="d-sm-block">Copyright &copy; {{date('Y')}} Todos los derechos reservados</p>
                             </div>
                         </div>
-                    </div><!-- .col -->
-                </div><!-- .row -->
-            </div><!-- .block @e -->
+                    </div> 
+                </div>
+            </div>
         </div>
         <div class="nk-ovm shape-s-sm shape-center-bottom ov-h"></div>
     </div>

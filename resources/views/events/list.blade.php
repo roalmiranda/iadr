@@ -11,7 +11,10 @@
                         <div class="col-xl-6 col-lg-9">
                             <div class="banner-caption cpn tc-light text-center">
                                 <div class="cpn-head">
-                                    <h2 class="title title-xl-2 animated fadeInUp text-dark" data-animate="fadeInUp" data-delay="1.25" style="visibility: visible; animation-delay: 1.25s;">Eventos</h2>
+                                    <h2 class="title title-xl-2 animated fadeInUp tc-primary" data-animate="fadeInUp" data-delay="1.25" style="visibility: visible; animation-delay: 1.25s;">Eventos</h2>
+                                    <b class="animated fadeInUp" data-animate="fadeInUp" data-delay="1.25">
+                                        <p class="tc-default"><a href="/">Inicio</a> > Eventos</p>
+                                    </b>
                                 </div>
                             </div>
                         </div>
@@ -28,6 +31,8 @@
 @section('content')
 <!-- // -->
 <section class="section pt-5" id="eventos"><div class="container container-xxl">
+    <h6 class="title title-xs title-s1 tc-primary animated" data-animate="fadeInUp" data-delay=".1">Lista</h6>
+    <h2 class="title animated" data-animate="fadeInUp" data-delay=".2">Eventos</h2>
     <div class="nk-block">
         <div class="row g-gs">
             <div class="col-xl-8">

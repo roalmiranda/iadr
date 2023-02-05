@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LandingController;
 use App\Http\Controllers\EventController;
 
 /*
@@ -14,9 +15,16 @@ use App\Http\Controllers\EventController;
 |
 */
 
-Route::get('/', function () {
-    return view('landingPage');
-});
+// Route::get('/', function () {
+//     return view('landingPage');
+// });
 
+
+Route::get('/',[LandingController::class,'index'])->name('landing.index');
+
+Route::get('quienes-somos',[LandingController::class,'about'])->name('about');
+Route::get('articulos',[LandingController::class,'article'])->name('article');
+Route::get('contacto',[LandingController::class,'contact'])->name('contact');
+Route::get('membresia',[LandingController::class,'membership'])->name('membership');
 
 Route::get('eventos',[EventController::class,'list'])->name('event.list');
