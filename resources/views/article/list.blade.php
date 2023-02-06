@@ -29,7 +29,7 @@
 
 @endsection
 @section('content')
-<section class="section" style="padding-top: 50px;">
+<section class="section pb-5" style="padding-top: 50px;">
     <div class="container">
         <h6 class="title title-xs title-s1 tc-primary animated" data-animate="fadeInUp" data-delay=".1">Lista</h6>
         <h2 class="title animated" data-animate="fadeInUp" data-delay=".2">Artículos</h2>
@@ -46,7 +46,7 @@
                 </div>
                 <div class="form-results"></div>
             </form>
-            <ul class="row gaps gy-5 pt-5">
+            {{-- <ul class="row gaps gy-5 pt-5">
                 <li class="col-md-6 col-xl-12">
                     <div class="border rounded-4 p-5 h-100 animated fadeInUp" data-animate="fadeInUp" data-delay=".75" style="visibility: visible; animation-delay: 0.75s;">
                         <div class="d-flex flex-column flex-xl-row align-items-xl-center h-100">
@@ -64,8 +64,114 @@
                         </div>
                     </div>
                 </li>
-            </ul>
+            </ul> --}}
         </div>
     </div>
+</section>
+<section class="section bg-white pt-0">
+    <div class="container">
+        <div class="nk-block nk-block-blog">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="blog">
+                        <div class="blog-photo">
+                            <img src="images/blog/a.jpg" alt="blog-thumb">
+                        </div>
+                        <div class="blog-text">
+                            <ul class="blog-meta">
+                                <li><a href="#">12 Mar, 2022</a></li>
+                                <li><a href="#">Blockchain</a></li>
+                            </ul>
+                            <h4 class="title title-sm"><a href="#">The Intersection with Blockchain.</a></h4>
+                            <p>Blockchain Meets Energy Surplus of electrical energy is sometimes ut perspiciatis unde omnis iste natus...</p>
+                        </div>
+                    </div><!-- .blog -->
+                </div><!-- .col -->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="blog">
+                        <div class="blog-photo">
+                            <img src="images/blog/b.jpg" alt="blog-thumb">
+                        </div>
+                        <div class="blog-text">
+                            <ul class="blog-meta">
+                                <li><a href="#">12 Mar, 2022</a></li>
+                                <li><a href="#">Blockchain</a></li>
+                            </ul>
+                            <h4 class="title title-sm"><a href="#">The Intersection with Blockchain.</a></h4>
+                            <p>Blockchain Meets Energy Surplus of electrical energy is sometimes ut perspiciatis unde omnis iste natus...</p>
+                        </div>
+                    </div><!-- .blog -->
+                </div><!-- .col -->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="blog">
+                        <div class="blog-photo">
+                            <img src="images/blog/c.jpg" alt="blog-thumb">
+                        </div>
+                        <div class="blog-text">
+                            <ul class="blog-meta">
+                                <li><a href="#">12 Mar, 2022</a></li>
+                                <li><a href="#">Blockchain</a></li>
+                            </ul>
+                            <h4 class="title title-sm"><a href="#">The Intersection with Blockchain.</a></h4>
+                            <p>Blockchain Meets Energy Surplus of electrical energy is sometimes ut perspiciatis unde omnis iste natus...</p>
+                        </div>
+                    </div><!-- .blog -->
+                </div><!-- .col -->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="blog">
+                        <div class="blog-photo">
+                            <img src="images/blog/d.jpg" alt="blog-thumb">
+                        </div>
+                        <div class="blog-text">
+                            <ul class="blog-meta">
+                                <li><a href="#">12 Mar, 2022</a></li>
+                                <li><a href="#">Blockchain</a></li>
+                            </ul>
+                            <h4 class="title title-sm"><a href="#">The Intersection with Blockchain.</a></h4>
+                            <p>Blockchain Meets Energy Surplus of electrical energy is sometimes ut perspiciatis unde omnis iste natus...</p>
+                        </div>
+                    </div><!-- .blog -->
+                </div><!-- .col -->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="blog">
+                        <div class="blog-photo">
+                            <img src="images/blog/e.jpg" alt="blog-thumb">
+                        </div>
+                        <div class="blog-text">
+                            <ul class="blog-meta">
+                                <li><a href="#">12 Mar, 2022</a></li>
+                                <li><a href="#">Blockchain</a></li>
+                            </ul>
+                            <h4 class="title title-sm"><a href="#">The Intersection with Blockchain.</a></h4>
+                            <p>Blockchain Meets Energy Surplus of electrical energy is sometimes ut perspiciatis unde omnis iste natus...</p>
+                        </div>
+                    </div><!-- .blog -->
+                </div><!-- .col -->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="blog">
+                        <div class="blog-photo">
+                            <img src="images/blog/f.jpg" alt="blog-thumb">
+                        </div>
+                        <div class="blog-text">
+                            <ul class="blog-meta">
+                                <li><a href="#">12 Mar, 2022</a></li>
+                                <li><a href="#">Blockchain</a></li>
+                            </ul>
+                            <h4 class="title title-sm"><a href="#">The Intersection with Blockchain.</a></h4>
+                            <p>Blockchain Meets Energy Surplus of electrical energy is sometimes ut perspiciatis unde omnis iste natus...</p>
+                        </div>
+                    </div><!-- .blog -->
+                </div><!-- .col -->
+            </div><!-- .row -->
+            <nav class="w-100 d-flex">
+                <ul class="pagination">
+                    <li><a class="active" href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#"><em class="icon ti ti-angle-right"></em></a></li>
+                </ul>
+            </nav>
+        </div><!-- .nk-block -->
+    </div><!-- .container -->
 </section>
 @endsection

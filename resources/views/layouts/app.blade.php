@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <!-- Fav Icon  -->
-    <link rel="shortcut icon" href="imagesiadr/logo/iconoIADR.png">
+    <link rel="shortcut icon" href="{{ asset('imagesiadr/logo/iconoIADR.png') }}">
     <!-- Site Title  -->
     <title>IADR Bolivia</title>
     <!-- Bundle and Base CSS -->
-    <link rel="stylesheet" href="assets/css/vendor.bundle.css?ver=210">
-    <link rel="stylesheet" href="assets/css/style-jasmine.css?ver=210">
+    <link rel="stylesheet" href="{!! asset('assets/css/vendor.bundle.css?ver=210') !!}">
+    <link rel="stylesheet" href="{!! asset('assets/css/style-jasmine.css?ver=210') !!}">
     <!-- Extra CSS -->
-    <link rel="stylesheet" href="assets/css/theme.css?ver=210">
+    <link rel="stylesheet" href="{!! asset('assets/css/theme.css?ver=210') !!}">
     <style>
         /* Movimiento de imagenes */
         
@@ -92,10 +92,10 @@
     <!-- Preloader -->
     <div class="preloader"><span class="spinner spinner-round"></span></div>
     <!-- JavaScript -->
-    <script src="assets/js/jquery.bundle.js?ver=210"></script>
-    <script src="assets/js/scripts.js?ver=210"></script>
-    <script src="assets/js/charts.js?ver=210"></script>
-    <script src="assets/js/charts.js?ver=210"></script>
+    <script src="{!! asset('assets/js/jquery.bundle.js?ver=210') !!}"></script>
+    <script src="{!! asset('assets/js/scripts.js?ver=210') !!}"></script>
+    <script src="{!! asset('assets/js/charts.js?ver=210') !!}"></script>
+    <script src="{!! asset('assets/js/charts.js?ver=210') !!}"></script>
     <!-- Script -->
     @yield('script_dev')
 

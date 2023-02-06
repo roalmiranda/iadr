@@ -45,7 +45,7 @@
                                 <li><a href="#"><em class="social-icon fab fa-github"></em></a></li>
                             </ul>
                             <a href="/" class="footer-logo">
-                                <img src="imagesiadr/logo/LogoIADR1.png" srcset="imagesiadr/logo/LogoIADR1.png 2x" alt="logo" width="300">
+                                <img src="{{ asset('imagesiadr/logo/LogoIADR1.png') }}" srcset="{{ asset('imagesiadr/logo/LogoIADR1.png 2x') }}" alt="logo" width="300">
                             </a>
                             <div class="copyright-text copyright-text-s3 pdt-m">
                                 <p><span class="d-sm-block">Copyright &copy; {{date('Y')}} Todos los derechos reservados</p>

@@ -210,77 +210,7 @@
                     </table>
                 </div><!-- .col -->
             </div><!-- .row -->
-        </div><!-- .block @e -->
-        <div class="nk-block">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3 class="sub-heading-s2 animated fadeInUp" data-animate="fadeInUp" data-delay=".1" style="visibility: visible; animation-delay: 0.1s;">Token Allocation</h3>
-                    <div class="token-bar-chart animated fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">
-                        <div class="token-bar-item tbic1" data-percent="8" style="width: 8%;">
-                            <div class="token-bar-txt">
-                                <span>8%</span>
-                                <span>Bounty</span>
-                            </div>
-                        </div>
-                        <div class="token-bar-item tbic2" data-percent="12" style="width: 12%;">
-                            <div class="token-bar-txt">
-                                <span>12%</span>
-                                <span>Presale</span>
-                            </div>
-                        </div>
-                        <div class="token-bar-item tbic3" data-percent="20" style="width: 20%;">
-                            <div class="token-bar-txt">
-                                <span>20%</span>
-                                <span>Team &amp; Advisor</span>
-                            </div>
-                        </div>
-                        <div class="token-bar-item tbic4" data-percent="25" style="width: 25%;">
-                            <div class="token-bar-txt">
-                                <span>25%</span>
-                                <span>Reserve Fund</span>
-                            </div>
-                        </div>
-                        <div class="token-bar-item tbic5" data-percent="35" style="width: 35%;">
-                            <div class="token-bar-txt">
-                                <span>35%</span>
-                                <span>Reserve Fund</span>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- .col -->
-            </div><!-- .row -->
-            <div class="row mgt-l">
-                <div class="col-lg-12">
-                    <h3 class="sub-heading-s2 animated fadeInUp" data-animate="fadeInUp" data-delay=".3" style="visibility: visible; animation-delay: 0.3s;">Operating Allocation</h3>
-                    <div class="token-bar-chart animated fadeInUp" data-animate="fadeInUp" data-delay=".4" style="visibility: visible; animation-delay: 0.4s;">
-                        <div class="token-bar-item tbic5" data-percent="13" style="width: 13%;">
-                            <div class="token-bar-txt">
-                                <span>13%</span>
-                                <span>Admin &amp; Ops</span>
-                            </div>
-                        </div>
-                        <div class="token-bar-item tbic4" data-percent="17" style="width: 17%;">
-                            <div class="token-bar-txt">
-                                <span>17%</span>
-                                <span>Legal &amp; Advisory</span>
-                            </div>
-                        </div>
-                        <div class="token-bar-item tbic3" data-percent="25" style="width: 25%;">
-                            <div class="token-bar-txt">
-                                <span>25%</span>
-                                <span>Marketing &amp; Sales</span>
-                            </div>
-                        </div>
-                        <div class="token-bar-item tbic2" data-percent="45" style="width: 45%;">
-                            <div class="token-bar-txt">
-                                <span>45%</span>
-                                <span>Business Dev &amp; Ops</span>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- .col -->
-            </div><!-- .row -->
-        </div><!-- .block @e -->
+        </div>
     </div>
 </section>
 @endsection

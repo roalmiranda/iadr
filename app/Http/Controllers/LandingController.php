@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Staff;
 
 class LandingController extends Controller
 {
@@ -13,16 +14,16 @@ class LandingController extends Controller
         return view('landingPage');
     }
     /**
+     * Buscar Articulo - IADR
+     */
+    public function article(){
+        return view('article.list');
+    }
+    /**
      * Quienes Somos - IADR
      */
     public function about(){
         return view('about.list');
-    }
-    /**
-     * Lista de Articulos - IADR
-     */
-    public function article(){
-        return view('article.list');
     }
     /**
      * Membresía - IADR
@@ -35,5 +36,15 @@ class LandingController extends Controller
      */
     public function contact(){
         return view('contact.list');
+    }
+    /**
+     * Lista de Articulos - IADR
+     */
+    public function directorySearch($name=''){
+        $data = 'Staff::first()';
+        // return view('directory.search',[
+        //     'data'  => $data
+        // ]);
+        return view('directory.search');
     }
 }

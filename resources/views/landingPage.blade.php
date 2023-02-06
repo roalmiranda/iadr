@@ -72,7 +72,7 @@
             <div class="row align-items-center gutter-vr-30px">
                 <div class="col-md-6">
                     <div class="gfx mx-auto mx-lg-0 animated zoom-animation" data-animate="fadeInUp" data-delay=".1">
-                        <img src="https://www.iadr.org/sites/default/files/styles/50_50/public/2021-11/grid-doctors-smaller.jpg?h=e5734912&itok=rAhSYGkR" alt="IADR_PRESENTACION">
+                        <img src="../../imagesiadr/img0.jpg" alt="IADR_PRESENTACION">
                     </div>
                 </div><!-- .col -->
                 <div class="col-md-6">
@@ -98,7 +98,7 @@
     <div class="container container-xxl">
         <div class="container">
             <div class="nk-block nk-block-text-wrap">
-                <h6 class="title title-xs title-s1 tc-primary animated" data-animate="fadeInUp" data-delay=".2">Únete a la IADR Bolivia</h6>
+                <h6 class="title title-xs title-s1 tc-primary animated" data-animate="fadeInUp" data-delay=".2">Únete a IADR Bolivia</h6>
                 <h2 class="title animated" data-animate="fadeInUp" data-delay=".3">Mejore su Conocimiento</h2>
                 <div class="row align-items-center gutter-vr-30px">
                     <div class="col-lg-6">
@@ -139,10 +139,11 @@
                 <div class="col-md-4 col-lg-2 col-6 zoom-animation">
                     <div class="team team-s2 team-sm-s2 team-odd animated" data-animate="fadeInUp" data-delay="0.3">
                         <div class="team-photo team-photo-s2">
-                            <img src="images/azalea/team-c.jpg" alt="">
+                            <img src="images/azalea/team-c.jpg" alt="Img">
                         </div>
                         <h5 class="team-name title title-sm">Ron Glabischnig</h5>
                         <span class="team-position team-position-sm">General manager, Coindexin</span>
+                        <a href="{{route('directory.search',12)}}">Ver más</a>
                         <ul class="team-social team-social-s2">
                             <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
                             <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
@@ -230,7 +231,7 @@
                             <h2 class="h1 mb-4 animated fadeInUp" data-animate="fadeInUp" data-delay=".4" style="visibility: visible; animation-delay: 0.4s;">¿Listo para comenzar?</h2>
                             <p class="lead text-white animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.5s;">Ser miembro de la Asociación Dental de Bolivia (IADR Bolivia) puede ayudarlo a impulsar su carrera dental y a estar al tanto de las innovaciones y avances en el campo dental.</p>
                             <ul class="btn-grp animated fadeInUp" data-animate="fadeInUp" data-delay=".6" style="visibility: visible; animation-delay: 0.6s;">
-                                <li><a href="#" class="btn btn-md btn-light btn-round btn-nocap">Ser Miembro</a></li>
+                                <li><a href="/membresia" class="btn btn-md btn-light btn-round btn-nocap">Ser Miembro</a></li>
                             </ul>
                         </div>
                     </div>
@@ -316,11 +317,11 @@
                 <div class="text-center">
                     <div class="row justify-content-center">
                         <div class="col-xxl-6 col-xl-8 col-lg-9">
-                            <div class="pb-1">
+                            <div class="pb-1 img_move">
                                 <h2 class="animated" data-animate="fadeInUp" data-delay=".3">¿Listo para comenzar?</h2>
                                 <p class="lead animated" data-animate="fadeInUp" data-delay=".4">Ser miembro puede ayudarlo a impulsar su carrera dental y ha estar al tanto de las innovaciones y avances en el campo dental.</p>
                                 <ul class="btn-grp animated fadeInUp" data-animate="fadeInUp" data-delay=".6" style="visibility: visible; animation-delay: 0.6s;">
-                                    <li><a href="#" class="btn btn-md btn-light btn-round btn-nocap"><em class="me-3 fab fa-discord"></em>Ser Miembro</a></li>
+                                    <li><a href="/membresia" class="btn btn-md btn-light btn-round btn-nocap">Ser Miembro</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -437,7 +438,7 @@
                                 </div>
                             </li>
                             <li class="animated fadeInUp" data-animate="fadeInUp" data-delay="0.4" style="visibility: visible; animation-delay: 0.4s;">
-                                <em class="contact-icon fas fa-"></em>
+                                <em class="contact-icon fas fa-paper-plane"></em>
                                 <div class="contact-text">
                                     <span>Join us on Telegram</span>
                                 </div>

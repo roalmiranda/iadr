@@ -29,7 +29,7 @@
 
 @endsection
 @section('content')
-<section class="section">
+<section class="section" style="padding-top:50px;">
     <div class="background-shape"></div>
     <div class="container">
         <!-- Block @s  -->
@@ -79,7 +79,7 @@
                                 </div>
                             </li>
                             <li class="animated fadeInUp" data-animate="fadeInUp" data-delay="0.4" style="visibility: visible; animation-delay: 0.4s;">
-                                <em class="contact-icon fas fa-"></em>
+                                <em class="contact-icon fas fa-paper-plane"></em>
                                 <div class="contact-text">
                                     <span>Join us on Telegram</span>
                                 </div>
