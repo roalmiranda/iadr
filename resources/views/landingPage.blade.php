@@ -136,8 +136,37 @@
     <div class="container container-xxl">
         <div class="nk-block nk-block-sm">
             <div class="row">
-                <div class="col-md-4 col-lg-2 col-6 zoom-animation">
-                    <div class="team team-s2 team-sm-s2 team-odd animated" data-animate="fadeInUp" data-delay="0.3">
+                <div class="col-md-3 zoom-animation">
+                    <div class="team team-s2 team-md-s2 team-odd animated" data-animate="fadeInUp" data-delay="0.3">
+                        <div class="team-photo team-photo-s2">
+                            <img src="images/azalea/team-c.jpg" alt="Img">
+                        </div>
+                        <h5 class="team-name title title-sm">Ron Glabischnig</h5>
+                        <span class="team-position team-position-sm">General manager, Coindexin</span>
+                        <ul class="team-social team-social-s2">
+                            <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
+                            <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
+                            <li><a href="#"><em class="fab fa-twitter"></em></a></li>
+                        </ul>
+                        <a href="{{route('directory.search',12)}}" class="btn btn-success btn-sm">Ver más</a>
+                    </div>
+                </div>
+                <div class="col-md-3 zoom-animation">
+                    <div class="team team-s2 team-md-s2 team-even animated" data-animate="fadeInUp" data-delay="0.35">
+                        <div class="team-photo team-photo-s2">
+                            <img src="images/azalea/team-b.jpg" alt="">
+                        </div>
+                        <h5 class="team-name title title-sm">Stefan Zakrisson</h5>
+                        <span class="team-position team-position-sm">Legal Advisor, TokenWiz Project</span>
+                        <ul class="team-social team-social-s2">
+                            <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
+                            <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
+                            <li><a href="#"><em class="fab fa-twitter"></em></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 zoom-animation">
+                    <div class="team team-s2 team-md-s2 team-odd animated" data-animate="fadeInUp" data-delay="0.3">
                         <div class="team-photo team-photo-s2">
                             <img src="images/azalea/team-c.jpg" alt="Img">
                         </div>
@@ -151,8 +180,37 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-2 col-6 zoom-animation">
-                    <div class="team team-s2 team-sm-s2 team-even animated" data-animate="fadeInUp" data-delay="0.35">
+                <div class="col-md-3 zoom-animation">
+                    <div class="team team-s2 team-md-s2 team-even animated" data-animate="fadeInUp" data-delay="0.35">
+                        <div class="team-photo team-photo-s2">
+                            <img src="images/azalea/team-b.jpg" alt="">
+                        </div>
+                        <h5 class="team-name title title-sm">Stefan Zakrisson</h5>
+                        <span class="team-position team-position-sm">Legal Advisor, TokenWiz Project</span>
+                        <ul class="team-social team-social-s2">
+                            <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
+                            <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
+                            <li><a href="#"><em class="fab fa-twitter"></em></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 zoom-animation">
+                    <div class="team team-s2 team-md-s2 team-odd animated" data-animate="fadeInUp" data-delay="0.3">
+                        <div class="team-photo team-photo-s2">
+                            <img src="images/azalea/team-c.jpg" alt="Img">
+                        </div>
+                        <h5 class="team-name title title-sm">Ron Glabischnig</h5>
+                        <span class="team-position team-position-sm">General manager, Coindexin</span>
+                        <a href="{{route('directory.search',12)}}">Ver más</a>
+                        <ul class="team-social team-social-s2">
+                            <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
+                            <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
+                            <li><a href="#"><em class="fab fa-twitter"></em></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 zoom-animation">
+                    <div class="team team-s2 team-md-s2 team-even animated" data-animate="fadeInUp" data-delay="0.35">
                         <div class="team-photo team-photo-s2">
                             <img src="images/azalea/team-b.jpg" alt="">
                         </div>
@@ -169,7 +227,194 @@
         </div>
     </div>
 </section>
-
+<section class="section bg-white" id="team">
+    <div class="ui-shape ui-shape-s5"></div>
+    <div class="container">
+        <!-- Section Head @s -->
+        <div class="section-head text-center wide-auto-sm">
+            <h4 class="title title-semibold animated fadeInUp" data-animate="fadeInUp" data-delay=".1" style="visibility: visible; animation-delay: 0.1s;">DIRECTORIO IADR - BOLIVIA</h4>
+        </div><!-- .section-head @e -->
+        <!-- Block @s -->
+        <div class="nk-block nk-block-team-list team-list">
+            <div class="row justify-content-center">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="team team-s3 animated fadeInUp" data-animate="fadeInUp" data-delay=".3" style="visibility: visible; animation-delay: 0.3s;">
+                        <div class="team-photo round-full team-photo-bg">
+                            <a href="#team-popup-1" class="team-show content-popup" data-overlay="bg-theme-grad-alt"></a>
+                            <img src="images/team/sq-a.jpg" alt="team" class="round-full">
+                        </div>
+                        <h5 class="team-name title title-sm">Waylon Dalton</h5>
+                        <span class="team-position">CEO &amp; Lead Blockchain</span>
+                        <ul class="team-social team-social-s2">
+                            <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
+                            <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
+                            <li><a href="#"><em class="fab fa-twitter"></em></a></li>
+                        </ul>
+                        <a href="{{route('article.search', 12)}}" class="btn btn-success btn-sm">Ver más</a>
+                    </div>
+                </div><!-- .col -->
+                <div class="col-sm-6 col-lg-3">
+                    <div class="team team-s3 animated fadeInUp" data-animate="fadeInUp" data-delay=".4" style="visibility: visible; animation-delay: 0.4s;">
+                        <div class="team-photo round-full team-photo-bg">
+                            <a href="#team-popup-2" class="team-show content-popup" data-overlay="bg-theme-grad-alt"></a>
+                            <img src="images/team/sq-b.jpg" alt="team" class="round-full">
+                        </div>
+                        <h5 class="team-name title title-sm">Stefan Harary</h5>
+                        <span class="team-position">CTO &amp; Software Engineer</span>
+                        <ul class="team-social team-social-s2">
+                            <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
+                            <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
+                            <li><a href="#"><em class="fab fa-twitter"></em></a></li>
+                        </ul>
+                        <a href="{{route('article.search', 12)}}" class="btn btn-success btn-sm">Ver más</a>
+                    </div>
+                    <!-- Start .team-profile  -->
+                    <div id="team-popup-2" class="team-popup mfp-hide">
+                        <a title="Close" class="mfp-close">×</a>
+                        <div class="row align-items-start">
+                            <div class="col-md-6">
+                                <div class="team-photo">
+                                    <img src="images/team/b-color.jpg" alt="team">
+                                </div>
+                            </div><!-- .col  -->
+                            <div class="col-md-6">
+                                <div class="team-popup-info ps-md-3">
+                                    <h3 class="team-name title title-lg pt-4">Stefan Harary</h3>
+                                    <p class="team-position mb-1">CTO &amp; Software Engineer</p>
+                                    <ul class="team-social team-social-s2 mb-4">
+                                        <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
+                                        <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
+                                    </ul>
+                                    <p>He is a great man to work Lorem ipsum dolor sit amet, consec tetur adipis icing elit. Simi lique, autem. </p>
+                                    <p>Tenetur quos facere magnam volupt ates quas esse Sedrep ell endus mole stiae tates quas esse Sed repell endus molesti aela uda ntium quis quam iusto minima thanks.</p>
+                                    <div class="progress-list">
+                                        <div class="progress-wrap">
+                                            <div class="progress-title">Blockchain <span class="progress-amount">85%</span></div>
+                                            <div class="progress-bar progress-bar-xs bg-black-10">
+                                                <div class="progress-percent bg-primary" data-percent="85" style="width: 85%;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="progress-wrap">
+                                            <div class="progress-title">Decentralization <span class="progress-amount">68%</span></div>
+                                            <div class="progress-bar progress-bar-xs bg-black-10">
+                                                <div class="progress-percent bg-primary" data-percent="68" style="width: 68%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- .col  -->
+                        </div><!-- .row  -->
+                    </div><!-- .team-profile  -->
+                </div><!-- .col -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team team-s3 animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.5s;">
+                        <div class="team-photo round-full team-photo-bg">
+                            <a href="#team-popup-3" class="team-show content-popup" data-overlay="bg-theme-grad-alt"></a>
+                            <img src="images/team/sq-c.jpg" alt="team" class="round-full">
+                        </div>
+                        <h5 class="team-name title title-sm">Moises Teare</h5>
+                        <span class="team-position">Sr.Backend developer</span>
+                        <ul class="team-social team-social-s2">
+                            <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
+                            <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
+                            <li><a href="#"><em class="fab fa-twitter"></em></a></li>
+                        </ul>
+                        <a href="{{route('article.search', 12)}}" class="btn btn-success btn-sm">Ver más</a>
+                    </div>
+                    <!-- Start .team-profile  -->
+                    <div id="team-popup-3" class="team-popup mfp-hide">
+                        <a title="Close" class="mfp-close">×</a>
+                        <div class="row align-items-start">
+                            <div class="col-md-6">
+                                <div class="team-photo">
+                                    <img src="images/team/c-color.jpg" alt="team">
+                                </div>
+                            </div><!-- .col  -->
+                            <div class="col-md-6">
+                                <div class="team-popup-info ps-md-3">
+                                    <h3 class="team-name title title-lg pt-4">Moises Teare</h3>
+                                    <p class="team-position mb-1">Sr.Backend developer</p>
+                                    <ul class="team-social team-social-s2 mb-4">
+                                        <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
+                                        <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
+                                    </ul>
+                                    <p>He is a great man to work Lorem ipsum dolor sit amet, consec tetur adipis icing elit. Simi lique, autem. </p>
+                                    <p>Tenetur quos facere magnam volupt ates quas esse Sedrep ell endus mole stiae tates quas esse Sed repell endus molesti aela uda ntium quis quam iusto minima thanks.</p>
+                                    <div class="progress-list">
+                                        <div class="progress-wrap">
+                                            <div class="progress-title">Blockchain <span class="progress-amount">85%</span></div>
+                                            <div class="progress-bar progress-bar-xs bg-black-10">
+                                                <div class="progress-percent bg-primary" data-percent="85" style="width: 85%;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="progress-wrap">
+                                            <div class="progress-title">Decentralization <span class="progress-amount">68%</span></div>
+                                            <div class="progress-bar progress-bar-xs bg-black-10">
+                                                <div class="progress-percent bg-primary" data-percent="68" style="width: 68%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- .col  -->
+                        </div><!-- .row  -->
+                    </div><!-- .team-profile  -->
+                </div><!-- .col -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team team-s3 animated fadeInUp" data-animate="fadeInUp" data-delay=".6" style="visibility: visible; animation-delay: 0.6s;">
+                        <div class="team-photo round-full team-photo-bg">
+                            <a href="#team-popup-4" class="team-show content-popup" data-overlay="bg-theme-grad-alt"></a>
+                            <img src="images/team/sq-d.jpg" alt="team" class="round-full">
+                        </div>
+                        <h5 class="team-name title title-sm">Gabriel Bernal</h5>
+                        <span class="team-position">Software Engineer</span>
+                        <ul class="team-social team-social-s2">
+                            <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
+                            <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
+                            <li><a href="#"><em class="fab fa-twitter"></em></a></li>
+                        </ul>
+                    </div>
+                    <!-- Start .team-profile  -->
+                    <div id="team-popup-4" class="team-popup mfp-hide">
+                        <a title="Close" class="mfp-close">×</a>
+                        <div class="row align-items-start">
+                            <div class="col-md-6">
+                                <div class="team-photo">
+                                    <img src="images/team/d-color.jpg" alt="team">
+                                </div>
+                            </div><!-- .col  -->
+                            <div class="col-md-6">
+                                <div class="team-popup-info ps-md-3">
+                                    <h3 class="team-name title title-lg pt-4">Gabriel Bernal</h3>
+                                    <p class="team-position mb-1">Software Engineer</p>
+                                    <ul class="team-social team-social-s2 mb-4">
+                                        <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
+                                        <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
+                                    </ul>
+                                    <p>He is a great man to work Lorem ipsum dolor sit amet, consec tetur adipis icing elit. Simi lique, autem. </p>
+                                    <p>Tenetur quos facere magnam volupt ates quas esse Sedrep ell endus mole stiae tates quas esse Sed repell endus molesti aela uda ntium quis quam iusto minima thanks.</p>
+                                    <div class="progress-list">
+                                        <div class="progress-wrap">
+                                            <div class="progress-title">Blockchain <span class="progress-amount">85%</span></div>
+                                            <div class="progress-bar progress-bar-xs bg-black-10">
+                                                <div class="progress-percent bg-primary" data-percent="85" style="width: 85%;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="progress-wrap">
+                                            <div class="progress-title">Decentralization <span class="progress-amount">68%</span></div>
+                                            <div class="progress-bar progress-bar-xs bg-black-10">
+                                                <div class="progress-percent bg-primary" data-percent="68" style="width: 68%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- .col  -->
+                        </div><!-- .row  -->
+                    </div><!-- .team-profile  -->
+                </div><!-- .col -->
+            </div>
+        </div>
+    </div>
+</section>
 <!-- Eventos -->
 <section class="section pt-0 pb-0" id="event">
     <div class="section section-m bg-white" id="resources">
@@ -187,7 +432,7 @@
                                 <ul class="news-tags">
                                     <li><a class="link-success" href="#">Knowledge</a></li>
                                 </ul>
-                                <h5>What Are Decentralized Applications (DApps)?</h5>
+                                <h4 class="title title-sm"><a href="{{route('event.search', 12)}}">The Intersection with Blockchain.</a></h4>
                                 <ul class="news-meta">
                                     <li>Published Dec 13, 2021</li>
                                 </ul>
@@ -213,7 +458,7 @@
                 </div>
                 <ul class="pt-4 d-flex gaps g-3 justify-content-center animated fadeInUp" data-animate="fadeInUp" data-delay=".9" style="visibility: visible; animation-delay: 0.9s;">
                     <li>
-                        <a href="#" class="btn btn-primary btn-round btn-md btn-nocap">Ver más</a>
+                        <a href="/eventos" class="btn btn-primary btn-round btn-md btn-nocap">Ver más</a>
                     </li>
                 </ul>
             </div>

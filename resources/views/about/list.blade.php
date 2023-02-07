@@ -124,11 +124,10 @@
         <!-- Block @s -->
         <div class="nk-block nk-block-team-list">
             <div class="row justify-content-center">
-                <div class="col-md-3 col-6">
-                    <div class="team animated  bg-white fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">
+                <div class="col-md-3 col-6 img_move">
+                    <div class="team animated  bg-white fadeInUp pb-3" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">
                         <div class="team-photo">
                             <img src="images/team/a.jpg" alt="team">
-                            <a href="#team-popup-1" class="team-show content-popup"></a>
                             <ul class="team-social">
                                 <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
                                 <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
@@ -136,44 +135,8 @@
                         </div>
                         <h5 class="team-name title title-sm">Louis Baker</h5>
                         <span class="team-position pb-2">CEO &amp; Lead Blockchain</span>
+                        <a href="http://iadr.test/directorio/12" class="btn btn-success btn-sm">Ver más</a>
                     </div>
-                    <!-- Start .team-profile  -->
-                    <div id="team-popup-1" class="team-popup mfp-hide">
-                        <a title="Close" class="mfp-close">×</a>
-                        <div class="row align-items-start">
-                            <div class="col-md-6">
-                                <div class="team-photo">
-                                    <img src="images/team/a.jpg" alt="team">
-                                </div>
-                            </div><!-- .col  -->
-                            <div class="col-md-6">
-                                <div class="team-popup-info ps-md-3">
-                                    <h3 class="team-name title title-lg pt-4">Ivan Rojas</h3>
-                                    <p class="team-position">CEO &amp; Lead Blockchain </p>
-                                    <ul class="team-social mb-4">
-                                        <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
-                                        <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
-                                    </ul>
-                                    <p>He is a great man to work Lorem ipsum dolor sit amet, consec tetur adipis icing elit. Simi lique, autem. </p>
-                                    <p>Tenetur quos facere magnam volupt ates quas esse Sedrep ell endus mole stiae tates quas esse Sed repell endus molesti aela uda ntium quis quam iusto minima thanks.</p>
-                                    <div class="progress-list">
-                                        <div class="progress-wrap">
-                                            <div class="progress-title">Blockchain <span class="progress-amount">85%</span></div>
-                                            <div class="progress-bar progress-bar-xs bg-black-10">
-                                                <div class="progress-percent bg-primary" data-percent="85" style="width: 85%;"></div>
-                                            </div>
-                                        </div>
-                                        <div class="progress-wrap">
-                                            <div class="progress-title">Decentralization <span class="progress-amount">68%</span></div>
-                                            <div class="progress-bar progress-bar-xs bg-black-10">
-                                                <div class="progress-percent bg-primary" data-percent="68" style="width: 68%;"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- .col  -->
-                        </div><!-- .row  -->
-                    </div><!-- .team-profile  -->
                 </div>
             </div>
         </div>

@@ -11,9 +11,9 @@
                         <div class="col-xl-6 col-lg-9">
                             <div class="banner-caption cpn tc-light text-center">
                                 <div class="cpn-head">
-                                    <h2 class="title title-xl-2 animated fadeInUp tc-primary" data-animate="fadeInUp" data-delay="1.25" style="visibility: visible; animation-delay: 1.25s;">Directorio</h2>
+                                    <h2 class="title title-xl-2 animated fadeInUp tc-primary" data-animate="fadeInUp" data-delay="1.25" style="visibility: visible; animation-delay: 1.25s;">Evento</h2>
                                     <b class="animated fadeInUp" data-animate="fadeInUp" data-delay="1.25">
-                                        <p class="tc-default"><a href="/">Inicio</a> > <a href="/quienes-somos">Quienes somos</a> > Directorio</p>
+                                        <p class="tc-default"><a href="/">Inicio</a> > <a href="/eventos">Eventos</a></p>
                                     </b>
                                 </div>
                             </div>
@@ -77,7 +77,7 @@
                         <h5 class="team-name title title-sm">Louis Baker</h5>
                         <span class="team-position">CEO &amp; Lead Blockchain</span>
                     </div>
-                    <!-- Start .team-profile  -->
+                    <!-- Detalle  -->
                     <div id="team-popup-1" class="team-popup mfp-hide">
                         <a title="Close" class="mfp-close">×</a>
                         <div class="row align-items-start">

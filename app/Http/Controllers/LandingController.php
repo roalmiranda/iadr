@@ -20,10 +20,30 @@ class LandingController extends Controller
         return view('article.list');
     }
     /**
+     * Buscar de Articulos - IADR
+     */
+    public function articleSearch($name=''){
+        $data = 'Staff::first()';
+        // return view('directory.search',[
+        //     'data'  => $data
+        // ]);
+        return view('article.search');
+    }
+    /**
      * Quienes Somos - IADR
      */
     public function about(){
         return view('about.list');
+    }
+    /**
+     * Buscar directorio - IADR
+     */
+    public function directorySearch($name=''){
+        $data = 'Staff::first()';
+        // return view('directory.search',[
+        //     'data'  => $data
+        // ]);
+        return view('directory.search');
     }
     /**
      * Membresía - IADR
@@ -36,15 +56,5 @@ class LandingController extends Controller
      */
     public function contact(){
         return view('contact.list');
-    }
-    /**
-     * Lista de Articulos - IADR
-     */
-    public function directorySearch($name=''){
-        $data = 'Staff::first()';
-        // return view('directory.search',[
-        //     'data'  => $data
-        // ]);
-        return view('directory.search');
     }
 }

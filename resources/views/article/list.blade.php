@@ -82,7 +82,7 @@
                                 <li><a href="#">12 Mar, 2022</a></li>
                                 <li><a href="#">Blockchain</a></li>
                             </ul>
-                            <h4 class="title title-sm"><a href="#">The Intersection with Blockchain.</a></h4>
+                            <h4 class="title title-sm"><a href="{{route('article.search', 'ronald')}}">The Intersection with Blockchain.</a></h4>
                             <p>Blockchain Meets Energy Surplus of electrical energy is sometimes ut perspiciatis unde omnis iste natus...</p>
                         </div>
                     </div><!-- .blog -->
