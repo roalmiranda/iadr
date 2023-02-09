@@ -222,7 +222,7 @@
                                 </div>
                             </div>
                             <div class="box-bordered-inner schedule-content">
-                                <img class="schedule-thumb" src="http://iadr-admin.test//img_admin/staff/1675404713_unnamed.png" alt="" height="150">
+                                <img class="schedule-thumb" src="http://www.iadr-bolivia.com/img_admin/staff/1675404713_unnamed.png" alt="" height="150">
                                 <div class="schedule-text">
                                     <h5 class="line-truncate-2">Titulo de Evento</h5>
                                     <p class="line-truncate-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias dolorem doloremque possimus facilis accusantium qui quos earum! Repellat inventore earum nobis tempora quo, distinctio eum, aspernatur nulla perspiciatis voluptatibus odio.. </p>
