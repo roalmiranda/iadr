@@ -11,10 +11,10 @@
     <!-- Site Title  -->
     <title>IADR Bolivia</title>
     <!-- Bundle and Base CSS -->
-    <link rel="stylesheet" href="{!! asset('assets/css/vendor.bundle.css?ver=210') !!}">
-    <link rel="stylesheet" href="{!! asset('assets/css/style-jasmine.css?ver=210') !!}">
+    <link rel="stylesheet" href="{{ asset('assets/css/vendor.bundle.css?ver=210') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style-jasmine.css?ver=210') }}">
     <!-- Extra CSS -->
-    <link rel="stylesheet" href="{!! asset('assets/css/theme.css?ver=210') !!}">
+    <link rel="stylesheet" href="{{ asset('assets/css/theme.css?ver=210') }}">
     <style>
         /* Movimiento de imagenes */
         
