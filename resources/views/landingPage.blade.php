@@ -122,7 +122,7 @@
 </section>
 <!-- // -->
 
-@php($url = "http://iadr-admin.test/")
+@php($url = "http://www.iadr-bolivia.com/")
 <section class="section bg-white" id="team">
     <div class="ui-shape ui-shape-s5"></div>
     <div class="container">
@@ -553,5 +553,5 @@
 </section>
 @endsection
 @section('script_dev')
-<script src="assets/js/gralSlider.js"></script>
+<script src="{!! asset('assets/js/gralSlider.js') !!}"></script>
 @endsection
