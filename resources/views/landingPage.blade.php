@@ -121,112 +121,8 @@
     </div>
 </section>
 <!-- // -->
-<section class="section">
-    <div class="background-shape bs-right"></div>
-    <div class="container">
-        <div class="row justify-content-center text-center">
-            <div class="col-lg-12">
-                <div class="section-head section-head-s2">
-                    <h6 class="title title-xs tc-primary animated" data-animate="fadeInUp" data-delay=".2">Equipo</h6>
-                    <h2 class="title animated" data-animate="fadeInUp" data-delay=".3">Directorio IADR</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container container-xxl">
-        <div class="nk-block nk-block-sm">
-            <div class="row">
-                <div class="col-md-3 zoom-animation">
-                    <div class="team team-s2 team-md-s2 team-odd animated" data-animate="fadeInUp" data-delay="0.3">
-                        <div class="team-photo team-photo-s2">
-                            <img src="images/azalea/team-c.jpg" alt="Img">
-                        </div>
-                        <h5 class="team-name title title-sm">Ron Glabischnig</h5>
-                        <span class="team-position team-position-sm">General manager, Coindexin</span>
-                        <ul class="team-social team-social-s2">
-                            <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
-                            <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
-                            <li><a href="#"><em class="fab fa-twitter"></em></a></li>
-                        </ul>
-                        <a href="{{route('directory.search',12)}}" class="btn btn-success btn-sm">Ver más</a>
-                    </div>
-                </div>
-                <div class="col-md-3 zoom-animation">
-                    <div class="team team-s2 team-md-s2 team-even animated" data-animate="fadeInUp" data-delay="0.35">
-                        <div class="team-photo team-photo-s2">
-                            <img src="images/azalea/team-b.jpg" alt="">
-                        </div>
-                        <h5 class="team-name title title-sm">Stefan Zakrisson</h5>
-                        <span class="team-position team-position-sm">Legal Advisor, TokenWiz Project</span>
-                        <ul class="team-social team-social-s2">
-                            <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
-                            <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
-                            <li><a href="#"><em class="fab fa-twitter"></em></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 zoom-animation">
-                    <div class="team team-s2 team-md-s2 team-odd animated" data-animate="fadeInUp" data-delay="0.3">
-                        <div class="team-photo team-photo-s2">
-                            <img src="images/azalea/team-c.jpg" alt="Img">
-                        </div>
-                        <h5 class="team-name title title-sm">Ron Glabischnig</h5>
-                        <span class="team-position team-position-sm">General manager, Coindexin</span>
-                        <a href="{{route('directory.search',12)}}">Ver más</a>
-                        <ul class="team-social team-social-s2">
-                            <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
-                            <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
-                            <li><a href="#"><em class="fab fa-twitter"></em></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 zoom-animation">
-                    <div class="team team-s2 team-md-s2 team-even animated" data-animate="fadeInUp" data-delay="0.35">
-                        <div class="team-photo team-photo-s2">
-                            <img src="images/azalea/team-b.jpg" alt="">
-                        </div>
-                        <h5 class="team-name title title-sm">Stefan Zakrisson</h5>
-                        <span class="team-position team-position-sm">Legal Advisor, TokenWiz Project</span>
-                        <ul class="team-social team-social-s2">
-                            <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
-                            <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
-                            <li><a href="#"><em class="fab fa-twitter"></em></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 zoom-animation">
-                    <div class="team team-s2 team-md-s2 team-odd animated" data-animate="fadeInUp" data-delay="0.3">
-                        <div class="team-photo team-photo-s2">
-                            <img src="images/azalea/team-c.jpg" alt="Img">
-                        </div>
-                        <h5 class="team-name title title-sm">Ron Glabischnig</h5>
-                        <span class="team-position team-position-sm">General manager, Coindexin</span>
-                        <a href="{{route('directory.search',12)}}">Ver más</a>
-                        <ul class="team-social team-social-s2">
-                            <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
-                            <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
-                            <li><a href="#"><em class="fab fa-twitter"></em></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 zoom-animation">
-                    <div class="team team-s2 team-md-s2 team-even animated" data-animate="fadeInUp" data-delay="0.35">
-                        <div class="team-photo team-photo-s2">
-                            <img src="images/azalea/team-b.jpg" alt="">
-                        </div>
-                        <h5 class="team-name title title-sm">Stefan Zakrisson</h5>
-                        <span class="team-position team-position-sm">Legal Advisor, TokenWiz Project</span>
-                        <ul class="team-social team-social-s2">
-                            <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
-                            <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
-                            <li><a href="#"><em class="fab fa-twitter"></em></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
+@php($url = "http://iadr-admin.test/")
 <section class="section bg-white" id="team">
     <div class="ui-shape ui-shape-s5"></div>
     <div class="container">
@@ -237,185 +133,158 @@
         <!-- Block @s -->
         <div class="nk-block nk-block-team-list team-list">
             <div class="row justify-content-center">
-                <div class="col-sm-6 col-lg-3">
-                    <div class="team team-s3 animated fadeInUp" data-animate="fadeInUp" data-delay=".3" style="visibility: visible; animation-delay: 0.3s;">
-                        <div class="team-photo round-full team-photo-bg">
-                            <a href="#team-popup-1" class="team-show content-popup" data-overlay="bg-theme-grad-alt"></a>
-                            <img src="images/team/sq-a.jpg" alt="team" class="round-full">
+                @foreach($staffs as $staff)
+                    <div class="col-md-3">
+                        <div class="team team-s3 animated fadeInUp" data-animate="fadeInUp" data-delay=".4" style="visibility: visible; animation-delay: 0.4s;">
+                            <div class="team-photo round-full team-photo-bg">
+                                <a href="#team-popup-2" class="team-show content-popup" data-overlay="bg-theme-grad-alt"></a>
+                                <img src="{{$url}}/img_admin/staff/{{$staff->photo}}" alt="team" class="round-full">
+                            </div>
+                            <h5 class="team-name title title-sm">{{$staff->name}} {{$staff->paternal}} {{$staff->maternal}}</h5>
+                            <span class="team-position">
+                                {{$staff->rol}}
+                            </span>
+                            <ul class="team-social team-social-s2">
+                                <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
+                                <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
+                                <li><a href="#"><em class="fab fa-twitter"></em></a></li>
+                            </ul>
+                            <a href="{{route('article.search', 12)}}" class="btn btn-success btn-sm">Ver más</a>
                         </div>
-                        <h5 class="team-name title title-sm">Waylon Dalton</h5>
-                        <span class="team-position">CEO &amp; Lead Blockchain</span>
-                        <ul class="team-social team-social-s2">
-                            <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
-                            <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
-                            <li><a href="#"><em class="fab fa-twitter"></em></a></li>
-                        </ul>
-                        <a href="{{route('article.search', 12)}}" class="btn btn-success btn-sm">Ver más</a>
-                    </div>
-                </div><!-- .col -->
-                <div class="col-sm-6 col-lg-3">
-                    <div class="team team-s3 animated fadeInUp" data-animate="fadeInUp" data-delay=".4" style="visibility: visible; animation-delay: 0.4s;">
-                        <div class="team-photo round-full team-photo-bg">
-                            <a href="#team-popup-2" class="team-show content-popup" data-overlay="bg-theme-grad-alt"></a>
-                            <img src="images/team/sq-b.jpg" alt="team" class="round-full">
-                        </div>
-                        <h5 class="team-name title title-sm">Stefan Harary</h5>
-                        <span class="team-position">CTO &amp; Software Engineer</span>
-                        <ul class="team-social team-social-s2">
-                            <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
-                            <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
-                            <li><a href="#"><em class="fab fa-twitter"></em></a></li>
-                        </ul>
-                        <a href="{{route('article.search', 12)}}" class="btn btn-success btn-sm">Ver más</a>
-                    </div>
-                    <!-- Start .team-profile  -->
-                    <div id="team-popup-2" class="team-popup mfp-hide">
-                        <a title="Close" class="mfp-close">×</a>
-                        <div class="row align-items-start">
-                            <div class="col-md-6">
-                                <div class="team-photo">
-                                    <img src="images/team/b-color.jpg" alt="team">
-                                </div>
-                            </div><!-- .col  -->
-                            <div class="col-md-6">
-                                <div class="team-popup-info ps-md-3">
-                                    <h3 class="team-name title title-lg pt-4">Stefan Harary</h3>
-                                    <p class="team-position mb-1">CTO &amp; Software Engineer</p>
-                                    <ul class="team-social team-social-s2 mb-4">
-                                        <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
-                                        <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
-                                    </ul>
-                                    <p>He is a great man to work Lorem ipsum dolor sit amet, consec tetur adipis icing elit. Simi lique, autem. </p>
-                                    <p>Tenetur quos facere magnam volupt ates quas esse Sedrep ell endus mole stiae tates quas esse Sed repell endus molesti aela uda ntium quis quam iusto minima thanks.</p>
-                                    <div class="progress-list">
-                                        <div class="progress-wrap">
-                                            <div class="progress-title">Blockchain <span class="progress-amount">85%</span></div>
-                                            <div class="progress-bar progress-bar-xs bg-black-10">
-                                                <div class="progress-percent bg-primary" data-percent="85" style="width: 85%;"></div>
+                        <!-- Start .team-profile  -->
+                        <div id="team-popup-2" class="team-popup mfp-hide">
+                            <a title="Close" class="mfp-close">×</a>
+                            <div class="row align-items-start">
+                                <div class="col-md-6">
+                                    <div class="team-photo">
+                                        <img src="{{$url}}/img_admin/staff/{{$staff->photo}}" alt="team">
+                                    </div>
+                                </div><!-- .col  -->
+                                <div class="col-md-6">
+                                    <div class="team-popup-info ps-md-3">
+                                        <h3 class="team-name title title-lg pt-4">{{$staff->name}} {{$staff->paternal}} {{$staff->maternal}}</h3>
+                                        <p class="team-position mb-1">
+                                            {{substr($staff->specialty, 0, 60)}}...
+                                        </p>
+                                        <ul class="team-social team-social-s2 mb-4">
+                                            <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
+                                            <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
+                                        </ul>
+                                        <p>He is a great man to work Lorem ipsum dolor sit amet, consec tetur adipis icing elit. Simi lique, autem. </p>
+                                        <p>Tenetur quos facere magnam volupt ates quas esse Sedrep ell endus mole stiae tates quas esse Sed repell endus molesti aela uda ntium quis quam iusto minima thanks.</p>
+                                        <div class="progress-list">
+                                            <div class="progress-wrap">
+                                                <div class="progress-title">Blockchain <span class="progress-amount">85%</span></div>
+                                                <div class="progress-bar progress-bar-xs bg-black-10">
+                                                    <div class="progress-percent bg-primary" data-percent="85" style="width: 85%;"></div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="progress-wrap">
-                                            <div class="progress-title">Decentralization <span class="progress-amount">68%</span></div>
-                                            <div class="progress-bar progress-bar-xs bg-black-10">
-                                                <div class="progress-percent bg-primary" data-percent="68" style="width: 68%;"></div>
+                                            <div class="progress-wrap">
+                                                <div class="progress-title">Decentralization <span class="progress-amount">68%</span></div>
+                                                <div class="progress-bar progress-bar-xs bg-black-10">
+                                                    <div class="progress-percent bg-primary" data-percent="68" style="width: 68%;"></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div><!-- .col  -->
-                        </div><!-- .row  -->
-                    </div><!-- .team-profile  -->
-                </div><!-- .col -->
-                <div class="col-lg-3 col-sm-6">
-                    <div class="team team-s3 animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.5s;">
-                        <div class="team-photo round-full team-photo-bg">
-                            <a href="#team-popup-3" class="team-show content-popup" data-overlay="bg-theme-grad-alt"></a>
-                            <img src="images/team/sq-c.jpg" alt="team" class="round-full">
-                        </div>
-                        <h5 class="team-name title title-sm">Moises Teare</h5>
-                        <span class="team-position">Sr.Backend developer</span>
-                        <ul class="team-social team-social-s2">
-                            <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
-                            <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
-                            <li><a href="#"><em class="fab fa-twitter"></em></a></li>
-                        </ul>
-                        <a href="{{route('article.search', 12)}}" class="btn btn-success btn-sm">Ver más</a>
+                                </div><!-- .col  -->
+                            </div><!-- .row  -->
+                        </div><!-- .team-profile  -->
                     </div>
-                    <!-- Start .team-profile  -->
-                    <div id="team-popup-3" class="team-popup mfp-hide">
-                        <a title="Close" class="mfp-close">×</a>
-                        <div class="row align-items-start">
-                            <div class="col-md-6">
-                                <div class="team-photo">
-                                    <img src="images/team/c-color.jpg" alt="team">
-                                </div>
-                            </div><!-- .col  -->
-                            <div class="col-md-6">
-                                <div class="team-popup-info ps-md-3">
-                                    <h3 class="team-name title title-lg pt-4">Moises Teare</h3>
-                                    <p class="team-position mb-1">Sr.Backend developer</p>
-                                    <ul class="team-social team-social-s2 mb-4">
-                                        <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
-                                        <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
-                                    </ul>
-                                    <p>He is a great man to work Lorem ipsum dolor sit amet, consec tetur adipis icing elit. Simi lique, autem. </p>
-                                    <p>Tenetur quos facere magnam volupt ates quas esse Sedrep ell endus mole stiae tates quas esse Sed repell endus molesti aela uda ntium quis quam iusto minima thanks.</p>
-                                    <div class="progress-list">
-                                        <div class="progress-wrap">
-                                            <div class="progress-title">Blockchain <span class="progress-amount">85%</span></div>
-                                            <div class="progress-bar progress-bar-xs bg-black-10">
-                                                <div class="progress-percent bg-primary" data-percent="85" style="width: 85%;"></div>
-                                            </div>
-                                        </div>
-                                        <div class="progress-wrap">
-                                            <div class="progress-title">Decentralization <span class="progress-amount">68%</span></div>
-                                            <div class="progress-bar progress-bar-xs bg-black-10">
-                                                <div class="progress-percent bg-primary" data-percent="68" style="width: 68%;"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- .col  -->
-                        </div><!-- .row  -->
-                    </div><!-- .team-profile  -->
-                </div><!-- .col -->
-                <div class="col-lg-3 col-sm-6">
-                    <div class="team team-s3 animated fadeInUp" data-animate="fadeInUp" data-delay=".6" style="visibility: visible; animation-delay: 0.6s;">
-                        <div class="team-photo round-full team-photo-bg">
-                            <a href="#team-popup-4" class="team-show content-popup" data-overlay="bg-theme-grad-alt"></a>
-                            <img src="images/team/sq-d.jpg" alt="team" class="round-full">
-                        </div>
-                        <h5 class="team-name title title-sm">Gabriel Bernal</h5>
-                        <span class="team-position">Software Engineer</span>
-                        <ul class="team-social team-social-s2">
-                            <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
-                            <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
-                            <li><a href="#"><em class="fab fa-twitter"></em></a></li>
-                        </ul>
-                    </div>
-                    <!-- Start .team-profile  -->
-                    <div id="team-popup-4" class="team-popup mfp-hide">
-                        <a title="Close" class="mfp-close">×</a>
-                        <div class="row align-items-start">
-                            <div class="col-md-6">
-                                <div class="team-photo">
-                                    <img src="images/team/d-color.jpg" alt="team">
-                                </div>
-                            </div><!-- .col  -->
-                            <div class="col-md-6">
-                                <div class="team-popup-info ps-md-3">
-                                    <h3 class="team-name title title-lg pt-4">Gabriel Bernal</h3>
-                                    <p class="team-position mb-1">Software Engineer</p>
-                                    <ul class="team-social team-social-s2 mb-4">
-                                        <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
-                                        <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
-                                    </ul>
-                                    <p>He is a great man to work Lorem ipsum dolor sit amet, consec tetur adipis icing elit. Simi lique, autem. </p>
-                                    <p>Tenetur quos facere magnam volupt ates quas esse Sedrep ell endus mole stiae tates quas esse Sed repell endus molesti aela uda ntium quis quam iusto minima thanks.</p>
-                                    <div class="progress-list">
-                                        <div class="progress-wrap">
-                                            <div class="progress-title">Blockchain <span class="progress-amount">85%</span></div>
-                                            <div class="progress-bar progress-bar-xs bg-black-10">
-                                                <div class="progress-percent bg-primary" data-percent="85" style="width: 85%;"></div>
-                                            </div>
-                                        </div>
-                                        <div class="progress-wrap">
-                                            <div class="progress-title">Decentralization <span class="progress-amount">68%</span></div>
-                                            <div class="progress-bar progress-bar-xs bg-black-10">
-                                                <div class="progress-percent bg-primary" data-percent="68" style="width: 68%;"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- .col  -->
-                        </div><!-- .row  -->
-                    </div><!-- .team-profile  -->
-                </div><!-- .col -->
+                @endforeach
             </div>
         </div>
     </div>
 </section>
 <!-- Eventos -->
+<div class="section section-t-l pb-0" id="roadmap">
+    <div class="container container-xxl">
+        <div class="nk-block">
+            <div class="section-head text-center">
+                <div class="row justify-content-center">
+                    <div class="col-xxl-6 col-xl-8 col-lg-9">
+                        <h2>Últimos <span class="text-grad">Eventos</span></h2>
+                    </div>
+                </div>
+            </div><!-- .section-head -->
+            <div class="row justify-content-center">
+                <div class="col-xxl-8 col-xl-9">
+                    <div class="has-carousel carousel-navs-middle carousel-navs-fill carousel-dots-long-line carousel-dots-sharp carousel-center-focused" data-margin="28" data-items="1" data-navs="true" data-dots="true" data-loop="true">
+                        <div class="schedule-item box-bordered-grad">
+                            <div class="box-bordered-inner flex-grow-0">
+                                <div class="schedule-meta">
+                                    <div class="schedule-meta-text">
+                                        <ul class="schedule-meta-list">
+                                            <li class="text-grad">Acontecimiento Anterior</li>
+                                        </ul>
+                                        <h5 class="schedule-meta-title">02 de Febrero de 2023</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-bordered-inner schedule-content">
+                                <img class="schedule-thumb" src="http://iadr-admin.test//img_admin/staff/1675404713_unnamed.png" alt="" height="150">
+                                <div class="schedule-text">
+                                    <h5 class="line-truncate-2">Titulo de Evento</h5>
+                                    <p class="line-truncate-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias dolorem doloremque possimus facilis accusantium qui quos earum! Repellat inventore earum nobis tempora quo, distinctio eum, aspernatur nulla perspiciatis voluptatibus odio.. </p>
+                                    <a href="#" class="btn btn-sm btn-grad btn-auto btn-noround btn-nocap mt-0">Ver más</a>
+                                </div>
+                            </div>
+                        </div><!-- .schedule-item -->
+                        <div class="schedule-item box-bordered-grad">
+                            <div class="box-bordered-inner flex-grow-0">
+                                <div class="schedule-meta">
+                                    <div class="schedule-step">
+                                        <h5>1</h5>
+                                    </div>
+                                    <div class="schedule-meta-text">
+                                        <ul class="schedule-meta-list">
+                                            <li class="text-grad">Phase 1</li>
+                                            <li class="text-grad">Completed</li>
+                                        </ul>
+                                        <h5 class="schedule-meta-title">Fall 2022 - Pre Launch</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-bordered-inner schedule-content">
+                                <img class="schedule-thumb" src="images/nft-portfolio/roadmap/b.jpg" alt="">
+                                <div class="schedule-text">
+                                    <h5 class="line-truncate-2">Community Game Launch Program Fall 2022</h5>
+                                    <p class="line-truncate-4">Sem sit convallis sem nulla ut fames. Ac urna amet quam cras et, est hendrerit ac. Sapien, nisl enim nam velit tristique. Morbi sagittis amet neque sollicitudin. Etiam condimentum elementum sollicitudin quis massa. Adipiscing diam purus et tempus, neque, quam semper. </p>
+                                    <a href="#" class="btn btn-sm btn-grad btn-auto btn-noround btn-nocap mt-0">Support Center</a>
+                                </div>
+                            </div>
+                        </div><!-- .schedule-item -->
+                        <div class="schedule-item box-bordered-grad">
+                            <div class="box-bordered-inner flex-grow-0">
+                                <div class="schedule-meta">
+                                    <div class="schedule-step">
+                                        <h5>1</h5>
+                                    </div>
+                                    <div class="schedule-meta-text">
+                                        <ul class="schedule-meta-list">
+                                            <li class="text-grad">Phase 1</li>
+                                            <li class="text-grad">Completed</li>
+                                        </ul>
+                                        <h5 class="schedule-meta-title">Fall 2022 - Pre Launch</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-bordered-inner schedule-content">
+                                <img class="schedule-thumb" src="images/nft-portfolio/roadmap/c.jpg" alt="">
+                                <div class="schedule-text">
+                                    <h5 class="line-truncate-2">Community Game Launch Program Fall 2022</h5>
+                                    <p class="line-truncate-4">Sem sit convallis sem nulla ut fames. Ac urna amet quam cras et, est hendrerit ac. Sapien, nisl enim nam velit tristique. Morbi sagittis amet neque sollicitudin. Etiam condimentum elementum sollicitudin quis massa. Adipiscing diam purus et tempus, neque, quam semper. </p>
+                                    <a href="#" class="btn btn-sm btn-grad btn-auto btn-noround btn-nocap mt-0">Support Center</a>
+                                </div>
+                            </div>
+                        </div><!-- .schedule-item -->
+                    </div><!-- .has-carousel -->
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .nk-block -->
+    </div><!-- .container -->
+</div>
+
 <section class="section pt-0 pb-0" id="event">
     <div class="section section-m bg-white" id="resources">
         <div class="container container-xxl">
@@ -464,30 +333,6 @@
             </div>
         </div>
     </div>
-    <div class="section py-0 pb-3 ov-h">
-        <div class="container container-xxl">
-            <div class="px-6 py-6 rounded-4 has-ovm ov-h tc-light animated fadeIn" data-animate="fadeIn" data-delay=".1" style="visibility: visible; animation-delay: 0.1s;">
-                <div class="row justify-content-center">
-                    <div class="col text-left d-none d-lg-block animated fadeInLeft" data-animate="fadeInLeft" data-delay=".3" style="visibility: visible; animation-delay: 0.3s;">
-                        <img src="images/blockchain/eth-bnb v2.png" srcset="images/blockchain/eth-bnb2x v2.png 2x" alt="">
-                    </div>
-                    <div class="col-xxl-5 col-xl-6 col-lg-8 col-md-10 text-center">
-                        <div class="nk-block pt-1 pb-3">
-                            <h2 class="h1 mb-4 animated fadeInUp" data-animate="fadeInUp" data-delay=".4" style="visibility: visible; animation-delay: 0.4s;">¿Listo para comenzar?</h2>
-                            <p class="lead text-white animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.5s;">Ser miembro de la Asociación Dental de Bolivia (IADR Bolivia) puede ayudarlo a impulsar su carrera dental y a estar al tanto de las innovaciones y avances en el campo dental.</p>
-                            <ul class="btn-grp animated fadeInUp" data-animate="fadeInUp" data-delay=".6" style="visibility: visible; animation-delay: 0.6s;">
-                                <li><a href="/membresia" class="btn btn-md btn-light btn-round btn-nocap">Ser Miembro</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col text-end d-none d-lg-block animated fadeInRight" data-animate="fadeInRight" data-delay=".3" style="visibility: visible; animation-delay: 0.3s;">
-                        <img src="images/blockchain/eth-bnb.png" srcset="images/blockchain/eth-bnb2x.png 2x" alt="">
-                    </div>
-                </div>
-                <div class="nk-ovm blur-b"></div>
-            </div>
-        </div>
-    </div>
 </section>
 
 <!-- Articulos -->
@@ -499,9 +344,11 @@
             <div class="row gutter-vr-50px">
                 <div class="col-sm-6 col-lg-3">
                     <div class="doc animated fadeInUp" data-animate="fadeInUp" data-delay="0.3" style="visibility: visible; animation-delay: 0.3s;">
-                        <div class="doc-photo doc-shape doc-shape-a">
-                            <img src="images/azalea/doc-a.jpg" alt="">
-                        </div>
+                        <a href="{{route('article.search', 'ronald')}}">
+                            <div class="doc-photo doc-shape doc-shape-a">
+                                <img src="images/azalea/doc-a.jpg" alt="img1" style="cursor:pointer;">
+                            </div>
+                        </a>
                         <div class="doc-text">
                             <h5 class="doc-title title-sm">White Paper <small>(2022)</small></h5>
                             <a class="doc-download" href="#"><em class="ti ti-import"></em></a>
@@ -592,7 +439,7 @@
                         <div class="tab-pane fade show active" id="tab-2-1">
                             <div class="accordion" id="acc-1">
                                 <div class="accordion-item accordion-item-s3 animated" data-animate="fadeInUp" data-delay="0.4">
-                                    <h5 class="accordion-title accordion-title-sm" data-bs-toggle="collapse" data-bs-target="#acc-1-1">What is ICO Crypto? <span class="accordion-icon"></span></h5>
+                                    <h5 class="accordion-title accordion-title-sm" data-bs-toggle="collapse" data-bs-target="#acc-1-1">¿Qué es IADR Bolivia? <span class="accordion-icon"></span></h5>
                                     <div id="acc-1-1" class="collapse show" data-bs-parent="#acc-1">
                                         <div class="accordion-content">
                                             <p>Once ICO period is launched, You can purchased Token with Etherum, Bitcoin or Litecoin. You can also tempor incididunt ut labore et dolore magna aliqua sed do eiusmod eaque ipsa.</p>
@@ -600,7 +447,7 @@
                                     </div>
                                 </div>
                                 <div class="accordion-item accordion-item-s3 animated" data-animate="fadeInUp" data-delay="0.5">
-                                    <h5 class="accordion-title accordion-title-sm collapsed" data-bs-toggle="collapse" data-bs-target="#acc-1-2">What cryptocurrencies can I use to purchase? <span class="accordion-icon"></span></h5>
+                                    <h5 class="accordion-title accordion-title-sm collapsed" data-bs-toggle="collapse" data-bs-target="#acc-1-2">¿Qué puedo realizar en IADR? <span class="accordion-icon"></span></h5>
                                     <div id="acc-1-2" class="collapse" data-bs-parent="#acc-1">
                                         <div class="accordion-content">
                                             <p>Once ICO period is launched, You can purchased Token with Etherum, Bitcoin or Litecoin. You can also tempor incididunt ut labore et dolore magna aliqua sed do eiusmod eaque ipsa.</p>
@@ -608,7 +455,7 @@
                                     </div>
                                 </div>
                                 <div class="accordion-item accordion-item-s3 animated" data-animate="fadeInUp" data-delay="0.6">
-                                    <h5 class="accordion-title accordion-title-sm collapsed" data-bs-toggle="collapse" data-bs-target="#acc-1-3">How can I participate in the ICO Token sale? <span class="accordion-icon"></span></h5>
+                                    <h5 class="accordion-title accordion-title-sm collapsed" data-bs-toggle="collapse" data-bs-target="#acc-1-3">¿Qué beneficios obtengo como miembro? <span class="accordion-icon"></span></h5>
                                     <div id="acc-1-3" class="collapse" data-bs-parent="#acc-1">
                                         <div class="accordion-content">
                                             <p>Once ICO period is launched, You can purchased Token with Etherum, Bitcoin or Litecoin. You can also tempor incididunt ut labore et dolore magna aliqua sed do eiusmod eaque ipsa.</p>
@@ -616,7 +463,7 @@
                                     </div>
                                 </div>
                                 <div class="accordion-item accordion-item-s3 animated" data-animate="fadeInUp" data-delay="0.7">
-                                    <h5 class="accordion-title accordion-title-sm collapsed" data-bs-toggle="collapse" data-bs-target="#acc-1-4">How do I benefit from the ICO Token? <span class="accordion-icon"></span></h5>
+                                    <h5 class="accordion-title accordion-title-sm collapsed" data-bs-toggle="collapse" data-bs-target="#acc-1-4">¿Cómo puedo ser miembro? <span class="accordion-icon"></span></h5>
                                     <div id="acc-1-4" class="collapse" data-bs-parent="#acc-1">
                                         <div class="accordion-content">
                                             <p>Once ICO period is launched, You can purchased Token with Etherum, Bitcoin or Litecoin. You can also tempor incididunt ut labore et dolore magna aliqua sed do eiusmod eaque ipsa.</p>

@@ -112,6 +112,93 @@
         </div><!-- .nk-block @e -->
     </div>
 </section>
+<section class="section bg-white">
+    <div class="container">
+        <!-- Block @s -->
+        <div class="nk-block nk-block-text-wrap">
+            <div class="row align-items-center gutter-vr-30px justify-content-center justify-content-lg-between">
+                <div class="col-lg-5 order-lg-last">
+                    <div class="gfx gfx-auto gfx-md animated fadeInUp" data-animate="fadeInUp" data-delay=".1" style="visibility: visible; animation-delay: 0.1s;">
+                        <img src="images/gfx/gfx-z-d.png" alt="app">
+                    </div>
+                </div>
+                <div class="col-lg-5 col-mb-9">
+                    <div class="nk-block-text">
+                        <div class="pb-5 animated fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">
+                            <h2 class="title"><em class="ikon ikon-target"></em> OBJETIVOS</h2>
+                        </div>
+                        <ul class="list list-number-s2">
+                            <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".3" style="visibility: visible; animation-delay: 0.3s;">
+                                <span>1</span>
+                                <p>Promover el avance de la investigación científica y el conocimiento odontológico en Bolivia.</p>
+                            </li>
+                            <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".3" style="visibility: visible; animation-delay: 0.3s;">
+                                <span>2</span>
+                                <p>Establecer mecanismos de apoyo para promover la investigación odontológica y las actividades de la IADR.</p>
+                            </li>
+                            <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".3" style="visibility: visible; animation-delay: 0.3s;">
+                                <span>3</span>
+                                <p>Ampliar la cooperación con otras instituciones dentales, industria, agencias de salud y organizaciones científicas y profesionales del país.</p>
+                            </li>
+                            <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".3" style="visibility: visible; animation-delay: 0.3s;">
+                                <span>4</span>
+                                <p>Apoyar y representar a la comunidad científica odontológica boliviana.</p>
+                            </li>
+                            <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".3" style="visibility: visible; animation-delay: 0.3s;">
+                                <span>5</span>
+                                <p>Motivar a la difusión de los avances científicos y la aplicación de descubrimientos que sean de beneficio a nuestra población.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- .row -->
+        </div><!-- .block @e -->
+    </div>
+</section>
+<section class="section bg-light">
+    <div class="container">
+        <!-- Block @s -->
+        <div class="nk-block nk-block-text-wrap">
+            <div class="row align-items-center gutter-vr-30px justify-content-center justify-content-lg-between">
+                <div class="col-lg-5">
+                    <div class="gfx gfx-auto gfx-md animated" data-animate="fadeInUp" data-delay=".1">
+                        <img src="images/gfx/gfx-z-e.png" alt="app">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-mb-9">
+                    <div class="nk-block-text">
+                        <div class="pb-5 animated" data-animate="fadeInUp" data-delay=".2">
+                            <h2 class="title"><em class="icon icon-md icon-grd ikon ikon-bulb-2"></em> MISIÓN</h2>
+                            <p class="lead lead-regular lead-s2">Impulsar la investigación dental, bucal y craneofacial para la salud y el bienestar en Bolivia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- .row -->
+        </div><!-- .block @e -->
+    </div>
+</section>
+<section class="section bg-white">
+    <div class="container">
+        <!-- Block @s -->
+        <div class="nk-block nk-block-text-wrap">
+            <div class="row align-items-center gutter-vr-30px justify-content-center justify-content-lg-between">
+                <div class="col-lg-5 order-lg-last">
+                    <div class="gfx gfx-auto gfx-md animated" data-animate="fadeInUp" data-delay=".1">
+                        <img src="images/gfx/gfx-t-light.png" alt="app">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-mb-9">
+                    <div class="nk-block-text">
+                        <div class="pb-5 animated" data-animate="fadeInUp" data-delay=".2">
+                            <h2 class="title"><em class="icon icon-md icon-grd ikon ikon-paricle"></em> VISIÓN</h2>
+                            <p class="lead lead-regular lead-s2">Salud bucal en Bolivia basada en la investigación científica y su difusión.</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- .row -->
+        </div><!-- .block @e -->
+    </div>
+</section>
 {{-- Equipo IADR --}}
 <section class="section bg-light-alt" id="team-members">
     <div class="background-shape bs-right"></div>
@@ -127,7 +214,7 @@
                 <div class="col-md-3 col-6 img_move">
                     <div class="team animated  bg-white fadeInUp pb-3" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">
                         <div class="team-photo">
-                            <img src="images/team/a.jpg" alt="team">
+                            <img src="http://iadr-admin.test//img_admin/staff/1675404713_unnamed.png" alt="team">
                             <ul class="team-social">
                                 <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
                                 <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>

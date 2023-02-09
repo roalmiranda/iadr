@@ -71,9 +71,11 @@
         left: 0;
         }
     </style>    
+    @yield('header')
 </head>
 
 <body class="nk-body body-wider mode-onepage">
+    @php($url = "http://iadr-admin.test/")
     <div class="nk-wrap">
         <header class="nk-header page-header is-sticky is-shrink is-transparent is-light" id="header">
             <!-- Header @s -->

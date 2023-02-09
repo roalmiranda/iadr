@@ -11,7 +11,14 @@ class LandingController extends Controller
      * Landing Page - IADR
      */
     public function index(){
-        return view('landingPage');
+        $staffs = Staff::with(['staffSocial' => function($query) {
+                            $query->with('social');
+                        }])
+                        ->where('state', 1)
+                        ->get();
+        return view('landingPage',[
+            'staffs' => $staffs
+        ]);
     }
     /**
      * Buscar Articulo - IADR
