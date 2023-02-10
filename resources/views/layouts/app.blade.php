@@ -9,7 +9,7 @@
     <!-- Fav Icon  -->
     <link rel="shortcut icon" href="{{ asset('imagesiadr/logo/iconoIADR.png') }}">
     <!-- Site Title  -->
-    <title>IADR Bolivia</title>
+    <title>IADR BOLIVIA</title>
     <!-- Bundle and Base CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/vendor.bundle.css?ver=210') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/style-jasmine.css?ver=210') }}">
@@ -70,12 +70,22 @@
         .slider .active {
         left: 0;
         }
+        /* Zoom DIV */
+        .zoom-element {
+            transition: transform 0.5s;
+        }
+        
+        .zoom-element:hover {
+            transform: scale(1.1);
+        }
     </style>    
     @yield('header')
+    
+    {{-- Uso de Jquery --}}
+    <script src="{{ asset('assets/jquery/jquery.min.js') }}"></script>
 </head>
 
 <body class="nk-body body-wider mode-onepage">
-    @php($url = "http://iadr-admin.test/")
     <div class="nk-wrap">
         <header class="nk-header page-header is-sticky is-shrink is-transparent is-light" id="header">
             <!-- Header @s -->

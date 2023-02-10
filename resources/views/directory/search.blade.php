@@ -29,91 +29,72 @@
 
 @endsection
 @section('content')
-<section class="section pt-5">
+{{-- Bibliografia --}}
+<section class="section pt-5 pb-5">
     <div class="container">
-        <h6 class="title title-xs title-s1 tc-primary animated" data-animate="fadeInUp" data-delay=".1">Lista</h6>
-        <h2 class="title animated" data-animate="fadeInUp" data-delay=".2">Eventos</h2>
+        <h6 class="title title-xs title-s1 tc-primary animated" data-animate="fadeInUp" data-delay=".1">Conoce más sobre</h6>
         <div class="nk-block nk-block-team-featured team-featured">
             <div class="row align-items-center">
-                <div class="col-lg-5 mb-4 mb-lg-0">
+                <div class="col-lg-5 mb-4 mb-lg-0 zoom-animation">
                     <div class="team-featured-photo tc-light">
-                        <img src="{{asset('images/team/large-a.jpg')}}" alt="team">
-                        <h5 class="team-featured-info">David Metthew<span>Chairman of ICOX and Entrepreneur</span></h5>
+                        <img src="{{urlGes()}}img_admin/staff/{{$data->photo}}" alt="team">
+                        <h5 class="team-featured-info bg-info p-3">{{$data->name}} {{$data->paternal}} {{$data->maternal}}<span>{{$data->email}}</span></h5>
                     </div>
                 </div>
                 <div class="col-lg-7">
                     <div class="team-featured-cont">
-                        <h6 class="title title-xs title-light">behind the idea</h6>
-                        <h2 class="title title-lg title-dark">The Founder</h2>
-                        <p>ICOx Crypto is founded by David Metthew who is young entrepreneur &amp; full stack-developer. He is totam rem aperiam, et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Quam nihil molestiae illum.</p>
+                        <h6 class="title title-xs title-light">{{$data->rol}}</h6>
+                        <h2 class="title title-lg title-dark">{{$data->name}} {{$data->paternal}} {{$data->maternal}}</h2>
+                        <p>{{$data->bibliography}}</p>
                         <ul class="social pdb-l justify-content-center">
-                            <li><a href="#"><em class="social-icon fab fa-facebook-f"></em></a></li>
-                            <li><a href="#"><em class="social-icon fab fa-twitter"></em></a></li>
-                            <li><a href="#"><em class="social-icon fab fa-youtube"></em></a></li>
-                            <li><a href="#"><em class="social-icon fab fa-github"></em></a></li>
+                            @foreach($data->staffSocial as $social)
+                                <li><a href="{{$social->url}}" target="_blank"><em class="social-icon fab {{$social->social->icon}}"></em></a></li>
+                            @endforeach
                         </ul>
                     </div>
-                </div>
-            </div><!-- .row -->
-        </div>
-        <!-- Block @e -->
-    </div>
-</section>
-<section class="section section-team bg-light-alt">
-    <div class="container">
-        <!-- Section Head @s -->
-        <div class="section-head text-center wide-auto">
-            <h2 class="title title-lg title-dark">Logros Profesionales</h2>
-        </div><!-- .section-head @e -->
-        <!-- Block @s -->
-        <div class="nk-block nk-block-team-list team-list">
-            <div class="row justify-content-center">
-                <div class="col-md-4">
-                    <div class="team bg-white pb-3">
-                        <div class="team-photo team-photo-md">
-                            <img src="{{asset('images/team/a.jpg')}}" alt="team">
-                            <a href="#team-popup-1" class="team-show content-popup"></a>
-                        </div>
-                        <h5 class="team-name title title-sm">Louis Baker</h5>
-                        <span class="team-position">CEO &amp; Lead Blockchain</span>
+                    <div class="team-featured-cont pb-5">
+                        <h2 class="title title-lg title-dark">Especialidades</h2>
                     </div>
-                    <!-- Start .team-profile  -->
-                    <div id="team-popup-1" class="team-popup mfp-hide">
-                        <a title="Close" class="mfp-close">×</a>
-                        <div class="row align-items-start">
-                            <div class="col-md-6">
-                                <div class="team-photo">
-                                    <img src="images/team/a.jpg" alt="team">
-                                </div>
-                            </div><!-- .col  -->
-                            <div class="col-md-6">
-                                <div class="team-popup-info ps-md-3">
-                                    <h3 class="team-name title title-lg pt-4">Louis Baker</h3>
-                                    <p class="team-position">CEO &amp; Lead Blockchain </p>
-                                    <p>He is a great man to work Lorem ipsum dolor sit amet, consec tetur adipis icing elit. Simi lique, autem. </p>
-                                    <p>Tenetur quos facere magnam volupt ates quas esse Sedrep ell endus mole stiae tates quas esse Sed repell endus molesti aela uda ntium quis quam iusto minima thanks.</p>
-                                    <div class="progress-list">
-                                        <div class="progress-wrap">
-                                            <div class="progress-title">Blockchain <span class="progress-amount">85%</span></div>
-                                            <div class="progress-bar progress-bar-xs bg-black-10">
-                                                <div class="progress-percent bg-primary" data-percent="85" style="width: 85%;"></div>
-                                            </div>
-                                        </div>
-                                        <div class="progress-wrap">
-                                            <div class="progress-title">Decentralization <span class="progress-amount">68%</span></div>
-                                            <div class="progress-bar progress-bar-xs bg-black-10">
-                                                <div class="progress-percent bg-primary" data-percent="68" style="width: 68%;"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- .col  -->
-                        </div><!-- .row  -->
-                    </div><!-- .team-profile  -->
+                    <marquee behavior="alternate" direction="right">
+                        <div class="has-marquee d-flex justify-content-center" id="marque-two">
+                            @php($arrays = explode(",", $data->specialty))
+                            @foreach($arrays as $array)
+                            <div class="bg-light d-flex flex-shrink-0 align-items-center p-2 mx-2 rounded-pill">
+                                <h6 class="text-base ms-1 px-2">{{$array}}</h6>
+                            </div>
+                            @endforeach
+                        </div>
+                    </marquee>
                 </div>
-            </div><!-- .row -->
+            </div>
         </div>
-        <!-- Block @r -->
     </div>
 </section>
+{{-- Detalle --}}
+@if(count($data_detail))
+<section class="section section-contact bg-light-alt" id="blog">
+    <div class="container">
+        <div class="section-head text-center wide-auto-sm">
+            <h2 class="title title-lg title-dark">Logros Profesionales</h2>
+        </div>
+        <div class="nk-block nk-block-blog">
+            <div class="row justify-content-center">
+                @foreach($data_detail as $detail)
+                    <div class="col-lg-4 col-sm-9 zoom-element">
+                        <div class="blog blog-s2 animated fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">
+                            <div class="blog-photo">
+                                <img src="{{urlGes()}}img_admin/staff/{{$data->photo}}" alt="blog-thumb">
+                            </div>
+                            <div class="blog-text">
+                                <h4 class="title title-sm"><a href="#">{{$detail->name}}</a></h4>
+                                <p>{{$detail->description}}</p>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </div>
+</section>
+@endif
 @endsection

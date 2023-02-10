@@ -39,31 +39,22 @@
                             <img class="round" src="{{asset('images/blog/large-a.jpg')}}" alt="featured">
                         </div>
                         <ul class="blog-meta">
-                            <li><a href="#">12 Mar, 2022</a></li>
-                            <li><a href="#">Blockchain</a></li>
+                            <li>{{$data->dateM}}</li>
+                            <li>{{strtoupper($data->area->name)}}</li>
                         </ul>
                         <div class="blog-content">
-                            <h2 class="title"><a href="#">The Intersection with Blockchain.</a></h2>
-                            <p>Blockchain Meets Energy Surplus of electrical energy is sometimes ut perspiciatis unde omnis iste naat vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
-                            <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
-                            <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis.</p>
-                            <p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+                            <h2 class="title">{{strtoupper($data->name)}}</h2>
+                            <p>{{$data->description}}</p>
                         </div>
-                        <ul class="blog-tags">
+                        {{-- <ul class="blog-tags">
                             <li><a href="#">bitcoin</a></li>
                             <li><a href="#">tokens</a></li>
-                        </ul>
+                        </ul> --}}
                     </div>
                 </div><!-- .col -->
                 <div class="col-lg-4">
                     <div class="sidebar ms-lg-4 mt-5 mt-lg-0">
-                        <div class="wgs wgs-search">
-                            <form action="#" class="field-inline">
-                                <input type="text" placeholder="Search Keyword" class="input-bordered">
-                                <button class="btn btn-primary btn-icon"><em class="ti ti-search"></em></button>
-                            </form>
-                        </div>
-                        <div class="wgs wgs-category">
+                        {{-- <div class="wgs wgs-category">
                             <h6 class="wgs-title">Categoria</h6>
                             <div class="wgs-body">
                                 <ul class="wgs-links wgs-links-category">
@@ -72,19 +63,7 @@
                                     <li><a href="#">Cirugia Bucal</a></li>
                                 </ul>
                             </div>
-                        </div>
-                        <div class="wgs wgs-tags">
-                            <h6 class="wgs-title">Tags</h6>
-                            <div class="wgs-body">
-                                <ul class="wgs-links wgs-links-tags">
-                                    <li><a href="#">ethereum</a></li>
-                                    <li><a href="#">bitcoin</a></li>
-                                    <li><a href="#">released</a></li>
-                                    <li><a href="#">tokens</a></li>
-                                    <li><a href="#">roadmap</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                        </div> --}}
                         <div class="wgs wgs-cta bg-theme tc-light round">
                             <div class="wgs-body">
                                 <div class="title title-sm"><b>¿Cómo podemos ayudarte?</b></div>

@@ -112,7 +112,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="nk-block-img animated fadeInUp img_move" data-animate="fadeInUp" data-delay=".4" style="visibility: visible; animation-delay: 0.4s;">
-                            <img  loading="lazy" src="../../imagesiadr/img5.jpg" alt="app">
+                            <img  loading="lazy" src="{{asset('imagesiadr/img5.jpg')}}" alt="app">
                         </div>
                     </div>
                 </div>
@@ -120,80 +120,45 @@
         </div>
     </div>
 </section>
-<!-- // -->
-<section class="section bg-white" id="team">
-    <div class="ui-shape ui-shape-s5"></div>
+{{-- Directorio --}}
+<section class="section section-team bg-light" id="team">
     <div class="container">
         <!-- Section Head @s -->
-        <div class="section-head text-center wide-auto-sm">
-            <h4 class="title title-semibold animated fadeInUp" data-animate="fadeInUp" data-delay=".1" style="visibility: visible; animation-delay: 0.1s;">DIRECTORIO IADR - BOLIVIA</h4>
+        <div class="section-head text-center wide-auto">
+            <h2 class="title title-lg title-dark animated" data-animate="fadeInUp" data-delay=".1">DIRECTORIO IADR - BOLIVIA</h2>
         </div><!-- .section-head @e -->
         <!-- Block @s -->
-        <div class="nk-block nk-block-team-list team-list">
+        <div class="nk-block">
             <div class="row justify-content-center">
+                {{-- Lista de Directorio --}}
                 @foreach($staffs as $staff)
-                    <div class="col-md-3">
-                        <div class="team team-s3 animated fadeInUp" data-animate="fadeInUp" data-delay=".4" style="visibility: visible; animation-delay: 0.4s;">
-                            <div class="team-photo round-full team-photo-bg">
-                                <a href="#team-popup-2" class="team-show content-popup" data-overlay="bg-theme-grad-alt"></a>
-                                <img  loading="lazy" src="{{urlGes()}}/img_admin/staff/{{$staff->photo}}" alt="team" class="round-full">
-                            </div>
-                            <h5 class="team-name title title-sm">{{$staff->name}} {{$staff->paternal}} {{$staff->maternal}}</h5>
-                            <span class="team-position">
-                                {{$staff->rol}}
-                            </span>
-                            <ul class="team-social team-social-s2">
-                                <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
-                                <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
-                                <li><a href="#"><em class="fab fa-twitter"></em></a></li>
+                <div class="col-md-3 col-6">
+                    <div class="team animated bg-white" 
+                            data-animate="fadeInUp" 
+                            data-delay=".2" 
+                            style="-webkit-box-shadow: 32px 38px 71px -44px rgba(163,163,163,1);
+                            -moz-box-shadow: 32px 38px 71px -44px rgba(163,163,163,1);
+                            box-shadow: 32px 38px 71px -44px rgba(163,163,163,1);">
+                        <div class="team-photo">
+                            <img src="{{urlGes()}}img_admin/staff/{{$staff->photo}}" alt="team">
+                            <a href="{{route('directory.search', [$staff->staff_id, $staff->name_staff])}}" class="team-show"></a>
+                            <ul class="team-social">
+                                @foreach($staff->staffSocial as $social)
+                                    <li><a href="{{$social->url}}" target="_blank"><em class="fab {{$social->social->icon}}"></em></a></li>
+                                @endforeach
                             </ul>
-                            <a href="{{route('article.search', 12)}}" class="btn btn-success btn-sm">Ver más</a>
                         </div>
-                        <!-- Start .team-profile  -->
-                        <div id="team-popup-2" class="team-popup mfp-hide">
-                            <a title="Close" class="mfp-close">×</a>
-                            <div class="row align-items-start">
-                                <div class="col-md-6">
-                                    <div class="team-photo">
-                                        <img loading="lazy" src="{{urlGes()}}/img_admin/staff/{{$staff->photo}}" alt="team">
-                                    </div>
-                                </div><!-- .col  -->
-                                <div class="col-md-6">
-                                    <div class="team-popup-info ps-md-3">
-                                        <h3 class="team-name title title-lg pt-4">{{$staff->name}} {{$staff->paternal}} {{$staff->maternal}}</h3>
-                                        <p class="team-position mb-1">
-                                            {{substr($staff->specialty, 0, 60)}}...
-                                        </p>
-                                        <ul class="team-social team-social-s2 mb-4">
-                                            <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
-                                            <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
-                                        </ul>
-                                        <p>He is a great man to work Lorem ipsum dolor sit amet, consec tetur adipis icing elit. Simi lique, autem. </p>
-                                        <p>Tenetur quos facere magnam volupt ates quas esse Sedrep ell endus mole stiae tates quas esse Sed repell endus molesti aela uda ntium quis quam iusto minima thanks.</p>
-                                        <div class="progress-list">
-                                            <div class="progress-wrap">
-                                                <div class="progress-title">Blockchain <span class="progress-amount">85%</span></div>
-                                                <div class="progress-bar progress-bar-xs bg-black-10">
-                                                    <div class="progress-percent bg-primary" data-percent="85" style="width: 85%;"></div>
-                                                </div>
-                                            </div>
-                                            <div class="progress-wrap">
-                                                <div class="progress-title">Decentralization <span class="progress-amount">68%</span></div>
-                                                <div class="progress-bar progress-bar-xs bg-black-10">
-                                                    <div class="progress-percent bg-primary" data-percent="68" style="width: 68%;"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><!-- .col  -->
-                            </div><!-- .row  -->
-                        </div><!-- .team-profile  -->
+                        <h5 class="team-name title title-sm">{{$staff->name_staff}}</h5>
+                        <span class="team-position pb-3">{{$staff->rol}}</span>
                     </div>
+                </div>
                 @endforeach
             </div>
         </div>
+        <!-- Block @r -->
     </div>
 </section>
+
 <!-- Eventos -->
 <div class="section section-t-l pb-0" id="roadmap">
     <div class="container container-xxl">
@@ -208,79 +173,36 @@
             <div class="row justify-content-center">
                 <div class="col-xxl-8 col-xl-9">
                     <div class="has-carousel carousel-navs-middle carousel-navs-fill carousel-dots-long-line carousel-dots-sharp carousel-center-focused" data-margin="28" data-items="1" data-navs="true" data-dots="true" data-loop="true">
-                        <div class="schedule-item box-bordered-grad">
-                            <div class="box-bordered-inner flex-grow-0">
-                                <div class="schedule-meta">
-                                    <div class="schedule-meta-text">
-                                        <ul class="schedule-meta-list">
-                                            <li class="text-grad">Acontecimiento Anterior</li>
-                                        </ul>
-                                        <h5 class="schedule-meta-title">02 de Febrero de 2023</h5>
+                        {{-- Lista de Eventos --}}
+                        @foreach($events as $event)
+                            <div class="schedule-item box-bordered-grad">
+                                <div class="box-bordered-inner flex-grow-0">
+                                    <div class="schedule-meta">
+                                        <div class="schedule-meta-text">
+                                            <ul class="schedule-meta-list">
+                                                <li class="text-grad">
+                                                    <b>{{strtoupper($event->area->name)}}</b>
+                                                </li>
+                                            </ul>
+                                            <h5 class="schedule-meta-title">{{$event->dateM}}</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-bordered-inner schedule-content">
+                                    <img  loading="lazy" class="schedule-thumb" src="http://ges.iadr-bolivia.com/img_admin/staff/1675404713_unnamed.png" alt="" height="150">
+                                    <div class="schedule-text">
+                                        <h5 class="line-truncate-2">{{$event->name}}</h5>
+                                        <p class="line-truncate-4">{{$event->description}}</p>
+                                        <a href="{{route('event.search', [$event->event_id, $event->name])}}" class="btn btn-sm btn-grad btn-auto btn-noround btn-nocap mt-0">Ver más</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="box-bordered-inner schedule-content">
-                                <img  loading="lazy" class="schedule-thumb" src="http://ges.iadr-bolivia.com/img_admin/staff/1675404713_unnamed.png" alt="" height="150">
-                                <div class="schedule-text">
-                                    <h5 class="line-truncate-2">Titulo de Evento</h5>
-                                    <p class="line-truncate-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias dolorem doloremque possimus facilis accusantium qui quos earum! Repellat inventore earum nobis tempora quo, distinctio eum, aspernatur nulla perspiciatis voluptatibus odio.. </p>
-                                    <a href="#" class="btn btn-sm btn-grad btn-auto btn-noround btn-nocap mt-0">Ver más</a>
-                                </div>
-                            </div>
-                        </div><!-- .schedule-item -->
-                        <div class="schedule-item box-bordered-grad">
-                            <div class="box-bordered-inner flex-grow-0">
-                                <div class="schedule-meta">
-                                    <div class="schedule-step">
-                                        <h5>1</h5>
-                                    </div>
-                                    <div class="schedule-meta-text">
-                                        <ul class="schedule-meta-list">
-                                            <li class="text-grad">Phase 1</li>
-                                            <li class="text-grad">Completed</li>
-                                        </ul>
-                                        <h5 class="schedule-meta-title">Fall 2022 - Pre Launch</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="box-bordered-inner schedule-content">
-                                <img  loading="lazy" class="schedule-thumb" src="images/nft-portfolio/roadmap/b.jpg" alt="">
-                                <div class="schedule-text">
-                                    <h5 class="line-truncate-2">Community Game Launch Program Fall 2022</h5>
-                                    <p class="line-truncate-4">Sem sit convallis sem nulla ut fames. Ac urna amet quam cras et, est hendrerit ac. Sapien, nisl enim nam velit tristique. Morbi sagittis amet neque sollicitudin. Etiam condimentum elementum sollicitudin quis massa. Adipiscing diam purus et tempus, neque, quam semper. </p>
-                                    <a href="#" class="btn btn-sm btn-grad btn-auto btn-noround btn-nocap mt-0">Support Center</a>
-                                </div>
-                            </div>
-                        </div><!-- .schedule-item -->
-                        <div class="schedule-item box-bordered-grad">
-                            <div class="box-bordered-inner flex-grow-0">
-                                <div class="schedule-meta">
-                                    <div class="schedule-step">
-                                        <h5>1</h5>
-                                    </div>
-                                    <div class="schedule-meta-text">
-                                        <ul class="schedule-meta-list">
-                                            <li class="text-grad">Phase 1</li>
-                                            <li class="text-grad">Completed</li>
-                                        </ul>
-                                        <h5 class="schedule-meta-title">Fall 2022 - Pre Launch</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="box-bordered-inner schedule-content">
-                                <img  loading="lazy" class="schedule-thumb" src="images/nft-portfolio/roadmap/c.jpg" alt="">
-                                <div class="schedule-text">
-                                    <h5 class="line-truncate-2">Community Game Launch Program Fall 2022</h5>
-                                    <p class="line-truncate-4">Sem sit convallis sem nulla ut fames. Ac urna amet quam cras et, est hendrerit ac. Sapien, nisl enim nam velit tristique. Morbi sagittis amet neque sollicitudin. Etiam condimentum elementum sollicitudin quis massa. Adipiscing diam purus et tempus, neque, quam semper. </p>
-                                    <a href="#" class="btn btn-sm btn-grad btn-auto btn-noround btn-nocap mt-0">Support Center</a>
-                                </div>
-                            </div>
-                        </div><!-- .schedule-item -->
-                    </div><!-- .has-carousel -->
-                </div><!-- .col -->
-            </div><!-- .row -->
-        </div><!-- .nk-block -->
-    </div><!-- .container -->
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <section class="section pt-0 pb-0" id="event">
@@ -290,38 +212,24 @@
                 <h6 class="title title-xs title-s1 tc-primary animated" data-animate="fadeInUp" data-delay=".1">Eventos</h6>
                 <h2 class="title animated" data-animate="fadeInUp" data-delay=".2">Últimos Eventos</h2>
                 <div class="row g-gs">
-                    <div class="col-xl-4 col-md-6 order-xl-2">
-                        <div class="news-item animated fadeInUp" data-animate="fadeInUp" data-delay=".7" style="visibility: visible; animation-delay: 0.7s;">
-                            <div class="news-thumb">
-                                <img  loading="lazy" class="w-100" src="images/blockchain/blog/b.jpg" alt="">
-                            </div>
-                            <div class="news-excerpt">
-                                <ul class="news-tags">
-                                    <li><a class="link-success" href="#">Knowledge</a></li>
-                                </ul>
-                                <h4 class="title title-sm"><a href="{{route('event.search', 12)}}">The Intersection with Blockchain.</a></h4>
-                                <ul class="news-meta">
-                                    <li>Published Dec 13, 2021</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-6 order-xl-2">
-                        <div class="news-item animated fadeInUp" data-animate="fadeInUp" data-delay=".8" style="visibility: visible; animation-delay: 0.8s;">
-                            <div class="news-thumb">
-                                <img  loading="lazy" class="w-100" src="images/blockchain/blog/c.jpg" alt="">
-                            </div>
-                            <div class="news-excerpt">
-                                <ul class="news-tags">
-                                    <li><a class="link-warning" href="#">Resources</a></li>
-                                </ul>
-                                <h5>6 Global Companies Building up the Metaverse</h5>
-                                <ul class="news-meta">
-                                    <li>Published Dec 13, 2021</li>
-                                </ul>
+                    @foreach($articles as $article)
+                        <div class="col-xl-4 col-md-6 order-xl-2">
+                            <div class="news-item animated fadeInUp" data-animate="fadeInUp" data-delay=".7" style="visibility: visible; animation-delay: 0.7s;">
+                                <div class="news-thumb">
+                                    <img  loading="lazy" class="w-100" src="images/blockchain/blog/b.jpg" alt="">
+                                </div>
+                                <div class="news-excerpt">
+                                    <ul class="news-tags">
+                                        <li class="link-primary">{{strtoupper($article->area->name)}}</li>
+                                    </ul>
+                                    <h4 class="title title-sm"><a href="{{route('event.search', [$article->article_id, $article->name])}}">{{$article->name}}</a></h4>
+                                    <ul class="news-meta">
+                                        <li>{{$article->dateM}}</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    @endforeach
                 </div>
                 <ul class="pt-4 d-flex gaps g-3 justify-content-center animated fadeInUp" data-animate="fadeInUp" data-delay=".9" style="visibility: visible; animation-delay: 0.9s;">
                     <li>
@@ -340,56 +248,21 @@
         <h2 class="title animated" data-animate="fadeInUp" data-delay=".2">Últimos Artículos</h2>
         <div class="nk-block">
             <div class="row gutter-vr-50px">
-                <div class="col-sm-6 col-lg-3">
-                    <div class="doc animated fadeInUp" data-animate="fadeInUp" data-delay="0.3" style="visibility: visible; animation-delay: 0.3s;">
-                        <a href="{{route('article.search', 'ronald')}}">
-                            <div class="doc-photo doc-shape doc-shape-a">
-                                <img  loading="lazy" src="images/azalea/doc-a.jpg" alt="img1" style="cursor:pointer;">
+                @foreach($articles as $article)
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="doc animated fadeInUp" data-animate="fadeInUp" data-delay="0.3" style="visibility: visible; animation-delay: 0.3s;">
+                            <a href="{{route('article.search', [1, 'ronald'])}}">
+                                <div class="doc-photo doc-shape doc-shape-a">
+                                    <img  loading="lazy" src="images/azalea/doc-a.jpg" alt="img1" style="cursor:pointer;">
+                                </div>
+                            </a>
+                            <div class="doc-text">
+                                <h5 class="doc-title title-sm">{{$article->name}} <small>({{$article->year}})</small></h5>
+                                <a class="doc-download" href="#"><em class="ti ti-import"></em></a>
                             </div>
-                        </a>
-                        <div class="doc-text">
-                            <h5 class="doc-title title-sm">White Paper <small>(2022)</small></h5>
-                            <a class="doc-download" href="#"><em class="ti ti-import"></em></a>
-                            <div class="doc-lang">ENGLISH</div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="doc animated fadeInUp" data-animate="fadeInUp" data-delay="0.4" style="visibility: visible; animation-delay: 0.4s;">
-                        <div class="doc-photo doc-shape doc-shape-b">
-                            <img  loading="lazy" src="images/azalea/doc-b.jpg" alt="">
-                        </div>
-                        <div class="doc-text">
-                            <h5 class="doc-title title-sm">Two Pager <small>(2022)</small></h5>
-                            <a class="doc-download" href="#"><em class="ti ti-import"></em></a>
-                            <div class="doc-lang">ENGLISH</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="doc animated fadeInUp" data-animate="fadeInUp" data-delay="0.5" style="visibility: visible; animation-delay: 0.5s;">
-                        <div class="doc-photo doc-shape doc-shape-c">
-                            <img  loading="lazy" src="images/azalea/doc-c.jpg" alt="">
-                        </div>
-                        <div class="doc-text">
-                            <h5 class="doc-title title-sm">One Pager <small>(2022)</small></h5>
-                            <a class="doc-download" href="#"><em class="ti ti-import"></em></a>
-                            <div class="doc-lang">ENGLISH</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="doc animated fadeInUp" data-animate="fadeInUp" data-delay="0.6" style="visibility: visible; animation-delay: 0.6s;">
-                        <div class="doc-photo doc-shape doc-shape-d">
-                            <img  loading="lazy" src="images/azalea/doc-d.jpg" alt="">
-                        </div>
-                        <div class="doc-text">
-                            <h5 class="doc-title title-sm">Presentation <small>(2022)</small></h5>
-                            <a class="doc-download" href="#"><em class="ti ti-import"></em></a>
-                            <div class="doc-lang">ENGLISH</div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
                 <ul class="pt-4 d-flex gaps g-3 justify-content-center animated fadeInUp" data-animate="fadeInUp" data-delay=".9" style="visibility: visible; animation-delay: 0.9s;">
                     <li>
                         <a href="#" class="btn btn-primary btn-round btn-md btn-nocap">Ver más</a>
@@ -399,7 +272,7 @@
         </div>
     </div>
 </section>
-{{--  --}}
+
 <section>
     <div class="section bg-theme-alt tc-light section-m">
         <div class="container">

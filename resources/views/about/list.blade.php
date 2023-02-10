@@ -200,31 +200,39 @@
     </div>
 </section>
 {{-- Equipo IADR --}}
-<section class="section bg-light-alt" id="team-members">
-    <div class="background-shape bs-right"></div>
+<section class="section section-team bg-light" id="team">
     <div class="container">
         <!-- Section Head @s -->
-        <div class="section-head section-head-s9 wide-md">
+        <div class="section-head text-center wide-auto">
             <h6 class="title title-xs title-s1 tc-primary animated" data-animate="fadeInUp" data-delay=".1">Conoce al equipo</h6>
             <h2 class="title animated" data-animate="fadeInUp" data-delay=".2">Directorio IADR</h2>
         </div><!-- .section-head @e -->
         <!-- Block @s -->
-        <div class="nk-block nk-block-team-list">
+        <div class="nk-block">
             <div class="row justify-content-center">
-                <div class="col-md-3 col-6 img_move">
-                    <div class="team animated  bg-white fadeInUp pb-3" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">
+                {{-- Lista de Directorio --}}
+                @foreach($staffs as $staff)
+                <div class="col-md-3 col-6">
+                    <div class="team animated bg-white" 
+                            data-animate="fadeInUp" 
+                            data-delay=".2" 
+                            style="-webkit-box-shadow: 32px 38px 71px -44px rgba(163,163,163,1);
+                            -moz-box-shadow: 32px 38px 71px -44px rgba(163,163,163,1);
+                            box-shadow: 32px 38px 71px -44px rgba(163,163,163,1);">
                         <div class="team-photo">
-                            <img src="http://iadr-admin.test//img_admin/staff/1675404713_unnamed.png" alt="team">
+                            <img src="{{urlGes()}}img_admin/staff/{{$staff->photo}}" alt="team">
+                            <a href="{{route('directory.search', [$staff->staff_id, $staff->name_staff])}}" class="team-show"></a>
                             <ul class="team-social">
-                                <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
-                                <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
+                                @foreach($staff->staffSocial as $social)
+                                    <li><a href="{{$social->url}}" target="_blank"><em class="fab {{$social->social->icon}}"></em></a></li>
+                                @endforeach
                             </ul>
                         </div>
-                        <h5 class="team-name title title-sm">Louis Baker</h5>
-                        <span class="team-position pb-2">CEO &amp; Lead Blockchain</span>
-                        <a href="http://iadr.test/directorio/12" class="btn btn-success btn-sm">Ver más</a>
+                        <h5 class="team-name title title-sm">{{$staff->name_staff}}</h5>
+                        <span class="team-position pb-3">{{$staff->rol}}</span>
                     </div>
                 </div>
+                @endforeach
             </div>
         </div>
         <!-- Block @r -->

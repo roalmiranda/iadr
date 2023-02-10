@@ -72,96 +72,23 @@
     <div class="container">
         <div class="nk-block nk-block-blog">
             <div class="row">
-                <div class="col-lg-4 col-sm-6">
-                    <div class="blog">
-                        <div class="blog-photo">
-                            <img src="images/blog/a.jpg" alt="blog-thumb">
-                        </div>
-                        <div class="blog-text">
-                            <ul class="blog-meta">
-                                <li><a href="#">12 Mar, 2022</a></li>
-                                <li><a href="#">Blockchain</a></li>
-                            </ul>
-                            <h4 class="title title-sm"><a href="{{route('article.search', 'ronald')}}">The Intersection with Blockchain.</a></h4>
-                            <p>Blockchain Meets Energy Surplus of electrical energy is sometimes ut perspiciatis unde omnis iste natus...</p>
-                        </div>
-                    </div><!-- .blog -->
-                </div><!-- .col -->
-                <div class="col-lg-4 col-sm-6">
-                    <div class="blog">
-                        <div class="blog-photo">
-                            <img src="images/blog/b.jpg" alt="blog-thumb">
-                        </div>
-                        <div class="blog-text">
-                            <ul class="blog-meta">
-                                <li><a href="#">12 Mar, 2022</a></li>
-                                <li><a href="#">Blockchain</a></li>
-                            </ul>
-                            <h4 class="title title-sm"><a href="#">The Intersection with Blockchain.</a></h4>
-                            <p>Blockchain Meets Energy Surplus of electrical energy is sometimes ut perspiciatis unde omnis iste natus...</p>
-                        </div>
-                    </div><!-- .blog -->
-                </div><!-- .col -->
-                <div class="col-lg-4 col-sm-6">
-                    <div class="blog">
-                        <div class="blog-photo">
-                            <img src="images/blog/c.jpg" alt="blog-thumb">
-                        </div>
-                        <div class="blog-text">
-                            <ul class="blog-meta">
-                                <li><a href="#">12 Mar, 2022</a></li>
-                                <li><a href="#">Blockchain</a></li>
-                            </ul>
-                            <h4 class="title title-sm"><a href="#">The Intersection with Blockchain.</a></h4>
-                            <p>Blockchain Meets Energy Surplus of electrical energy is sometimes ut perspiciatis unde omnis iste natus...</p>
-                        </div>
-                    </div><!-- .blog -->
-                </div><!-- .col -->
-                <div class="col-lg-4 col-sm-6">
-                    <div class="blog">
-                        <div class="blog-photo">
-                            <img src="images/blog/d.jpg" alt="blog-thumb">
-                        </div>
-                        <div class="blog-text">
-                            <ul class="blog-meta">
-                                <li><a href="#">12 Mar, 2022</a></li>
-                                <li><a href="#">Blockchain</a></li>
-                            </ul>
-                            <h4 class="title title-sm"><a href="#">The Intersection with Blockchain.</a></h4>
-                            <p>Blockchain Meets Energy Surplus of electrical energy is sometimes ut perspiciatis unde omnis iste natus...</p>
-                        </div>
-                    </div><!-- .blog -->
-                </div><!-- .col -->
-                <div class="col-lg-4 col-sm-6">
-                    <div class="blog">
-                        <div class="blog-photo">
-                            <img src="images/blog/e.jpg" alt="blog-thumb">
-                        </div>
-                        <div class="blog-text">
-                            <ul class="blog-meta">
-                                <li><a href="#">12 Mar, 2022</a></li>
-                                <li><a href="#">Blockchain</a></li>
-                            </ul>
-                            <h4 class="title title-sm"><a href="#">The Intersection with Blockchain.</a></h4>
-                            <p>Blockchain Meets Energy Surplus of electrical energy is sometimes ut perspiciatis unde omnis iste natus...</p>
-                        </div>
-                    </div><!-- .blog -->
-                </div><!-- .col -->
-                <div class="col-lg-4 col-sm-6">
-                    <div class="blog">
-                        <div class="blog-photo">
-                            <img src="images/blog/f.jpg" alt="blog-thumb">
-                        </div>
-                        <div class="blog-text">
-                            <ul class="blog-meta">
-                                <li><a href="#">12 Mar, 2022</a></li>
-                                <li><a href="#">Blockchain</a></li>
-                            </ul>
-                            <h4 class="title title-sm"><a href="#">The Intersection with Blockchain.</a></h4>
-                            <p>Blockchain Meets Energy Surplus of electrical energy is sometimes ut perspiciatis unde omnis iste natus...</p>
-                        </div>
-                    </div><!-- .blog -->
-                </div><!-- .col -->
+                @foreach($articles as $article)
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="blog">
+                            <div class="blog-photo">
+                                <img src="images/blog/a.jpg" alt="blog-thumb">
+                            </div>
+                            <div class="blog-text">
+                                <ul class="blog-meta">
+                                    <li><a href="#">{{$article->dateM}}</a></li>
+                                    <li><a href="#">{{strtoupper($article->area->name)}}</a></li>
+                                </ul>
+                                <h4 class="title title-sm"><a href="{{route('article.search', ['ronald',1])}}">{{$article->name}}</a></h4>
+                                <p>{{$article->description}}</p>
+                            </div>
+                        </div><!-- .blog -->
+                    </div>
+                @endforeach
             </div><!-- .row -->
             <nav class="w-100 d-flex">
                 <ul class="pagination">
