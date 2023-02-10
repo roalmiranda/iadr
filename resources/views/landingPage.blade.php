@@ -42,13 +42,13 @@
                             <div class="banner-caption wide-auto text-center text-lg-start">
                                 <div class="slider">
                                     <div class="slide">
-                                    <img src="../../imagesiadr/img1.jpg" alt="Imagen 1">
+                                    <img  loading="lazy" src="../../imagesiadr/img1.jpg" alt="Imagen 1">
                                     </div>
                                     <div class="slide">
-                                    <img src="../../imagesiadr/img2.jpg" alt="Imagen 2">
+                                    <img  loading="lazy" src="../../imagesiadr/img2.jpg" alt="Imagen 2">
                                     </div>
                                     <div class="slide">
-                                    <img src="../../imagesiadr/img3.jpg" alt="Imagen 3">
+                                    <img  loading="lazy" src="../../imagesiadr/img3.jpg" alt="Imagen 3">
                                     </div>
                                 </div>
                             </div>
@@ -72,7 +72,7 @@
             <div class="row align-items-center gutter-vr-30px">
                 <div class="col-md-6">
                     <div class="gfx mx-auto mx-lg-0 animated zoom-animation" data-animate="fadeInUp" data-delay=".1">
-                        <img src="../../imagesiadr/img0.jpg" alt="IADR_PRESENTACION">
+                        <img  loading="lazy" src="../../imagesiadr/img0.jpg" alt="IADR_PRESENTACION">
                     </div>
                 </div><!-- .col -->
                 <div class="col-md-6">
@@ -112,7 +112,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="nk-block-img animated fadeInUp img_move" data-animate="fadeInUp" data-delay=".4" style="visibility: visible; animation-delay: 0.4s;">
-                            <img src="../../imagesiadr/img5.jpg" alt="app">
+                            <img  loading="lazy" src="../../imagesiadr/img5.jpg" alt="app">
                         </div>
                     </div>
                 </div>
@@ -121,8 +121,6 @@
     </div>
 </section>
 <!-- // -->
-
-@php($url = "http://ges.iadr-bolivia.com/")
 <section class="section bg-white" id="team">
     <div class="ui-shape ui-shape-s5"></div>
     <div class="container">
@@ -138,7 +136,7 @@
                         <div class="team team-s3 animated fadeInUp" data-animate="fadeInUp" data-delay=".4" style="visibility: visible; animation-delay: 0.4s;">
                             <div class="team-photo round-full team-photo-bg">
                                 <a href="#team-popup-2" class="team-show content-popup" data-overlay="bg-theme-grad-alt"></a>
-                                <img src="{{$url}}/img_admin/staff/{{$staff->photo}}" alt="team" class="round-full">
+                                <img  loading="lazy" src="{{urlGes()}}/img_admin/staff/{{$staff->photo}}" alt="team" class="round-full">
                             </div>
                             <h5 class="team-name title title-sm">{{$staff->name}} {{$staff->paternal}} {{$staff->maternal}}</h5>
                             <span class="team-position">
@@ -157,7 +155,7 @@
                             <div class="row align-items-start">
                                 <div class="col-md-6">
                                     <div class="team-photo">
-                                        <img src="{{$url}}/img_admin/staff/{{$staff->photo}}" alt="team">
+                                        <img loading="lazy" src="{{urlGes()}}/img_admin/staff/{{$staff->photo}}" alt="team">
                                     </div>
                                 </div><!-- .col  -->
                                 <div class="col-md-6">
@@ -222,7 +220,7 @@
                                 </div>
                             </div>
                             <div class="box-bordered-inner schedule-content">
-                                <img class="schedule-thumb" src="http://ges.iadr-bolivia.com/img_admin/staff/1675404713_unnamed.png" alt="" height="150">
+                                <img  loading="lazy" class="schedule-thumb" src="http://ges.iadr-bolivia.com/img_admin/staff/1675404713_unnamed.png" alt="" height="150">
                                 <div class="schedule-text">
                                     <h5 class="line-truncate-2">Titulo de Evento</h5>
                                     <p class="line-truncate-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias dolorem doloremque possimus facilis accusantium qui quos earum! Repellat inventore earum nobis tempora quo, distinctio eum, aspernatur nulla perspiciatis voluptatibus odio.. </p>
@@ -246,7 +244,7 @@
                                 </div>
                             </div>
                             <div class="box-bordered-inner schedule-content">
-                                <img class="schedule-thumb" src="images/nft-portfolio/roadmap/b.jpg" alt="">
+                                <img  loading="lazy" class="schedule-thumb" src="images/nft-portfolio/roadmap/b.jpg" alt="">
                                 <div class="schedule-text">
                                     <h5 class="line-truncate-2">Community Game Launch Program Fall 2022</h5>
                                     <p class="line-truncate-4">Sem sit convallis sem nulla ut fames. Ac urna amet quam cras et, est hendrerit ac. Sapien, nisl enim nam velit tristique. Morbi sagittis amet neque sollicitudin. Etiam condimentum elementum sollicitudin quis massa. Adipiscing diam purus et tempus, neque, quam semper. </p>
@@ -270,7 +268,7 @@
                                 </div>
                             </div>
                             <div class="box-bordered-inner schedule-content">
-                                <img class="schedule-thumb" src="images/nft-portfolio/roadmap/c.jpg" alt="">
+                                <img  loading="lazy" class="schedule-thumb" src="images/nft-portfolio/roadmap/c.jpg" alt="">
                                 <div class="schedule-text">
                                     <h5 class="line-truncate-2">Community Game Launch Program Fall 2022</h5>
                                     <p class="line-truncate-4">Sem sit convallis sem nulla ut fames. Ac urna amet quam cras et, est hendrerit ac. Sapien, nisl enim nam velit tristique. Morbi sagittis amet neque sollicitudin. Etiam condimentum elementum sollicitudin quis massa. Adipiscing diam purus et tempus, neque, quam semper. </p>
@@ -295,7 +293,7 @@
                     <div class="col-xl-4 col-md-6 order-xl-2">
                         <div class="news-item animated fadeInUp" data-animate="fadeInUp" data-delay=".7" style="visibility: visible; animation-delay: 0.7s;">
                             <div class="news-thumb">
-                                <img class="w-100" src="images/blockchain/blog/b.jpg" alt="">
+                                <img  loading="lazy" class="w-100" src="images/blockchain/blog/b.jpg" alt="">
                             </div>
                             <div class="news-excerpt">
                                 <ul class="news-tags">
@@ -311,7 +309,7 @@
                     <div class="col-xl-4 col-md-6 order-xl-2">
                         <div class="news-item animated fadeInUp" data-animate="fadeInUp" data-delay=".8" style="visibility: visible; animation-delay: 0.8s;">
                             <div class="news-thumb">
-                                <img class="w-100" src="images/blockchain/blog/c.jpg" alt="">
+                                <img  loading="lazy" class="w-100" src="images/blockchain/blog/c.jpg" alt="">
                             </div>
                             <div class="news-excerpt">
                                 <ul class="news-tags">
@@ -346,7 +344,7 @@
                     <div class="doc animated fadeInUp" data-animate="fadeInUp" data-delay="0.3" style="visibility: visible; animation-delay: 0.3s;">
                         <a href="{{route('article.search', 'ronald')}}">
                             <div class="doc-photo doc-shape doc-shape-a">
-                                <img src="images/azalea/doc-a.jpg" alt="img1" style="cursor:pointer;">
+                                <img  loading="lazy" src="images/azalea/doc-a.jpg" alt="img1" style="cursor:pointer;">
                             </div>
                         </a>
                         <div class="doc-text">
@@ -359,7 +357,7 @@
                 <div class="col-sm-6 col-lg-3">
                     <div class="doc animated fadeInUp" data-animate="fadeInUp" data-delay="0.4" style="visibility: visible; animation-delay: 0.4s;">
                         <div class="doc-photo doc-shape doc-shape-b">
-                            <img src="images/azalea/doc-b.jpg" alt="">
+                            <img  loading="lazy" src="images/azalea/doc-b.jpg" alt="">
                         </div>
                         <div class="doc-text">
                             <h5 class="doc-title title-sm">Two Pager <small>(2022)</small></h5>
@@ -371,7 +369,7 @@
                 <div class="col-sm-6 col-lg-3">
                     <div class="doc animated fadeInUp" data-animate="fadeInUp" data-delay="0.5" style="visibility: visible; animation-delay: 0.5s;">
                         <div class="doc-photo doc-shape doc-shape-c">
-                            <img src="images/azalea/doc-c.jpg" alt="">
+                            <img  loading="lazy" src="images/azalea/doc-c.jpg" alt="">
                         </div>
                         <div class="doc-text">
                             <h5 class="doc-title title-sm">One Pager <small>(2022)</small></h5>
@@ -383,7 +381,7 @@
                 <div class="col-sm-6 col-lg-3">
                     <div class="doc animated fadeInUp" data-animate="fadeInUp" data-delay="0.6" style="visibility: visible; animation-delay: 0.6s;">
                         <div class="doc-photo doc-shape doc-shape-d">
-                            <img src="images/azalea/doc-d.jpg" alt="">
+                            <img  loading="lazy" src="images/azalea/doc-d.jpg" alt="">
                         </div>
                         <div class="doc-text">
                             <h5 class="doc-title title-sm">Presentation <small>(2022)</small></h5>
