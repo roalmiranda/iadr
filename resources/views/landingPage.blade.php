@@ -290,7 +290,7 @@
                 @endforeach
                 <ul class="pt-4 d-flex gaps g-3 justify-content-center animated fadeInUp" data-animate="fadeInUp" data-delay=".9" style="visibility: visible; animation-delay: 0.9s;">
                     <li>
-                        <a href="#" class="btn btn-primary btn-round btn-md btn-nocap">Ver más</a>
+                        <a href="/articulos" class="btn btn-primary btn-round btn-md btn-nocap">Ver más</a>
                     </li>
                 </ul>
             </div>

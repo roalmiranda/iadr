@@ -48,9 +48,9 @@
                             <h3>{{$data[0]->name}}</h3>
                             <p class="lead">{{$data[0]->description}}</p>
                             <ul class="news-meta">
-                                <li>Published Dec 13, 2021</li>
+                                <li><b>Fecha de Evento: </b>{{$data[0]->dateM}}</li>
                             </ul>
-                            <a href="#about" class="btn btn-md btn-grad">
+                            <a href="{{route('event.search', [$data[0]->event_id, $data[0]->name])}}" class="btn btn-md btn-grad">
                                 <q>Ver más</q>
                             </a>
                         </div>
@@ -75,9 +75,9 @@
                                     </ul>
                                     <a href=""><h5>{{$event->name}}</h5></a>
                                     <ul class="news-meta">
-                                        <li>{{$event->dateM}}</li>
+                                        <li><b>Fecha de Evento:</b> {{$event->dateM}}</li>
                                     </ul>
-                                    <a href="#about" class="btn btn-md btn-grad">
+                                    <a href="{{route('event.search', [$event->event_id, $event->name])}}" class="btn btn-md btn-grad">
                                         <q>Ver más</q>
                                     </a>
                                 </div>
