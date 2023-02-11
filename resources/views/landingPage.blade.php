@@ -284,6 +284,9 @@
                                 @if(!empty($article->document))
                                     <a class="doc-download" href="{{urlGes()}}document_admin/articulos/{{$article->document}}" download  target="_blank" title="Descargar Articulo"><em class="ti ti-import"></em></a>
                                 @endif
+                                @if(!empty($article->document))
+                                    <a class="doc-download bg-success" href="{{$article->url}}"  target="_blank" title="Ver Oficial"><em class="ti ti-link"></em></a>
+                                @endif
                             </div>
                         </div>
                     </div>
