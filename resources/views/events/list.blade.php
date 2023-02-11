@@ -34,85 +34,60 @@
     <h6 class="title title-xs title-s1 tc-primary animated" data-animate="fadeInUp" data-delay=".1">Lista</h6>
     <h2 class="title animated" data-animate="fadeInUp" data-delay=".2">Eventos</h2>
     <div class="nk-block">
-        <div class="row g-gs">
-            <div class="col-xl-8">
-                <div class="news-item news-featured animated fadeInUp" data-animate="fadeInUp" data-delay=".4" style="visibility: visible; animation-delay: 0.4s;">
-                    <div class="news-thumb">
-                        <img class="w-100 h-100" src="images/blockchain/blog/large-a.jpg" alt="">
-                    </div>
-                    <div class="news-excerpt">
-                        <ul class="news-tags">
-                            <li><a class="link-primary" href="#">Industry</a></li>
-                        </ul>
-                        <h3>Top 7 technologies that power the Metaverse</h3>
-                        <p class="lead">Sapien, nibh nullam volutpat orci metus elementum. Sit molestie porta lobortis pellentesque gravida. Dolor rhoncus odio massa fermentum.</p>
-                        <ul class="news-meta">
-                            <li>Published Dec 13, 2021</li>
-                        </ul>
-                        <a href="#about" class="btn btn-md btn-grad">
-                            <q>Ver más</q>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-md-6 order-xl-2">
-                <div class="news-item animated fadeInUp" data-animate="fadeInUp" data-delay=".6" style="visibility: visible; animation-delay: 0.6s;">
-                    <div class="news-thumb">
-                        <img class="w-100" src="images/blockchain/blog/a.jpg" alt="">
-                    </div>
-                    <div class="news-excerpt">
-                        <ul class="news-tags">
-                            <li><a class="link-success" href="#">Knowledge</a></li>
-                        </ul>
-                        <h5>What Is a Blockchain Consensus Algorithm to secure connections?</h5>
-                        <ul class="news-meta">
-                            <li>Published Dec 13, 2021</li>
-                        </ul>
-                        <a href="#about" class="btn btn-md btn-grad">
-                            <q>Ver más</q>
-                        </a>
+        @if(count($data))
+            <div class="row g-gs">
+                <div class="col-xl-8">
+                    <div class="news-item news-featured animated fadeInUp" data-animate="fadeInUp" data-delay=".4" style="visibility: visible; animation-delay: 0.4s;">
+                        <div class="news-thumb">
+                            <img class="w-100 h-100" src="images/blockchain/blog/large-a.jpg" alt="">
+                        </div>
+                        <div class="news-excerpt">
+                            <ul class="news-tags">
+                                <li><a class="link-primary" href="#">{{strtoupper($data[0]->area->name)}}</a></li>
+                            </ul>
+                            <h3>{{$data[0]->name}}</h3>
+                            <p class="lead">{{$data[0]->description}}</p>
+                            <ul class="news-meta">
+                                <li>Published Dec 13, 2021</li>
+                            </ul>
+                            <a href="#about" class="btn btn-md btn-grad">
+                                <q>Ver más</q>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-xl-4 col-md-6 order-xl-2">
-                <div class="news-item animated fadeInUp" data-animate="fadeInUp" data-delay=".7" style="visibility: visible; animation-delay: 0.7s;">
-                    <div class="news-thumb">
-                        <img class="w-100" src="images/blockchain/blog/b.jpg" alt="">
-                    </div>
-                    <div class="news-excerpt">
-                        <ul class="news-tags">
-                            <li><a class="link-success" href="#">Knowledge</a></li>
-                        </ul>
-                        <h5>What Are Decentralized Applications (DApps)?</h5>
-                        <ul class="news-meta">
-                            <li>Published Dec 13, 2021</li>
-                        </ul>
-                        <a href="#about" class="btn btn-md btn-grad">
-                            <q>Ver más</q>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-md-6 order-xl-2">
-                <div class="news-item animated fadeInUp" data-animate="fadeInUp" data-delay=".8" style="visibility: visible; animation-delay: 0.8s;">
-                    <div class="news-thumb">
-                        <img class="w-100" src="images/blockchain/blog/c.jpg" alt="">
-                    </div>
-                    <div class="news-excerpt">
-                        <ul class="news-tags">
-                            <li><a class="link-warning" href="#">Resources</a></li>
-                        </ul>
-                        <h5>6 Global Companies Building up the Metaverse</h5>
-                        <ul class="news-meta">
-                            <li>Published Dec 13, 2021</li>
-                        </ul>
-                        <a href="#about" class="btn btn-md btn-grad">
-                            <q>Ver más</q>
-                        </a>
-                    </div>
-                </div>
-            </div>
+                @php($count = 0)
+                @foreach($data as $event)
+                    @if($count == 1)
+                        <div class="col-xl-4 col-md-6 order-xl-2 zoom-element">
+                            <div class="news-item animated fadeInUp" data-animate="fadeInUp" data-delay=".6" style="visibility: visible; animation-delay: 0.6s;">
+                                <div class="news-thumb">
+                                    <img class="w-100" src="{{urlGes()}}img_admin/eventos/{{$event->photo}}" alt="img_evento"
+                                    style="
+                                    width: 350px;
+                                    height: 250px;
+                                    background: #CCC;
+                                    overflow: hidden;">
+                                </div>
+                                <div class="news-excerpt">
+                                    <ul class="news-tags">
+                                        <li class="text-success">{{ strtoupper($event->area->name) }}</li>
+                                    </ul>
+                                    <a href=""><h5>{{$event->name}}</h5></a>
+                                    <ul class="news-meta">
+                                        <li>{{$event->dateM}}</li>
+                                    </ul>
+                                    <a href="#about" class="btn btn-md btn-grad">
+                                        <q>Ver más</q>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    @endif
+                    @php($count=1)
+                @endforeach
         </div>
+        @endif
     </div>
 </div>
 </section>

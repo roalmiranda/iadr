@@ -37,7 +37,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-5 mb-4 mb-lg-0 zoom-animation">
                     <div class="team-featured-photo tc-light">
-                        <img src="{{urlGes()}}img_admin/staff/{{$data->photo}}" alt="team">
+                        <img src="{{urlGes()}}img_admin/staff/{{empty($data->photo)?'default_user.png':$data->photo}}" alt="team">
                         <h5 class="team-featured-info bg-info p-3">{{$data->name}} {{$data->paternal}} {{$data->maternal}}<span>{{$data->email}}</span></h5>
                     </div>
                 </div>
@@ -83,7 +83,12 @@
                     <div class="col-lg-4 col-sm-9 zoom-element">
                         <div class="blog blog-s2 animated fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">
                             <div class="blog-photo">
-                                <img src="{{urlGes()}}img_admin/staff/{{$data->photo}}" alt="blog-thumb">
+                                <img src="{{urlGes()}}img_admin/detail_staff/{{$detail->photo}}" alt="blog-thumb"
+                                style="
+                                width: 350px;
+                                height: 350px;
+                                background: #CCC;
+                                overflow: hidden;">
                             </div>
                             <div class="blog-text">
                                 <h4 class="title title-sm"><a href="#">{{$detail->name}}</a></h4>

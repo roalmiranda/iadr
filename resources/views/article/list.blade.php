@@ -73,31 +73,30 @@
         <div class="nk-block nk-block-blog">
             <div class="row">
                 @foreach($articles as $article)
-                    <div class="col-lg-4 col-sm-6">
+                    <div class="col-lg-4 col-sm-6 zoom-element">
                         <div class="blog">
                             <div class="blog-photo">
-                                <img src="images/blog/a.jpg" alt="blog-thumb">
+                                <img src="{{urlGes()}}img_admin/articulos/{{empty($article->photo)?'article_default.png':$article->photo}}" 
+                                alt="blog-thumb"
+                                style="
+                                width: 350px;
+                                height: 250px;
+                                background: #CCC;
+                                overflow: hidden;
+                                cursor:pointer;">
                             </div>
                             <div class="blog-text">
                                 <ul class="blog-meta">
                                     <li><a href="#">{{$article->dateM}}</a></li>
                                     <li><a href="#">{{strtoupper($article->area->name)}}</a></li>
                                 </ul>
-                                <h4 class="title title-sm"><a href="{{route('article.search', ['ronald',1])}}">{{$article->name}}</a></h4>
+                                <h4 class="title title-sm"><a href="{{route('article.search', [$article->article_id, $article->name])}}">{{$article->name}}</a></h4>
                                 <p>{{$article->description}}</p>
                             </div>
                         </div><!-- .blog -->
                     </div>
                 @endforeach
-            </div><!-- .row -->
-            <nav class="w-100 d-flex">
-                <ul class="pagination">
-                    <li><a class="active" href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#"><em class="icon ti ti-angle-right"></em></a></li>
-                </ul>
-            </nav>
+            </div>
         </div><!-- .nk-block -->
     </div><!-- .container -->
 </section>

@@ -35,8 +35,14 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="blog-details">
-                        <div class="blog-featured">
-                            <img class="round" src="{{asset('images/blog/large-a.jpg')}}" alt="featured">
+                        <div class="blog-featured text-center">
+                            <img class="round" src="{{urlGes()}}img_admin/articulos/{{empty($data->photo)?'article_default.png':$data->photo}}" alt="featured"
+                            style="
+                            width: 50%;
+                            height: 20%;
+                            background: #CCC;
+                            overflow: hidden;
+                            cursor:pointer;">
                         </div>
                         <ul class="blog-meta">
                             <li>{{$data->dateM}}</li>
@@ -77,4 +83,37 @@
         </div><!-- .nk-block -->
     </div><!-- .container -->
 </section>
+
+{{-- Detalle --}}
+@if(count($data_detail))
+<section class="section section-contact bg-light-alt" id="blog">
+    <div class="container">
+        <div class="section-head text-center wide-auto-sm">
+            <h2 class="title title-lg title-dark">Información Extra</h2>
+        </div>
+        <div class="nk-block nk-block-blog">
+            <div class="row justify-content-center">
+                @foreach($data_detail as $detail)
+                    <div class="col-lg-4 col-sm-9 zoom-element">
+                        <div class="blog blog-s2 animated fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">
+                            <div class="blog-photo">
+                                <img src="{{urlGes()}}img_admin/detail_article/{{$detail->photo}}" alt="blog-thumb"
+                                style="
+                                width: 350px;
+                                height: 350px;
+                                background: #CCC;
+                                overflow: hidden;">
+                            </div>
+                            <div class="blog-text">
+                                <h4 class="title title-sm"><a href="#">{{$detail->name}}</a></h4>
+                                <p>{{$detail->description}}</p>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </div>
+</section>
+@endif
 @endsection

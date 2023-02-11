@@ -58,6 +58,38 @@
         </div>
     </div>
 </section>
+<section class="section bg-light">
+    <div class="container">
+        <div class="section-head section-head-s9 wide-md">
+            <h6 class="title title-xs title-s1 tc-primary animated fadeInUp" data-animate="fadeInUp" data-delay=".1" style="visibility: visible; animation-delay: 0.1s;">Beneficios IADR Bolivia</h6>
+            <h2 class="title animated fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">Miembro pleno 
+            </h2>
+        </div>
+        <!-- Block @s -->
+        <div class="nk-block nk-block-text-wrap">
+            <div class="row align-items-center gutter-vr-30px">
+                <div class="col-lg-6">
+                    <div class="nk-block-img animated fadeInUp zoom-animation" data-animate="fadeInUp" data-delay=".4" style="visibility: visible; animation-delay: 0.4s;">
+                        <img src="images/laptop-mobile-a1.png" alt="app">
+                    </div>
+                </div><!-- .col -->
+                <div class="col-lg-6">
+                    <div class="nk-block-text">
+                        <ul class="list list-check list-check-s3">
+                            <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.5s;">Acceso al journal dental research 
+                            </li>
+                            <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".55" style="visibility: visible; animation-delay: 0.55s;">Acceso al journal of translation research 
+                            </li>
+                            <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".6" style="visibility: visible; animation-delay: 0.6s;">Acceso a plataforma virtual es de cursos grabados y en vivo</li>
+                            <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".65" style="visibility: visible; animation-delay: 0.65s;">Descuento en eventos nacionales e internacionales 
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .block @e -->
+    </div>
+</section>
 <section class="section">
     <!-- Block @s -->
     <div class="nk-block nk-block-features">
@@ -112,20 +144,17 @@
         <div class="section-head section-head-s9 wide-md">
             <h6 class="title title-xs title-s1 tc-primary animated fadeInUp" data-animate="fadeInUp" data-delay=".1" style="visibility: visible; animation-delay: 0.1s;">Únase a IADR Bolivia</h6>
             <h2 class="title animated fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">Explora los precios</h2>
-            <div class="wide-sm">
-                <p class="animated fadeInUp" data-animate="fadeInUp" data-delay=".3" style="visibility: visible; animation-delay: 0.3s;">The tokens will be available for transfer thar is rorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
         </div>
         <div class="nk-block nk-block-token">
             <div class="row gutter-vr-30px">
-                <div class="col-lg-7">
+                <div class="col-lg-12">
                     <div class="row">
-                        <div class="col-sm-4">
+                        <div class="col-sm-6">
                             <div class="token-stage text-center animated fadeInUp" data-animate="fadeInUp" data-delay=".4" style="visibility: visible; animation-delay: 0.4s;">
-                                <div class="token-stage-title token-stage-pre">Pre Sale</div>
+                                <div class="token-stage-title token-stage-pre">Investigador</div>
                                 <div class="token-stage-date">
-                                    <h6>3 July 2022</h6>
-                                    <span>10 Days</span>
+                                    <h6>Beneficios..</h6>
+                                    <span>Acceso al journal dental research</span>
                                 </div>
                                 <div class="token-stage-info">
                                     <span class="token-stage-bonus">30% Bonus</span>
@@ -134,12 +163,12 @@
                                 </div>
                             </div>
                         </div><!-- .col -->
-                        <div class="col-sm-4">
+                        <div class="col-sm-6">
                             <div class="token-stage text-center animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.5s;">
-                                <div class="token-stage-title token-stage-one">Sale Stage 1</div>
+                                <div class="token-stage-title token-stage-one">Meditante</div>
                                 <div class="token-stage-date">
-                                    <h6>15 August 2022</h6>
-                                    <span>15 Days</span>
+                                    <h6>Beneficios..</h6>
+                                    <span>Acceso al journal dental research</span>
                                 </div>
                                 <div class="token-stage-info">
                                     <span class="token-stage-bonus">30% Bonus</span>
@@ -147,68 +176,9 @@
                                     <span class="token-stage-amount">$2M</span>
                                 </div>
                             </div>
-                        </div><!-- .col -->
-                        <div class="col-sm-4">
-                            <div class="token-stage text-center animated fadeInUp" data-animate="fadeInUp" data-delay=".6" style="visibility: visible; animation-delay: 0.6s;">
-                                <div class="token-stage-title">Sale Stage 2t</div>
-                                <div class="token-stage-date">
-                                    <h6>28 October 2022</h6>
-                                    <span>10 Days</span>
-                                </div>
-                                <div class="token-stage-info">
-                                    <span class="token-stage-bonus">10% Bonus</span>
-                                    <span class="token-stage-cap">Hard Cap</span>
-                                    <span class="token-stage-amount">$3M</span>
-                                </div>
-                            </div>
-                        </div><!-- .col -->
-                    </div><!-- row -->
-                    <div class="token-action-box text-center animated fadeInUp" data-animate="fadeInUp" data-delay=".7" style="visibility: visible; animation-delay: 0.7s;">
-                        <div class="token-action-title">Join Our <br> Pre-Sale List</div>
-                        <div class="token-action-date"><strong>Pre-Sale Start at</strong> 03 July 2022</div>
-                        <div class="token-action-btn">
-                            <a href="#" class="btn btn-lg btn-grad">Signup &amp; Join</a>
                         </div>
                     </div>
-                </div><!-- .col -->
-                <div class="col-lg-5">
-                    <table class="table table-s1 table-token table-token-s1 animated fadeInUp" data-animate="fadeInUp" data-delay=".8" style="visibility: visible; animation-delay: 0.8s;">
-                        <tbody>
-                            <tr>
-                                <td class="table-head table-head-s1">Token Symbol</td>
-                                <td class="table-des table-des-s1">ICOX</td>
-                            </tr>
-                            <tr>
-                                <td class="table-head table-head-s1">Token Sale Start</td>
-                                <td class="table-des table-des-s1">3 July 2022</td>
-                            </tr>
-                            <tr>
-                                <td class="table-head table-head-s1">Token Sale End</td>
-                                <td class="table-des table-des-s1">28 October 2022</td>
-                            </tr>
-                            <tr>
-                                <td class="table-head table-head-s1">Tokens for sale</td>
-                                <td class="table-des table-des-s1">100,500,000</td>
-                            </tr>
-                            <tr>
-                                <td class="table-head table-head-s1">Specifications</td>
-                                <td class="table-des table-des-s1">ICOX token</td>
-                            </tr>
-                            <tr>
-                                <td class="table-head table-head-s1">Max circulating supply</td>
-                                <td class="table-des table-des-s1">175,500,000</td>
-                            </tr>
-                            <tr>
-                                <td class="table-head table-head-s1">Sale duration</td>
-                                <td class="table-des table-des-s1">10 days</td>
-                            </tr>
-                            <tr>
-                                <td class="table-head table-head-s1">Sale duration</td>
-                                <td class="table-des table-des-s1">10 days</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div><!-- .col -->
+                </div>
             </div><!-- .row -->
         </div>
     </div>

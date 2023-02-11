@@ -48,71 +48,9 @@
                 </div>
             </div>
         </div>
-        <div class="hr"></div>
-        <!-- Block @s -->
-        <div class="nk-block nk-block-about">
-            <div class="row gutter-vr-30px align-items-center justify-content-between">
-                <div class="col-md-4 col-lg-3">
-                    <div class="nk-block-text">
-                        <h2 class="title title-lg tc-primary"><em class="ikon ikon-target"></em> OBJETIVOS</h2>
-                    </div>
-                </div>
-                <div class="col-md-7 col-lg-8">
-                    <div class="nk-block-text">
-                        <p>
-                            •	Promover el avance de la investigación científica y el conocimiento odontológico en Bolivia.
-                        </p>
-                        <p>
-                            •	Establecer mecanismos de apoyo para promover la investigación odontológica y las actividades de la IADR.
-                        </p>
-                        <p>
-                            •	Ampliar la cooperación con otras instituciones dentales, industria, agencias de salud y organizaciones científicas y profesionales del país.
-                        </p>
-                        <p>
-                            •	Apoyar y representar a la comunidad científica odontológica boliviana.
-                        </p>
-                        <p>
-                            •	Motivar a la difusión de los avances científicos y la aplicación de descubrimientos que sean de beneficio a nuestra población.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div><!-- .nk-block @e -->
-        <div class="hr"></div>
-        <!-- Block @s -->
-        <div class="nk-block nk-block-about">
-            <div class="row gutter-vr-30px align-items-center justify-content-between">
-                <div class="col-md-4 col-lg-3">
-                    <div class="nk-block-text">
-                        <h2 class="title title-lg tc-primary"><em class="icon icon-md icon-grd ikon ikon-bulb-2"></em> MISIÓN</h2>
-                    </div>
-                </div>
-                <div class="col-md-7 col-lg-8">
-                    <div class="nk-block-text">
-                        <p class="lead">Impulsar la investigación dental, bucal y craneofacial para la salud y el bienestar en Bolivia.</p>
-                    </div>
-                </div>
-            </div>
-        </div><!-- .nk-block @e -->
-        <div class="hr"></div>
-        <!-- Block @s -->
-        <div class="nk-block nk-block-about">
-            <div class="row gutter-vr-30px align-items-center justify-content-between">
-                <div class="col-md-4 col-lg-3">
-                    <div class="nk-block-text">
-                        <h2 class="title title-lg tc-primary"><em class="icon icon-md icon-grd ikon ikon-paricle"></em> VISIÓN</h2>
-                    </div>
-                </div>
-                <div class="col-md-7 col-lg-8">
-                    <div class="nk-block-text">
-                        <p class="lead">Salud bucal en Bolivia basada en la investigación científica y su difusión.</p>
-                    </div>
-                </div>
-            </div>
-        </div><!-- .nk-block @e -->
     </div>
 </section>
-<section class="section bg-white">
+<section class="section bg-white pt-0">
     <div class="container">
         <!-- Block @s -->
         <div class="nk-block nk-block-text-wrap">
@@ -195,19 +133,17 @@
                         </div>
                     </div>
                 </div>
-            </div><!-- .row -->
-        </div><!-- .block @e -->
+            </div>
+        </div>
     </div>
 </section>
 {{-- Equipo IADR --}}
 <section class="section section-team bg-light" id="team">
     <div class="container">
-        <!-- Section Head @s -->
         <div class="section-head text-center wide-auto">
             <h6 class="title title-xs title-s1 tc-primary animated" data-animate="fadeInUp" data-delay=".1">Conoce al equipo</h6>
             <h2 class="title animated" data-animate="fadeInUp" data-delay=".2">Directorio IADR</h2>
-        </div><!-- .section-head @e -->
-        <!-- Block @s -->
+        </div>
         <div class="nk-block">
             <div class="row justify-content-center">
                 {{-- Lista de Directorio --}}
@@ -220,7 +156,12 @@
                             -moz-box-shadow: 32px 38px 71px -44px rgba(163,163,163,1);
                             box-shadow: 32px 38px 71px -44px rgba(163,163,163,1);">
                         <div class="team-photo">
-                            <img src="{{urlGes()}}img_admin/staff/{{$staff->photo}}" alt="team">
+                            <img src="{{urlGes()}}img_admin/staff/{{$staff->photo}}" alt="team"
+                                style="
+                                    width: 300px;
+                                    height: 300px;
+                                    background: #CCC;
+                                    overflow: hidden;">
                             <a href="{{route('directory.search', [$staff->staff_id, $staff->name_staff])}}" class="team-show"></a>
                             <ul class="team-social">
                                 @foreach($staff->staffSocial as $social)

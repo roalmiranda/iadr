@@ -36,7 +36,8 @@
             <div class="row align-items-center">
                 <div class="col-lg-5 mb-4 mb-lg-0">
                     <div class="team-featured-photo tc-light">
-                        <img src="{{asset('images/team/large-a.jpg')}}" alt="team">
+                        <img src="{{urlGes()}}img_admin/eventos/{{empty($data->photo)?'default.jpg':$data->photo}}" 
+                            alt="evento_detalle">
                     </div>
                 </div>
                 <div class="col-lg-7">
@@ -50,6 +51,7 @@
         </div>
     </div>
 </section>
+@if(count($data_detail))
 <section class="section pt-0 pb-0" id="event">
     <div class="section section-m bg-white pt-0" id="resources">
         <div class="container container-xxl">
@@ -59,10 +61,15 @@
                 <div class="row g-gs">
                     {{-- Lista Detalle --}}
                     @foreach($data_detail as $detail)
-                        <div class="col-xl-4 col-md-6 order-xl-2">
+                        <div class="col-xl-4 col-md-6 order-xl-2 zoom-element">
                             <div class="news-item animated fadeInUp" data-animate="fadeInUp" data-delay=".7" style="visibility: visible; animation-delay: 0.7s;">
                                 <div class="news-thumb">
-                                    <img loading="lazy" class="w-100" src="../../images/blockchain/blog/b.jpg" alt="">
+                                    <img loading="lazy" class="w-100" src="{{urlGes()}}img_admin/detail_event/{{$detail->photo}}" alt="mas_info_evento"
+                                    style="
+                                    width: 350px;
+                                    height: 500px;
+                                    background: #CCC;
+                                    overflow: hidden;">
                                 </div>
                                 <div class="news-excerpt">
                                     <ul class="news-tags">
@@ -80,4 +87,5 @@
         </div>
     </div>
 </section>
+@endif
 @endsection

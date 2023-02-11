@@ -132,7 +132,7 @@
             <div class="row justify-content-center">
                 {{-- Lista de Directorio --}}
                 @foreach($staffs as $staff)
-                <div class="col-md-3 col-6">
+                <div class="col-md-3 col-6 zoom-element">
                     <div class="team animated bg-white" 
                             data-animate="fadeInUp" 
                             data-delay=".2" 
@@ -140,7 +140,12 @@
                             -moz-box-shadow: 32px 38px 71px -44px rgba(163,163,163,1);
                             box-shadow: 32px 38px 71px -44px rgba(163,163,163,1);">
                         <div class="team-photo">
-                            <img src="{{urlGes()}}img_admin/staff/{{$staff->photo}}" alt="team">
+                            <img src="{{urlGes()}}img_admin/staff/{{empty($staff->photo)?'default_user.png':$staff->photo}}" alt="team"
+                                style="
+                                width: 300px;
+                                height: 300px;
+                                background: #CCC;
+                                overflow: hidden;">
                             <a href="{{route('directory.search', [$staff->staff_id, $staff->name_staff])}}" class="team-show"></a>
                             <ul class="team-social">
                                 @foreach($staff->staffSocial as $social)
@@ -160,6 +165,7 @@
 </section>
 
 <!-- Eventos -->
+@if(false)
 <div class="section section-t-l pb-0" id="roadmap">
     <div class="container container-xxl">
         <div class="nk-block">
@@ -189,7 +195,10 @@
                                     </div>
                                 </div>
                                 <div class="box-bordered-inner schedule-content">
-                                    <img  loading="lazy" class="schedule-thumb" src="http://ges.iadr-bolivia.com/img_admin/staff/1675404713_unnamed.png" alt="" height="150">
+                                    <img loading="lazy" 
+                                        class="schedule-thumb" 
+                                        src="{{urlGes()}}img_admin/eventos/{{empty($event->photo)?'event_default.png':$event->photo}}" 
+                                        alt="img">
                                     <div class="schedule-text">
                                         <h5 class="line-truncate-2">{{$event->name}}</h5>
                                         <p class="line-truncate-4">{{$event->description}}</p>
@@ -204,6 +213,7 @@
         </div>
     </div>
 </div>
+@endif
 
 <section class="section pt-0 pb-0" id="event">
     <div class="section section-m bg-white" id="resources">
@@ -212,19 +222,24 @@
                 <h6 class="title title-xs title-s1 tc-primary animated" data-animate="fadeInUp" data-delay=".1">Eventos</h6>
                 <h2 class="title animated" data-animate="fadeInUp" data-delay=".2">Últimos Eventos</h2>
                 <div class="row g-gs">
-                    @foreach($articles as $article)
-                        <div class="col-xl-4 col-md-6 order-xl-2">
+                    @foreach($events as $event)
+                        <div class="col-xl-4 col-md-6 order-xl-2 zoom-element">
                             <div class="news-item animated fadeInUp" data-animate="fadeInUp" data-delay=".7" style="visibility: visible; animation-delay: 0.7s;">
                                 <div class="news-thumb">
-                                    <img  loading="lazy" class="w-100" src="images/blockchain/blog/b.jpg" alt="">
+                                    <img  loading="lazy" 
+                                        class="w-100" src="{{urlGes()}}img_admin/eventos/{{empty($event->photo)?'event_default.png':$event->photo}}" 
+                                        alt="event"
+                                        style="
+                                        width: 300px;
+                                        height: 200px;
+                                        background: #CCC;
+                                        overflow: hidden;">
                                 </div>
                                 <div class="news-excerpt">
-                                    <ul class="news-tags">
-                                        <li class="link-primary">{{strtoupper($article->area->name)}}</li>
-                                    </ul>
-                                    <h4 class="title title-sm"><a href="{{route('event.search', [$article->article_id, $article->name])}}">{{$article->name}}</a></h4>
+                                    <span class="link-primary"><b>{{strtoupper($event->area->name)}}</b></span>
+                                    <h4 class="title title-sm"><a href="{{route('event.search', [$event->event_id, $event->name])}}">{{$event->name}}</a></h4>
                                     <ul class="news-meta">
-                                        <li>{{$article->dateM}}</li>
+                                        <li>{{$event->dateM}}</li>
                                     </ul>
                                 </div>
                             </div>
@@ -251,14 +266,24 @@
                 @foreach($articles as $article)
                     <div class="col-sm-6 col-lg-3">
                         <div class="doc animated fadeInUp" data-animate="fadeInUp" data-delay="0.3" style="visibility: visible; animation-delay: 0.3s;">
-                            <a href="{{route('article.search', [1, 'ronald'])}}">
+                            <a href="{{route('article.search', [$article->article_id, $article->name])}}">
                                 <div class="doc-photo doc-shape doc-shape-a">
-                                    <img  loading="lazy" src="images/azalea/doc-a.jpg" alt="img1" style="cursor:pointer;">
+                                    <img  loading="lazy" 
+                                        src="{{urlGes()}}img_admin/articulos/{{empty($article->photo)?'article_default.png':$article->photo}}" 
+                                        alt="img1" 
+                                        style="
+                                        width: 300px;
+                                        height: 280px;
+                                        background: #CCC;
+                                        overflow: hidden;
+                                        cursor:pointer;">
                                 </div>
                             </a>
                             <div class="doc-text">
                                 <h5 class="doc-title title-sm">{{$article->name}} <small>({{$article->year}})</small></h5>
-                                <a class="doc-download" href="#"><em class="ti ti-import"></em></a>
+                                @if(!empty($article->document))
+                                    <a class="doc-download" href="{{urlGes()}}document_admin/articulos/{{$article->document}}" download  target="_blank" title="Descargar Articulo"><em class="ti ti-import"></em></a>
+                                @endif
                             </div>
                         </div>
                     </div>

@@ -30,5 +30,5 @@ Route::get('articulos/{id}/{nombre}',[LandingController::class,'articleSearch'])
 Route::get('contacto',[LandingController::class,'contact'])->name('contact');
 Route::get('membresia',[LandingController::class,'membership'])->name('membership');
 
-Route::get('eventos',[EventController::class,'list'])->name('event.list');
-Route::get('eventos/{id}/{nombre}',[EventController::class,'eventSearch'])->name('event.search');
+Route::get('eventos',[LandingController::class,'events'])->name('event.list');
+Route::get('eventos/{id}/{nombre}',[LandingController::class,'eventSearch'])->name('event.search');
