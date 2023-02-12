@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\SubscriptorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,3 +34,6 @@ Route::get('membresia',[LandingController::class,'membership'])->name('membershi
 
 Route::get('eventos',[LandingController::class,'events'])->name('event.list');
 Route::get('eventos/{id}/{nombre}',[LandingController::class,'eventSearch'])->name('event.search');
+
+Route::post('contacto-mensaje',[ContactController::class,'store'])->name('contact.store');
+Route::post('subscriptor',[SubscriptorController::class,'store'])->name('subscriptor.store');

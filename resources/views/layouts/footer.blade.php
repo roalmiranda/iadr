@@ -14,13 +14,14 @@
                         </div> 
                         <div class="col-lg-6">
                             <div class="gap-3x d-none d-lg-block"></div>
-                            <form action="form/subscribe.php" class="nk-form-submit" method="post">
+                            <form id="form1" method="post">
                                 <div class="field-inline field-inline-s2 field-inline-s2-sm bg-white shadow-soft">
                                     <div class="field-wrap">
-                                        <input class="input-solid input-solid-md required email" type="text" name="contact-email" placeholder="Ingresa tu correo">
+                                        <input class="input-solid input-solid-md required email" type="text" id="sub_email" name="sub_email" placeholder="Ingresa tu correo">
                                     </div>
                                     <div class="submit-wrap">
-                                        <button class="btn btn-md btn-secondary">Subscribirse</button>
+                                        <button class="btn btn-md btn-secondary sub-save-contact">Subscribirse</button>
+                                        <button class="btn btn-md btn-info sub-save-load" disabled style="display:none;">Subscribiendo...</button>
                                     </div>
                                 </div>
                                 <div class="form-results"></div>
