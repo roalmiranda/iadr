@@ -148,7 +148,7 @@
             <div class="row justify-content-center">
                 {{-- Lista de Directorio --}}
                 @foreach($staffs as $staff)
-                <div class="col-md-3 col-6">
+                <div class="col-md-3 col-6 zoom-element">
                     <div class="team animated bg-white" 
                             data-animate="fadeInUp" 
                             data-delay=".2" 
@@ -156,10 +156,10 @@
                             -moz-box-shadow: 32px 38px 71px -44px rgba(163,163,163,1);
                             box-shadow: 32px 38px 71px -44px rgba(163,163,163,1);">
                         <div class="team-photo">
-                            <img src="{{urlGes()}}img_admin/staff/{{$staff->photo}}" alt="team"
+                            <img src="{{urlGes()}}img_admin/staff/{{empty($staff->photo)?'default_user.png':$staff->photo}}" alt="team"
                                 style="
-                                    width: 300px;
-                                    height: 300px;
+                                    width: 270px;
+                                    height: 270px;
                                     background: #CCC;
                                     overflow: hidden;">
                             <a href="{{route('directory.search', [$staff->staff_id, $staff->name_staff])}}" class="team-show"></a>

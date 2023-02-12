@@ -39,10 +39,10 @@
                     <div class="col">
                         <div class="wgs wgs-text text-center mb-3">
                             <ul class="social pdb-l justify-content-center">
-                                <li><a href="#"><em class="social-icon fab fa-facebook-f"></em></a></li>
-                                <li><a href="#"><em class="social-icon fab fa-twitter"></em></a></li>
+                                <li title="Facebook IADR - Bolivia"><a href="https://www.facebook.com/OPIEBOLIVIA?mibextid=LQQJ4d"><em class="social-icon fab fa-facebook-f"></em></a></li>
+                                {{-- <li><a href="#"><em class="social-icon fab fa-twitter"></em></a></li>
                                 <li><a href="#"><em class="social-icon fab fa-youtube"></em></a></li>
-                                <li><a href="#"><em class="social-icon fab fa-github"></em></a></li>
+                                <li><a href="#"><em class="social-icon fab fa-github"></em></a></li> --}}
                             </ul>
                             <a href="/" class="footer-logo">
                                 <img src="{{ asset('imagesiadr/logo/LogoIADR1.png') }}" srcset="{{ asset('imagesiadr/logo/LogoIADR1.png 2x') }}" alt="logo" width="300">

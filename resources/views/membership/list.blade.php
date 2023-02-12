@@ -149,7 +149,7 @@
             <div class="row gutter-vr-30px">
                 <div class="col-lg-12">
                     <div class="row">
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 zoom-element">
                             <div class="token-stage text-center animated fadeInUp" data-animate="fadeInUp" data-delay=".4" style="visibility: visible; animation-delay: 0.4s;">
                                 <div class="token-stage-title token-stage-pre">Investigador</div>
                                 <div class="token-stage-date">
@@ -163,7 +163,7 @@
                                 </div>
                             </div>
                         </div><!-- .col -->
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 zoom-element">
                             <div class="token-stage text-center animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.5s;">
                                 <div class="token-stage-title token-stage-one">Meditante</div>
                                 <div class="token-stage-date">

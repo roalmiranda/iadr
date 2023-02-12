@@ -31,9 +31,9 @@
                                 </div>
                                 <div class="cpn-social">
                                     <ul class="social">
-                                        <li class="animated" data-animate="fadeInUp" data-delay="1.5"><a href="#"><em class="social-icon fab fa-facebook-f"></em></a></li>
-                                        <li class="animated" data-animate="fadeInUp" data-delay="1.55"><a href="#"><em class="social-icon fab fa-twitter"></em></a></li>
-                                        <li class="animated" data-animate="fadeInUp" data-delay="1.6"><a href="#"><em class="social-icon fab fa-youtube"></em></a></li>
+                                        <li class="animated" data-animate="fadeInUp" data-delay="1.5"><a href="https://www.facebook.com/OPIEBOLIVIA?mibextid=LQQJ4d" target="_blank"><em class="social-icon fab fa-facebook-f"></em></a></li>
+                                        {{-- <li class="animated" data-animate="fadeInUp" data-delay="1.55"><a href="#"><em class="social-icon fab fa-twitter"></em></a></li>
+                                        <li class="animated" data-animate="fadeInUp" data-delay="1.6"><a href="#"><em class="social-icon fab fa-youtube"></em></a></li> --}}
                                     </ul>
                                 </div>
                             </div>
@@ -139,11 +139,11 @@
                             style="-webkit-box-shadow: 32px 38px 71px -44px rgba(163,163,163,1);
                             -moz-box-shadow: 32px 38px 71px -44px rgba(163,163,163,1);
                             box-shadow: 32px 38px 71px -44px rgba(163,163,163,1);">
-                        <div class="team-photo">
+                        <div class="team-photo text-center">
                             <img src="{{urlGes()}}img_admin/staff/{{empty($staff->photo)?'default_user.png':$staff->photo}}" alt="team"
                                 style="
-                                width: 300px;
-                                height: 300px;
+                                width: 270px;
+                                height: 270px;
                                 background: #CCC;
                                 overflow: hidden;">
                             <a href="{{route('directory.search', [$staff->staff_id, $staff->name_staff])}}" class="team-show"></a>
@@ -438,12 +438,13 @@
                         <div class="nk-circle-animation nk-df-center blue small"></div><!-- .circle-animation -->
                     </div>
                     <ul class="social-links social-links-s2 justify-content-center animated fadeInUp" data-animate="fadeInUp" data-delay="0.6" style="visibility: visible; animation-delay: 0.6s;">
-                        <li><a href="#"><em class="fab fa-twitter"></em></a></li>
+                        <li title="Facebook IADR-Bolivia"><a href="https://www.facebook.com/OPIEBOLIVIA?mibextid=LQQJ4d"><em class="fab fa-facebook-f"></em></a></li>
+                        {{-- <li><a href="#"><em class="fab fa-twitter"></em></a></li>
                         <li><a href="#"><em class="fab fa-medium-m"></em></a></li>
                         <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
                         <li><a href="#"><em class="fab fa-youtube"></em></a></li>
                         <li><a href="#"><em class="fab fa-bitcoin"></em></a></li>
-                        <li><a href="#"><em class="fab fa-github"></em></a></li>
+                        <li><a href="#"><em class="fab fa-github"></em></a></li> --}}
                     </ul>
                 </div>
             </div>

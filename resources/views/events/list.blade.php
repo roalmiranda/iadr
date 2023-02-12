@@ -41,7 +41,7 @@
                         <div class="news-thumb">
                             <img class="w-100 h-100" src="images/blockchain/blog/large-a.jpg" alt="">
                         </div>
-                        <div class="news-excerpt">
+                        <div class="news-excerpt zoom-element">
                             <ul class="news-tags">
                                 <li><a class="link-primary" href="#">{{strtoupper($data[0]->area->name)}}</a></li>
                             </ul>

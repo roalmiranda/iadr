@@ -78,7 +78,6 @@
         .zoom-element:hover {
             transform: scale(1.1);
         }
-        
     </style>    
     @yield('header')
     
