@@ -341,7 +341,7 @@
                                     <h5 class="accordion-title accordion-title-sm" data-bs-toggle="collapse" data-bs-target="#acc-1-1">¿Qué es IADR Bolivia? <span class="accordion-icon"></span></h5>
                                     <div id="acc-1-1" class="collapse show" data-bs-parent="#acc-1">
                                         <div class="accordion-content">
-                                            <p>Once ICO period is launched, You can purchased Token with Etherum, Bitcoin or Litecoin. You can also tempor incididunt ut labore et dolore magna aliqua sed do eiusmod eaque ipsa.</p>
+                                            <p>Esta organización es una sucursal boliviana de la Asociación Internacional para la Investigación Dental, que es una organización global dedicada a promover la investigación dental y mejorar la salud bucal a nivel mundial.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -349,7 +349,7 @@
                                     <h5 class="accordion-title accordion-title-sm collapsed" data-bs-toggle="collapse" data-bs-target="#acc-1-2">¿Qué puedo realizar en IADR? <span class="accordion-icon"></span></h5>
                                     <div id="acc-1-2" class="collapse" data-bs-parent="#acc-1">
                                         <div class="accordion-content">
-                                            <p>Once ICO period is launched, You can purchased Token with Etherum, Bitcoin or Litecoin. You can also tempor incididunt ut labore et dolore magna aliqua sed do eiusmod eaque ipsa.</p>
+                                            <p>En IADR Bolivia, puedes participar en eventos y actividades relacionados con la investigación dental, como conferencias, simposios y presentaciones de investigaciones. También puedes interactuar con otros profesionales y expertos en el campo de la investigación dental, y acceder a recursos y publicaciones sobre el tema. Además, puedes contribuir a la misión de IADR de promover la investigación dental y mejorar la salud bucal a nivel local y mundial.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -357,7 +357,7 @@
                                     <h5 class="accordion-title accordion-title-sm collapsed" data-bs-toggle="collapse" data-bs-target="#acc-1-3">¿Qué beneficios obtengo como miembro? <span class="accordion-icon"></span></h5>
                                     <div id="acc-1-3" class="collapse" data-bs-parent="#acc-1">
                                         <div class="accordion-content">
-                                            <p>Once ICO period is launched, You can purchased Token with Etherum, Bitcoin or Litecoin. You can also tempor incididunt ut labore et dolore magna aliqua sed do eiusmod eaque ipsa.</p>
+                                            <p>Puedes obtener diversos beneficios en eventos y actividades organizados por la asociación, así como también en publicaciones y recursos relacionados con la investigación dental. También puedes tener acceso a una amplia red de profesionales y expertos en el campo, lo que puede ayudarte a desarrollar tus habilidades y conocimientos en la investigación dental.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -365,7 +365,15 @@
                                     <h5 class="accordion-title accordion-title-sm collapsed" data-bs-toggle="collapse" data-bs-target="#acc-1-4">¿Cómo puedo ser miembro? <span class="accordion-icon"></span></h5>
                                     <div id="acc-1-4" class="collapse" data-bs-parent="#acc-1">
                                         <div class="accordion-content">
-                                            <p>Once ICO period is launched, You can purchased Token with Etherum, Bitcoin or Litecoin. You can also tempor incididunt ut labore et dolore magna aliqua sed do eiusmod eaque ipsa.</p>
+                                            <p class="animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.1s;">Para ser miembro de IADR Bolivia, debes seguir los siguientes pasos:</p>
+                                            <ul class="list list-check list-check-s1">
+                                                <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.2s;"><b>Paso 1:</b> Ir a la página web de IADR Bolivia y buscar la sección de <a class="link" href="/membresia" title="Ir a Membresía">"Membresía"</a>.</li>
+                                                <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.25s;"><b>Paso 2:</b> Leer los requisitos de membresía y verificar si cumples con ellos.</li>
+                                                <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.3s;"><b>Paso 3:</b> Completar un formulario de solicitud de membresía en línea o descargar un formulario de solicitud y enviarlo por correo.</li>
+                                                <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.35s;"><b>Paso 4:</b> Proporcionar información personal y profesional, así como una declaración de interés en la investigación dental.</li>
+                                                <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.4s;"><b>Paso 5:</b> Pagar la tarifa de membresía correspondiente.</li>
+                                            </ul>
+                                            <p class="animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.45s;">Después de completar estos pasos, tu solicitud de membresía será revisada por los oficiales de IADR Bolivia. Si eres aceptado como miembro, recibirás una confirmación y tendrás acceso a todos los recursos y oportunidades disponibles para los miembros.</p>
                                         </div>
                                     </div>
                                 </div>
