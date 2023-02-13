@@ -48,31 +48,43 @@
                         <p>{{$data->bibliography}}</p>
                         <ul class="social pdb-l justify-content-center">
                             @foreach($data->staffSocial as $social)
-                                <li><a href="{{$social->url}}" target="_blank"><em class="social-icon fab {{$social->social->icon}}"></em></a></li>
+                                <a href="{{$social->url}}" target="_blank"><li><em class="social-icon fab {{$social->social->icon}}"></em> {{$social->name}}</li></a>
+                                <a href="{{$social->url}}" target="_blank"><li><em class="social-icon fab {{$social->social->icon}}"></em> {{$social->name}}</li></a>
                             @endforeach
                         </ul>
                     </div>
-                    <div class="team-featured-cont pb-5">
-                        <h2 class="title title-lg title-dark">Especialidades</h2>
-                    </div>
-                    <marquee behavior="alternate" direction="right">
-                        <div class="has-marquee d-flex justify-content-center" id="marque-two">
-                            @php($arrays = explode(",", $data->specialty))
-                            @foreach($arrays as $array)
-                            <div class="bg-light d-flex flex-shrink-0 align-items-center p-2 mx-2 rounded-pill">
-                                <h6 class="text-base ms-1 px-2">{{$array}}</h6>
-                            </div>
-                            @endforeach
-                        </div>
-                    </marquee>
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section bg-light-grad">
+    <div class="ui-mask-right ui-mask-s12"></div>
+    <div class="container">
+        <!-- Section Head @s -->
+        <div class="section-head text-center wide-sm animated fadeInUp" data-animate="fadeInUp" data-delay=".1" style="visibility: visible; animation-delay: 0.1s;">
+            <h2 class="title title-dark title-regular">Especialidades</h2>
+        </div>
+        <!-- Section Head @s -->
+        <div class="nk-block">
+            <div class="row">
+                @php($arrays = explode(",", $data->specialty))
+                @foreach($arrays as $array)
+                    <div class="col-md-4 zoom-element">
+                        <div class="feature feature-center card animated fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">
+                            <div class="feature-text feature-currency">
+                                <h3 class="title title-sm">{{$array}}</h3>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
             </div>
         </div>
     </div>
 </section>
 {{-- Detalle --}}
 @if(count($data_detail))
-<section class="section section-contact bg-light-alt" id="blog">
+<section class="section section-contact bg-light-alt pt-5 pb-5" id="blog">
     <div class="container">
         <div class="section-head text-center wide-auto-sm">
             <h2 class="title title-lg title-dark">Logros Profesionales</h2>

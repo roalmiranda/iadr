@@ -36,7 +36,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-5 mb-4 mb-lg-0">
                     <div class="team-featured-photo tc-light">
-                        <img src="{{urlGes()}}img_admin/eventos/{{empty($data->photo)?'default.jpg':$data->photo}}" 
+                        <img src="{{urlGes()}}img_admin/eventos/{{empty($data->photo)?'event_default.png':$data->photo}}" 
                             alt="evento_detalle">
                     </div>
                 </div>

@@ -45,8 +45,8 @@
                             cursor:pointer;">
                         </div>
                         <ul class="blog-meta">
-                            <li>{{$data->dateM}}</li>
-                            <li>{{strtoupper($data->area->name)}}</li>
+                            <li><b>Fecha publición: </b>{{$data->dateM}}</li>
+                            <li><b>Categoria: </b>{{strtoupper($data->area->name)}}</li>
                         </ul>
                         <div class="blog-content">
                             <h2 class="title">{{strtoupper($data->name)}}</h2>
@@ -56,6 +56,14 @@
                             <li><a href="#">bitcoin</a></li>
                             <li><a href="#">tokens</a></li>
                         </ul> --}}
+                        @if(!empty($data->url))
+                            <div class="token-action-box text-center animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.5s;">
+                                <div class="token-action-date"><strong>Para obtener información más detallada del árticulo ingrese: </strong> ¡No te pierdas la oportunidad de ampliar tus conocimientos!</div>
+                                <div class="token-action-btn">
+                                    <a href="{{$data->url}}" class="btn btn-lg btn-grad" target="_blank">¡Haz Click!</a>
+                                </div>
+                            </div>
+                        @endif
                     </div>
                 </div><!-- .col -->
                 <div class="col-lg-4">

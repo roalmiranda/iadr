@@ -34,14 +34,15 @@
         <h6 class="title title-xs title-s1 tc-primary animated" data-animate="fadeInUp" data-delay=".1">Lista</h6>
         <h2 class="title animated" data-animate="fadeInUp" data-delay=".2">Artículos</h2>
         <div class="nk-block">
-            <form action="form/subscribe.php" class="nk-form-submit" method="post" novalidate="novalidate">
+            <form action="{{route('article')}}" method="GET">
+                @csrf
                 <div class="field-inline field-inline-round field-inline-s2-sm bg-light-alt">
                     <div class="field-wrap">
-                        <input class="input-solid input-solid-md required email" type="text" name="contact-email" placeholder="Escribe tu palabra clave">
+                        <input class="input-solid input-solid-md" type="text" name="search" id="search" placeholder="Escribe tu palabra clave" value="{{$search}}">
                         <input type="text" class="d-none" name="form-anti-honeypot" value="">
                     </div>
                     <div class="submit-wrap">
-                        <button class="btn btn-md btn-round btn-dark h-100">Buscar</button>
+                        <button type="submit" class="btn btn-md btn-round btn-dark h-100">Buscar</button>
                     </div>
                 </div>
                 <div class="form-results"></div>

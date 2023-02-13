@@ -74,7 +74,8 @@ class LandingController extends Controller
     /**
      * Buscar Articulo - IADR
      */
-    public function article(){
+    public function article(Request $request){
+        $search = empty($request->search) ? '' : $request->search;
         $articles = Article::select('articles.*' , 
                             DB::raw('CONCAT(
                                 DATE_FORMAT(articles.date,"%d"), " ",
@@ -95,9 +96,13 @@ class LandingController extends Controller
                                 DATE_FORMAT(articles.date,"%Y")) as dateM'))
                             ->with('area')
                             ->where('state', 1)
-                            ->paginate(10);
+                            ->name($search)
+                            ->description($search)
+                            ->resume($search)
+                            ->get();
         return view('article.list',[
-            'articles'  =>  $articles
+            'articles'  =>  $articles,
+            'search'    =>  $search
         ]);
     }
     /**
