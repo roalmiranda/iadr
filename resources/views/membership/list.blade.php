@@ -150,30 +150,87 @@
                 <div class="col-lg-12">
                     <div class="row">
                         <div class="col-sm-6 zoom-element">
-                            <div class="token-stage text-center animated fadeInUp" data-animate="fadeInUp" data-delay=".4" style="visibility: visible; animation-delay: 0.4s;">
-                                <div class="token-stage-title token-stage-pre">Investigador</div>
-                                <div class="token-stage-date">
-                                    <h6>Beneficios..</h6>
-                                    <span>Acceso al journal dental research</span>
+                            <div class="token-stage animated fadeInUp" data-animate="fadeInUp" data-delay=".4" style="visibility: visible; animation-delay: 0.4s;">
+                                <div class="token-stage-title text-center token-stage-pre">Investigador</div>
+                                <div class="token-stage-date text-center">
+                                    <h6>Comparación de beneficios</h6>
                                 </div>
-                                <div class="token-stage-info">
-                                    <span class="token-stage-bonus">30% Bonus</span>
-                                    <span class="token-stage-cap">Soft Cap</span>
-                                    <span class="token-stage-amount">$2M</span>
+                                <div class="token-stage-info p-5">
+                                    <ul class="list list-check list-check-s1">
+                                        <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.5s;">
+                                            Miembro de la mayor organización en investigación odontológica a nivel mundial.
+                                        </li>
+                                        <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.5s;">
+                                            Participa en Webinars en vivo organizados por IADR.
+                                        </li>
+                                        <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.5s;">
+                                            Accede a grabaciones de cursos y congresos organizados por IADR
+                                        </li>
+                                        <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.5s;">
+                                            Accede vía online a la revista Journal of Dental Research (JDR) durante todo el año.
+                                        </li>
+                                        <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.5s;">
+                                            Participa en redes y grupos de investigación a nivel mundial
+                                        </li>
+                                        <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.5s;">
+                                            Recibe descuentos en curso nacionales y en la Sesión General de IADR.
+                                        </li>
+                                        <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.5s;">
+                                            Compite por premios, reconocimientos y becas de IADR.
+                                        </li>
+                                        <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.5s;">
+                                            Recibe tutorías para la creación y ejecución de proyectos de investigación.
+                                        </li>
+                                        <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.5s;">
+                                            Participa en cursos organizados por la sección Bolivia de IADR
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="token-stage-date text-center">
+                                    <h6><span class="badge badge-info mb-2">Estudiante</span></h6>
+                                    <h3>75 $</h3>
+                                </div>
+                                <div class="token-stage-date text-center">
+                                    <h6><span class="badge badge-dark mb-2">Profesional</span></h6>
+                                    <h3>65 $</h3>
+                                </div>
+                                <div class="col-md-12 text-center p-4 p-lg-5 bg-light">
+                                    <a href="#" class="btn btn-outline btn-grad on-bg-light-alt">¡Inscríbete ahora!</a>
                                 </div>
                             </div>
                         </div><!-- .col -->
                         <div class="col-sm-6 zoom-element">
-                            <div class="token-stage text-center animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.5s;">
-                                <div class="token-stage-title token-stage-one">Meditante</div>
-                                <div class="token-stage-date">
-                                    <h6>Beneficios..</h6>
-                                    <span>Acceso al journal dental research</span>
+                            <div class="token-stage animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.5s;">
+                                <div class="token-stage-title text-center token-stage-one">Meditante</div>
+                                <div class="token-stage-date text-center">
+                                    <h6>Comparación de beneficios</h6>
                                 </div>
-                                <div class="token-stage-info">
-                                    <span class="token-stage-bonus">30% Bonus</span>
-                                    <span class="token-stage-cap">Soft Cap</span>
-                                    <span class="token-stage-amount">$2M</span>
+                                <div class="token-stage-info p-5">
+                                    <ul class="list list-check list-check-s1">
+                                        <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.5s;">
+                                            Miembro de la sección boliviana de IADR.
+                                        </li>
+                                        <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.5s;">
+                                            Recibe tutorías para la creación y ejecución de proyectos de investigación.
+                                        </li>
+                                        <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.5s;">
+                                            Participa en cursos organizados por la sección Bolivia de IADR.
+                                        </li>
+                                        <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.5s;">
+                                            Participa en redes y grupos de investigación a nivel nacional.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="token-stage-date text-center">
+                                    <h6><span class="badge badge-info mb-2">Estudiante</span></h6>
+                                    <h3>250 Bs.</h3>
+                                </div>
+                                <div class="token-stage-date text-center">
+                                    <h6><span class="badge badge-dark mb-2">Profesional</span></h6>
+                                    <h3>150 Bs.</h3>
+                                </div>
+                                <div class="col-md-12 text-center p-4 p-lg-5 bg-light">
+                                    <a href="https://forms.gle/8chz8uEjy7i8QdB28" target="_blank" class="btn btn-outline btn-grad on-bg-light-alt">¡Inscríbete ahora!</a>
                                 </div>
                             </div>
                         </div>

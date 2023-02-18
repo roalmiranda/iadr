@@ -6,9 +6,11 @@ use Illuminate\Http\Request;
 use App\Models\Event;
 use App\Models\EventDetail;
 use App\Models\Staff;
+use App\Models\StaffDetail;
+use App\Models\Member;
+use App\Models\MemberDetail;
 use App\Models\Article;
 use App\Models\ArticleDetail;
-use App\Models\StaffDetail;
 use DB;
 
 class LandingController extends Controller
@@ -19,6 +21,12 @@ class LandingController extends Controller
     public function index(){
         $staffs = Staff::select('staff.*', DB::raw("CONCAT(staff.name,' ',staff.paternal, ' ', staff.maternal) as name_staff"))
                         ->with(['staffSocial' => function($query) {
+                            $query->with('social');
+                        }])
+                        ->where('state', 1)
+                        ->get();
+        $members = Member::select('member.*', DB::raw("CONCAT(member.name,' ',member.paternal, ' ', member.maternal) as name_member"))
+                        ->with(['memberSocial' => function($query) {
                             $query->with('social');
                         }])
                         ->where('state', 1)
@@ -67,6 +75,7 @@ class LandingController extends Controller
                             ->paginate(3);
         return view('landingPage',[
             'staffs'   => $staffs,
+            'members'  => $members,
             'events'   => $events,
             'articles' => $articles
         ]);

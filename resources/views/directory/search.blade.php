@@ -49,7 +49,6 @@
                         <ul class="social pdb-l justify-content-center">
                             @foreach($data->staffSocial as $social)
                                 <a href="{{$social->url}}" target="_blank"><li><em class="social-icon fab {{$social->social->icon}}"></em> {{$social->name}}</li></a>
-                                <a href="{{$social->url}}" target="_blank"><li><em class="social-icon fab {{$social->social->icon}}"></em> {{$social->name}}</li></a>
                             @endforeach
                         </ul>
                     </div>

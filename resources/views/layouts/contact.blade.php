@@ -51,24 +51,24 @@
                 <div class="col-lg-5 text-center order-lg-first">
                     <div class="nk-block-contact nk-block-contact-s1 animated fadeInUp" data-animate="fadeInUp" data-delay="0.1" style="visibility: visible; animation-delay: 0.1s;">
                         <ul class="contact-list">
-                            <li class="animated fadeInUp" data-animate="fadeInUp" data-delay="0.2" style="visibility: visible; animation-delay: 0.2s;">
+                            {{-- <li class="animated fadeInUp" data-animate="fadeInUp" data-delay="0.2" style="visibility: visible; animation-delay: 0.2s;">
                                 <em class="contact-icon fas fa-phone"></em>
                                 <div class="contact-text">
                                     <span>+44 0123 4567</span>
                                 </div>
-                            </li>
-                            <li class="animated fadeInUp" data-animate="fadeInUp" data-delay="0.3" style="visibility: visible; animation-delay: 0.3s;">
+                            </li> --}}
+                            <li class="animated fadeInUp zoom-animation" data-animate="fadeInUp" data-delay="0.3" style="visibility: visible; animation-delay: 0.3s; cursor:pointer;">
                                 <em class="contact-icon fas fa-envelope"></em>
                                 <div class="contact-text">
-                                    <span>info@company.com</span>
+                                    <a href="mailto:Boliviaiadr@gmail.com"><span>Boliviaiadr@gmail.com</span></a>
                                 </div>
                             </li>
-                            <li class="animated fadeInUp" data-animate="fadeInUp" data-delay="0.4" style="visibility: visible; animation-delay: 0.4s;">
+                            {{-- <li class="animated fadeInUp" data-animate="fadeInUp" data-delay="0.4" style="visibility: visible; animation-delay: 0.4s;">
                                 <em class="contact-icon fas fa-paper-plane"></em>
                                 <div class="contact-text">
                                     <span>Join us on Telegram</span>
                                 </div>
-                            </li>
+                            </li> --}}
                         </ul>
                         <div class="nk-circle-animation nk-df-center blue small"></div><!-- .circle-animation -->
                     </div>

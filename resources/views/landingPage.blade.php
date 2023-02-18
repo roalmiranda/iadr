@@ -121,6 +121,7 @@
     </div>
 </section>
 {{-- Directorio --}}
+@if(false)
 <section class="section section-team bg-light" id="team">
     <div class="container">
         <!-- Section Head @s -->
@@ -164,43 +165,91 @@
         <!-- Block @r -->
     </div>
 </section>
-<section class="section bg-white" id="team">
+@endif
+<section class="section bg-light" id="team">
     <div class="background-shape bs-right"></div>
     <div class="container">
         <div class="section-head section-head-s9 wide-md">
             <h6 class="title title-xs title-s1 tc-primary animated" data-animate="fadeInUp" data-delay=".1">IADR Bolivia</h6>
             <h2 class="title animated" data-animate="fadeInUp" data-delay=".2">Directorio</h2>
         </div>
-        <div class="nk-block nk-block-left nk-block-team-list team-list tc-light">
+        <div class="nk-block nk-block-left nk-block-team-list team-list">
             <div class="row justify-content-center">
                 {{-- Lista de Directorio --}}
                 @foreach($staffs as $staff)
-                        <div class="col-lg-3 col-sm-6 zoom-element">
-                            <div class="team team-s4 round bg-theme-alt ms-0">
-                                <a href="{{route('directory.search', [$staff->staff_id, $staff->name_staff])}}">
-                                <div class="team-photo team-photo-s1 round-full">
-                                    <img src="{{urlGes()}}img_admin/staff/{{empty($staff->photo)?'default_user.png':$staff->photo}}" 
-                                        alt="team" 
-                                        class="round-full">
-                                </div>
-                                </a>
-                                <h5 class="team-name">{{$staff->paternal}} {{$staff->maternal}} <br> {{$staff->name}}</h5>
-                                <span class="team-position tc-primary">{{$staff->rol}}</span>
-                                {{-- <div class="team-desc">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incide.</p>
-                                </div> --}}
+                    <div class="col-lg-3 col-sm-6 zoom-element">
+                        <div class="team team-s4 round bg-white ms-0"
+                            style="-webkit-box-shadow: 32px 38px 71px -44px rgba(163,163,163,1);
+                            -moz-box-shadow: 32px 38px 71px -44px rgba(163,163,163,1);
+                            box-shadow: 32px 38px 71px -44px rgba(163,163,163,1);">
+                            <a href="{{route('directory.search', [$staff->staff_id, $staff->name_staff])}}">
+                            <div class="team-photo team-photo-s1 round-full">
+                                <img src="{{urlGes()}}img_admin/staff/{{empty($staff->photo)?'default_user.png':$staff->photo}}" 
+                                    alt="team" 
+                                    class="round-full"
+                                    style="
+                                    width: 150px;
+                                    height: 150px;
+                                    background: #CCC;
+                                    overflow: hidden;
+                                    ">
+                            </div>
+                            </a>
+                            <h5 class="team-name">{{$staff->paternal}} {{$staff->maternal}} <br> {{$staff->name}}</h5>
+                            <span class="team-position tc-primary">{{$staff->rol}}</span>
+                            {{-- <div class="team-desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incide.</p>
+                            </div> --}}
                             <ul class="team-social">
                                 @foreach($staff->staffSocial as $social)
                                     <li><a href="{{$social->url}}" target="_blank"><em class="fab {{$social->social->icon}}"></em></a></li>
                                 @endforeach
                             </ul>
-                            </div>
                         </div>
+                    </div>
                 @endforeach
             </div>
         </div>
     </div>
 </section>
+@if(count($members))
+<section class="section tc-light" id="team1" style="background-color:#08091b;">
+    <div class="container">
+        <div class="section-head text-center wide-auto">
+            <h2 class="title title-lg title-dark animated" data-animate="fadeInUp" data-delay=".1">Miembros Investigadores</h2>
+        </div>
+        <div class="nk-block nk-block-team-list team-list">
+            <div class="row justify-content-center">
+                {{-- Lista Miembros Investigadores --}}
+                @foreach($members as $member)                
+                    <div class="col-md-3">
+                        <div class="team team-s3 team-s3-alt animated fadeInUp" data-animate="fadeInUp" data-delay=".3" style="visibility: visible; animation-delay: 0.3s;">
+                            <div class="team-photo round-full team-photo-bg">
+                                {{-- <a href="#team-popup-1" class="team-show content-popup" data-overlay="bg-theme-grad-alternet"></a> --}}
+                                <img src="{{urlGes()}}img_admin/member/{{empty($member->photo)?'default_user.png':$member->photo}}" 
+                                alt="team" 
+                                class="round-full"
+                                style="
+                                width: 100px;
+                                height: 100px;
+                                background: #CCC;
+                                overflow: hidden;
+                                ">
+                            </div>
+                            <h5 class="team-name title title-sm">{{$member->name_member}}</h5>
+                            <ul class="team-social team-social-s2">
+                                @foreach($member->memberSocial as $social)
+                                    <li><a href="{{$social->url}}" target="_blank"><em class="fab {{$social->social->icon}}"></em></a></li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    </div>
+                @endforeach
+            </div><!-- .row -->
+        </div>
+    </div>
+</section>
+@endif
 <!-- Eventos -->
 @if(false)
 <div class="section section-t-l pb-0" id="roadmap">
