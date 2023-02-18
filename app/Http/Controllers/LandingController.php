@@ -25,11 +25,13 @@ class LandingController extends Controller
                         }])
                         ->where('state', 1)
                         ->get();
+        // Miembro Investigador (1)
         $members = Member::select('member.*', DB::raw("CONCAT(member.name,' ',member.paternal, ' ', member.maternal) as name_member"))
                         ->with(['memberSocial' => function($query) {
                             $query->with('social');
                         }])
                         ->where('state', 1)
+                        ->where('rol', 1)
                         ->get();
         $events = Event::select('events.*', DB::raw('CONCAT(
                                                     DATE_FORMAT(events.date,"%d"), " ",
