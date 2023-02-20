@@ -166,6 +166,7 @@
     </div>
 </section>
 @endif
+@if(count($staffs))
 <section class="section bg-light" id="team">
     <div class="background-shape bs-right"></div>
     <div class="container">
@@ -177,7 +178,7 @@
             <div class="row justify-content-center">
                 {{-- Lista de Directorio --}}
                 @foreach($staffs as $staff)
-                    <div class="col-lg-3 col-sm-6 zoom-element">
+                    <div class="col-lg-3 col-sm-6 zoom-element animated" data-animate="fadeInUp" data-delay=".3">
                         <div class="team team-s4 round bg-white ms-0"
                             style="-webkit-box-shadow: 32px 38px 71px -44px rgba(163,163,163,1);
                             -moz-box-shadow: 32px 38px 71px -44px rgba(163,163,163,1);
@@ -212,30 +213,33 @@
         </div>
     </div>
 </section>
+@endif
+{{-- Miembros Investigadores IADR --}}
 @if(count($members))
 <section class="section tc-light" id="team1" style="background-color:#08091b;">
     <div class="container">
-        <div class="section-head text-center wide-auto">
-            <h2 class="title title-lg title-dark animated" data-animate="fadeInUp" data-delay=".1">Miembros Investigadores</h2>
+        <div class="section-head section-head-s9 wide-md">
+            <h6 class="title title-xs title-s1 tc-primary animated" data-animate="fadeInUp" data-delay=".1">Miembros</h6>
+            <h2 class="title animated" data-animate="fadeInUp" data-delay=".2">Investigadores</h2>
         </div>
         <div class="nk-block nk-block-team-list team-list">
             <div class="row justify-content-center">
                 {{-- Lista Miembros Investigadores --}}
                 @foreach($members as $member)                
-                    <div class="col-md-3">
+                    <div class="col-md-3 animated" data-animate="fadeInUp" data-delay=".3">
                         <div class="team team-s3 team-s3-alt animated fadeInUp" data-animate="fadeInUp" data-delay=".3" style="visibility: visible; animation-delay: 0.3s;">
-                            <div class="team-photo round-full team-photo-bg">
-                                {{-- <a href="#team-popup-1" class="team-show content-popup" data-overlay="bg-theme-grad-alternet"></a> --}}
-                                <img src="{{urlGes()}}img_admin/member/{{empty($member->photo)?'default_user.png':$member->photo}}" 
-                                alt="team" 
-                                class="round-full"
+                            <a href="{{route('member.search', [$member->member_id, $member->name_member])}}">
+                                <div class="team-photo round-full team-photo-bg"
                                 style="
-                                width: 100px;
-                                height: 100px;
-                                background: #CCC;
-                                overflow: hidden;
+                                width: 110px;
+                                height: 110px;
                                 ">
-                            </div>
+                                    <img src="{{urlGes()}}img_admin/member/{{empty($member->photo)?'default_user.png':$member->photo}}" 
+                                    alt="team" 
+                                    class="round-full"
+                                    style="width: 112px;height: 112px;background: #CCC;overflow: hidden;">
+                                </div>
+                            </a>
                             <h5 class="team-name title title-sm">{{$member->name_member}}</h5>
                             <ul class="team-social team-social-s2">
                                 @foreach($member->memberSocial as $social)
@@ -246,6 +250,39 @@
                     </div>
                 @endforeach
             </div><!-- .row -->
+        </div>
+    </div>
+</section>
+@endif
+{{-- Miembros MEDITANTE IADR --}}
+@if(count($membersM))
+<section class="section" id="team">
+    <div class="container">
+        <div class="section-head section-head-s9 wide-md">
+            <h6 class="title title-xs title-s1 tc-primary animated" data-animate="fadeInUp" data-delay=".1">Miembros</h6>
+            <h2 class="title animated" data-animate="fadeInUp" data-delay=".2">Meditantes</h2>
+        </div>
+        <div class="nk-block">
+            <div class="has-carousel carousel-nav-center" data-items="4" data-navs="true">
+                {{-- Lista Miembros Meditantes --}}
+                @php($turn = 0)
+                @foreach($membersM as $member)
+                    @php($turn = ($turn==1?0:1))
+                    <div class="item animated" data-animate="fadeInUp" data-delay="0.3">
+                        <div class="team team-s2 team-{{$turn==1?'odd':'even'}}">
+                            <div class="team-photo">
+                                <img src="{{urlGes()}}img_admin/member/{{empty($member->photo)?'default_user.png':$member->photo}}" alt="miembros">
+                            </div>
+                            <h5 class="team-name title title-md">{{$member->name_member}}</h5>
+                            <ul class="team-social team-social-s2">
+                                @foreach($member->memberSocial as $social)
+                                    <li><a href="{{$social->url}}" target="_blank"><em class="fab {{$social->social->icon}}"></em></a></li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
         </div>
     </div>
 </section>
@@ -300,7 +337,8 @@
     </div>
 </div>
 @endif
-
+{{-- EVENTOS --}}
+@if(count($events))
 <section class="section pt-0 pb-0" id="event">
     <div class="section section-m bg-white" id="resources">
         <div class="container container-xxl">
@@ -341,8 +379,10 @@
         </div>
     </div>
 </section>
+@endif
 
 <!-- Articulos -->
+@if(count($articles))
 <section class="section bg-light-grad" id="docs">
     <div class="container container-xxl">
         <h6 class="title title-xs title-s1 tc-primary animated" data-animate="fadeInUp" data-delay=".1">Artículos</h6>
@@ -386,6 +426,7 @@
         </div>
     </div>
 </section>
+@endif
 
 <section>
     <div class="section bg-theme-alt tc-light section-m">

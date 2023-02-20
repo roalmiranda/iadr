@@ -30,9 +30,18 @@ class LandingController extends Controller
                         ->with(['memberSocial' => function($query) {
                             $query->with('social');
                         }])
-                        ->where('state', 1)
-                        ->where('rol', 1)
+                        ->where('state', '=', 1)
+                        ->where('rol', '=', 1)
                         ->get();
+        // Miembro Meditante (2)
+        $membersM = Member::select('member.*', DB::raw("CONCAT(member.name,' ',member.paternal, ' ', member.maternal) as name_member"))
+                        ->with(['memberSocial' => function($query) {
+                            $query->with('social');
+                        }])
+                        ->where('state', '=', 1)
+                        ->where('rol', '=', 2)
+                        ->get();
+                        
         $events = Event::select('events.*', DB::raw('CONCAT(
                                                     DATE_FORMAT(events.date,"%d"), " ",
                                                     CASE
@@ -78,6 +87,7 @@ class LandingController extends Controller
         return view('landingPage',[
             'staffs'   => $staffs,
             'members'  => $members,
+            'membersM' => $membersM,
             'events'   => $events,
             'articles' => $articles
         ]);
@@ -176,6 +186,24 @@ class LandingController extends Controller
 
         $data_detail = StaffDetail::where('staff_id', $id)->get();
         return view('directory.search',[
+            'data'        => $data,
+            'data_detail' => $data_detail
+        ]);
+    }
+    /**
+     * Buscar Miembro - IADR
+     */
+    public function memberSearch($id=null, $name=''){
+        $data = Member::select('member.*', DB::raw("CONCAT(member.name,' ',member.paternal, ' ', member.maternal) as name_member"))
+                        ->with(['memberSocial' => function($query) {
+                            $query->with('social');
+                        }])
+                        ->where('member_id', $id)
+                        ->where('state', 1)
+                        ->first();
+
+        $data_detail = MemberDetail::where('member_id', $id)->get();
+        return view('member.search',[
             'data'        => $data,
             'data_detail' => $data_detail
         ]);
