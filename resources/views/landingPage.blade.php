@@ -38,22 +38,37 @@
                                 </div>
                             </div>
                         </div><!-- .col -->
-                        <div class="col-lg-6 col-xl-7 col-md-8 col-sm-9">
-                            <div class="banner-caption wide-auto text-center text-lg-start">
-                                <div class="slider">
-                                    <div class="slide">
-                                    <img  loading="lazy" src="../../imagesiadr/img1.jpg" alt="Imagen 1">
-                                    </div>
-                                    <div class="slide">
-                                    <img  loading="lazy" src="../../imagesiadr/img2.jpg" alt="Imagen 2">
-                                    </div>
-                                    <div class="slide">
-                                    <img  loading="lazy" src="../../imagesiadr/img3.jpg" alt="Imagen 3">
+                        <div class="col-lg-6">
+                            <div class="banner-gfx banner-gfx-re-s3 my-0 animated fadeInUp" data-animate="fadeInUp" data-delay="1.1" style="visibility: visible; animation-delay: 1.1s;">
+                                <div class="text-center text-lg-start">
+                                    <div class="slider">
+                                        <div class="slide">
+                                        <img src="../../imagesiadr/img1.jpg" alt="Imagen 1">
+                                        </div>
+                                        <div class="slide">
+                                        <img src="../../imagesiadr/img2.jpg" alt="Imagen 2">
+                                        </div>
+                                        <div class="slide">
+                                        <img src="../../imagesiadr/img3.jpg" alt="Imagen 3">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div><!-- .col -->
-                    </div><!-- .row -->
+                            {{-- <div class="text-center text-lg-start">
+                                <div class="slider">
+                                    <div class="slide">
+                                    <img src="../../imagesiadr/img1.jpg" alt="Imagen 1">
+                                    </div>
+                                    <div class="slide">
+                                    <img src="../../imagesiadr/img2.jpg" alt="Imagen 2">
+                                    </div>
+                                    <div class="slide">
+                                    <img src="../../imagesiadr/img3.jpg" alt="Imagen 3">
+                                    </div>
+                                </div>
+                            </div> --}}
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

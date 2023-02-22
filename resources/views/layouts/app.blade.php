@@ -55,10 +55,10 @@
         }
         /* SLIDER */
         .slider {
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-        height: 500px;
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 500px;
         }
 
         .slide {
@@ -71,11 +71,11 @@
         }
 
         .slide img {
-        object-fit: cover;
+            object-fit: cover;
         }
 
         .slider .active {
-        left: 0;
+            left: 0;
         }
         /* Zoom DIV */
         .zoom-element {
