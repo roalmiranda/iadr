@@ -58,7 +58,7 @@
                         </ul> --}}
                         @if(!empty($data->url))
                             <div class="token-action-box text-center animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.5s;">
-                                <div class="token-action-date"><strong>Para obtener información más detallada del árticulo ingrese: </strong> ¡No te pierdas la oportunidad de ampliar tus conocimientos!</div>
+                                <div class="token-action-date"><strong>Para tener acceso al recurso ingresé a:</strong></div>
                                 <div class="token-action-btn">
                                     <a href="{{$data->url}}" class="btn btn-lg btn-grad" target="_blank">¡Haz Click!</a>
                                 </div>
