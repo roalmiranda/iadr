@@ -43,7 +43,7 @@
                 </div>
                 <div class="col-lg-7">
                     <div class="team-featured-cont">
-                        <h6 class="title title-xs title-light">{{$data->rol}}</h6>
+                        <h6 class="title title-xs title-light">{{$data->rol==1?'Investigador':'Meditante'}}</h6>
                         <h2 class="title title-lg title-dark">{{$data->name}} {{$data->paternal}} {{$data->maternal}}</h2>
                         <p>{{$data->bibliography}}</p>
                         <ul class="social pdb-l justify-content-center">
