@@ -217,8 +217,12 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incide.</p>
                             </div> --}}
                             <ul class="team-social">
+                                @php($ind=1)
                                 @foreach($staff->staffSocial as $social)
+                                    @if($ind<4)
                                     <li><a href="{{$social->url}}" target="_blank"><em class="fab {{$social->social->icon}}"></em></a></li>
+                                    @endif
+                                    @php($ind++)
                                 @endforeach
                             </ul>
                         </div>
@@ -257,8 +261,12 @@
                             </a>
                             <h5 class="team-name title title-sm">{{$member->name_member}}</h5>
                             <ul class="team-social team-social-s2">
+                                @php($ind=1)
                                 @foreach($member->memberSocial as $social)
+                                    @if($ind<4)
                                     <li><a href="{{$social->url}}" target="_blank"><em class="fab {{$social->social->icon}}"></em></a></li>
+                                    @endif
+                                    @php($ind++)
                                 @endforeach
                             </ul>
                         </div>
@@ -291,7 +299,10 @@
                             <h5 class="team-name title title-md">{{$member->name_member}}</h5>
                             <ul class="team-social team-social-s2">
                                 @foreach($member->memberSocial as $social)
+                                    @if($ind<4)
                                     <li><a href="{{$social->url}}" target="_blank"><em class="fab {{$social->social->icon}}"></em></a></li>
+                                    @endif
+                                    @php($ind++)
                                 @endforeach
                             </ul>
                         </div>
