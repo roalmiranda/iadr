@@ -32,8 +32,8 @@
                                 <div class="cpn-social">
                                     <ul class="social">
                                         <li class="animated" data-animate="fadeInUp" data-delay="1.5"><a href="https://www.facebook.com/OPIEBOLIVIA?mibextid=LQQJ4d" target="_blank"><em class="social-icon fab fa-facebook-f"></em></a></li>
-                                        {{-- <li class="animated" data-animate="fadeInUp" data-delay="1.55"><a href="#"><em class="social-icon fab fa-twitter"></em></a></li>
-                                        <li class="animated" data-animate="fadeInUp" data-delay="1.6"><a href="#"><em class="social-icon fab fa-youtube"></em></a></li> --}}
+                                        <li class="animated" data-animate="fadeInUp" data-delay="1.55"><a href="https://instagram.com/iadr.bolivia?igshid=YmMyMTA2M2Y=" target="_blank"><em class="social-icon fab fa-instagram bg-warning"></em></a></li>
+                                        <li class="animated" data-animate="fadeInUp" data-delay="1.6"><a href="https://www.youtube.com/@iadrseccionbolivia8734" target="_blank"><em class="social-icon fab fa-youtube bg-danger"></em></a></li>
                                     </ul>
                                 </div>
                             </div>

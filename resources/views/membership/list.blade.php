@@ -172,11 +172,11 @@
                                     <h6>Cuota Anual</h6>
                                 </div>
                                 <div class="token-stage-date text-center">
-                                    <h6><span class="badge badge-info mb-2">Estudiante</span></h6>
+                                    <h6><span class="badge badge-dark mb-2">Profesional</span></h6>
                                     <h3>75 $</h3>
                                 </div>
                                 <div class="token-stage-date text-center">
-                                    <h6><span class="badge badge-dark mb-2">Profesional</span></h6>
+                                    <h6><span class="badge badge-info mb-2">Estudiante</span></h6>
                                     <h3>65 $</h3>
                                 </div>
                                 <div class="col-md-12 text-center p-4 p-lg-5 bg-light">
@@ -207,11 +207,11 @@
                                     <h6>Cuota Anual</h6>
                                 </div>
                                 <div class="token-stage-date text-center">
-                                    <h6><span class="badge badge-info mb-2">Estudiante</span></h6>
+                                    <h6><span class="badge badge-dark mb-2">Profesional</span></h6>
                                     <h3>250 Bs.</h3>
                                 </div>
                                 <div class="token-stage-date text-center">
-                                    <h6><span class="badge badge-dark mb-2">Profesional</span></h6>
+                                    <h6><span class="badge badge-info mb-2">Estudiante</span></h6>
                                     <h3>150 Bs.</h3>
                                 </div>
                                 <div class="col-md-12 text-center p-4 p-lg-5 bg-light">

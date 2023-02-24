@@ -174,8 +174,12 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incide.</p>
                             </div> --}}
                             <ul class="team-social">
+                                @php($ind=1)
                                 @foreach($staff->staffSocial as $social)
+                                    @if($ind<4)
                                     <li><a href="{{$social->url}}" target="_blank"><em class="fab {{$social->social->icon}}"></em></a></li>
+                                    @endif
+                                    @php($ind++)
                                 @endforeach
                             </ul>
                         </div>

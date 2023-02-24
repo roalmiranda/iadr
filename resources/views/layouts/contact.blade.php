@@ -60,7 +60,7 @@
                             <li class="animated fadeInUp zoom-animation" data-animate="fadeInUp" data-delay="0.3" style="visibility: visible; animation-delay: 0.3s; cursor:pointer;">
                                 <em class="contact-icon fas fa-envelope"></em>
                                 <div class="contact-text">
-                                    <a href="mailto:Boliviaiadr@gmail.com"><span>Boliviaiadr@gmail.com</span></a>
+                                    <a href="mailto:Boliviaiadr@gmail.com"><span>boliviaiadr@gmail.com</span></a>
                                 </div>
                             </li>
                             {{-- <li class="animated fadeInUp" data-animate="fadeInUp" data-delay="0.4" style="visibility: visible; animation-delay: 0.4s;">
@@ -73,12 +73,9 @@
                         <div class="nk-circle-animation nk-df-center blue small"></div><!-- .circle-animation -->
                     </div>
                     <ul class="social-links social-links-s2 justify-content-center animated fadeInUp" data-animate="fadeInUp" data-delay="0.6" style="visibility: visible; animation-delay: 0.6s;">
-                        {{-- <li><a href="#"><em class="fab fa-twitter"></em></a></li>
-                        <li><a href="#"><em class="fab fa-medium-m"></em></a></li> --}}
-                        <li><a href="https://www.facebook.com/OPIEBOLIVIA?mibextid=LQQJ4d"><em class="fab fa-facebook-f"></em></a></li>
-                        {{-- <li><a href="#"><em class="fab fa-youtube"></em></a></li>
-                        <li><a href="#"><em class="fab fa-bitcoin"></em></a></li>
-                        <li><a href="#"><em class="fab fa-github"></em></a></li> --}}
+                        <li title="Facebook IADR - Bolivia" class="animated" data-animate="fadeInUp" data-delay="0.5"><a href="https://www.facebook.com/OPIEBOLIVIA?mibextid=LQQJ4d" target="_blank"><em class="fab fa-facebook-f"></em></a></li>
+                        <li title="Instagram IADR - Bolivia" class="animated" data-animate="fadeInUp" data-delay="0.55"><a href="https://instagram.com/iadr.bolivia?igshid=YmMyMTA2M2Y=" target="_blank"><em class="fab fa-instagram"></em></a></li>
+                        <li title="Youtube IADR - Bolivia" class="animated" data-animate="fadeInUp" data-delay="0.6"><a href="https://www.youtube.com/@iadrseccionbolivia8734" target="_blank"><em class="fab fa-youtube"></em></a></li>
                     </ul>
                 </div>
             </div>
