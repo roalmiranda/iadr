@@ -13,7 +13,7 @@
                                     <h1 class="title title-xl-2 animated" data-animate="fadeInUp" data-delay="1.25">International Association for Dental Research</h1>
                                 </div>
                                 <div class="cpn-text cpn-text-s1">
-                                    <p class="lead animated" data-animate="fadeInUp" data-delay="1.35">División Bolivia</p>
+                                    <p class="lead animated" data-animate="fadeInUp" data-delay="1.35">Bolivian Section</p>
                                 </div>
                                 <div class="cpn-btns">
                                     <ul class="btn-grp animated" data-animate="fadeInUp" data-delay="1.45">
@@ -46,10 +46,10 @@
                                         <img src="../../imagesiadr/img1.jpg" alt="Imagen 1">
                                         </div>
                                         <div class="slide">
-                                        <img src="../../imagesiadr/img2.jpg" alt="Imagen 2">
+                                        <img src="../../imagesiadr/img2.png" alt="Imagen 2">
                                         </div>
                                         <div class="slide">
-                                        <img src="../../imagesiadr/img3.jpg" alt="Imagen 3">
+                                        <img src="../../imagesiadr/img3.jpeg" alt="Imagen 3">
                                         </div>
                                     </div>
                                 </div>
@@ -94,7 +94,7 @@
                     <!-- Section Head @s -->
                     <div class="nk-block-text text-center text-md-start">
                         <h6 class="title title-xs title-s1 tc-primary animated" data-animate="fadeInUp" data-delay=".2">International Association for Dental Research</h6>
-                        <h2 class="title animated" data-animate="fadeInUp" data-delay=".3">IADR – División Bolivia</h2>
+                        <h2 class="title animated" data-animate="fadeInUp" data-delay=".3">IADR – Bolivian Section</h2>
                         <p class="animated" data-animate="fadeInUp" data-delay=".4">La sección boliviana de la IADR surge a partir de la inquietud e iniciativa de odontólogos investigadores bolivianos que buscan encontrar soluciones a problemas de salud oral en nuestro país, y simultáneamente promover la investigación científica en el área de odontología visando alcanzar trascendencia internacional.</p>
                         <ul class="btn-grp animated fadeInUp" data-animate="fadeInUp" data-delay="1.45" style="visibility: visible; animation-delay: 1.45s;">
                             <li>
@@ -127,7 +127,8 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="nk-block-img animated fadeInUp img_move" data-animate="fadeInUp" data-delay=".4" style="visibility: visible; animation-delay: 0.4s;">
-                            <img  loading="lazy" src="{{asset('imagesiadr/img5.jpg')}}" alt="app">
+                            <img  loading="lazy" src="{{asset('imagesiadr/jorge1.png')}}" alt="app"
+                            style="height: 500px;">
                         </div>
                     </div>
                 </div>
