@@ -92,7 +92,7 @@
                                     <li><a href="#">{{strtoupper($article->area->name)}}</a></li>
                                 </ul>
                                 <h4 class="title title-sm"><a href="{{route('article.search', [$article->article_id, $article->name])}}">{{$article->name}}</a></h4>
-                                <p>{{$article->description}}</p>
+                                <p>{{substr($article->description, 0, 120);}}...</p>
                             </div>
                         </div><!-- .blog -->
                     </div>
