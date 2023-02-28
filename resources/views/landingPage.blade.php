@@ -87,7 +87,7 @@
             <div class="row align-items-center gutter-vr-30px">
                 <div class="col-md-6">
                     <div class="gfx mx-auto mx-lg-0 animated zoom-animation" data-animate="fadeInUp" data-delay=".1">
-                        <img  loading="lazy" src="../../imagesiadr/img0.jpg" alt="IADR_PRESENTACION">
+                        <img loading="lazy" src="../../imagesiadr/img0.jpg" alt="IADR_PRESENTACION">
                     </div>
                 </div><!-- .col -->
                 <div class="col-md-6">

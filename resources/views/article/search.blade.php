@@ -38,8 +38,8 @@
                         <div class="blog-featured text-center">
                             <img class="round" src="{{urlGes()}}img_admin/articulos/{{empty($data->photo)?'article_default.png':$data->photo}}" alt="featured"
                             style="
-                            width: 50%;
-                            height: 20%;
+                            width: 65%;
+                            height: 35%;
                             background: #CCC;
                             overflow: hidden;
                             cursor:pointer;">

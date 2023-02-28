@@ -62,7 +62,7 @@
                         <div class="col-xl-4 col-md-6 order-xl-2 zoom-element">
                             <div class="news-item animated fadeInUp" data-animate="fadeInUp" data-delay=".6" style="visibility: visible; animation-delay: 0.6s;">
                                 <div class="news-thumb">
-                                    <img class="w-100" src="{{urlGes()}}img_admin/eventos/{{$event->photo}}" alt="img_evento"
+                                    <img loading="lazy" class="w-100" src="{{urlGes()}}img_admin/eventos/{{$event->photo}}" alt="img_evento"
                                     style="
                                     width: 350px;
                                     height: 250px;

@@ -77,7 +77,7 @@
                     <div class="col-lg-4 col-sm-6 zoom-element">
                         <div class="blog">
                             <div class="blog-photo">
-                                <img src="{{urlGes()}}img_admin/articulos/{{empty($article->photo)?'article_default.png':$article->photo}}" 
+                                <img loading="lazy" src="{{urlGes()}}img_admin/articulos/{{empty($article->photo)?'article_default.png':$article->photo}}" 
                                 alt="blog-thumb"
                                 style="
                                 width: 350px;
