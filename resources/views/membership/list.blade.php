@@ -32,7 +32,7 @@
 <section class="section" style="padding-top: 40px;padding-bottom: 40px;">
     <div class="container">
         <h6 class="title title-xs title-s1 tc-primary animated fadeInUp" data-animate="fadeInUp" data-delay=".1" style="visibility: visible; animation-delay: 0.1s;">¿Cómo ser miembro?</h6>
-        <h2 class="title animated fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">Categorias IADR</h2>
+        <h2 class="title animated fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">Categorías para miembros en IADR Sección Bolivia</h2>
         <div class="nk-block nk-block-features-s2">
             <div class="row align-items-center gutter-vr-30px">
                 <div class="col-md-6">
@@ -47,12 +47,12 @@
                     </ul>
                     <div class="tab-content">
                         <div class="tab-pane fade active show" id="general-questions-19" role="tabpanel">
-                            <p class="animated fadeInUp" data-animate="fadeInUp" data-delay=".4" style="visibility: visible; animation-delay: 0.1s;">Un <b>miembro investigador</b> de la Asociación Internacional de Investigación Dental (IADR) es un profesional de la odontología o de ciencias afines que se ha unido a la asociación con el objetivo de avanzar en la investigación dental y mejorar la salud bucal en todo el mundo.</p>
-                            <p class="animated fadeInUp" data-animate="fadeInUp" data-delay=".4" style="visibility: visible; animation-delay: 0.2s;">Como miembro de la IADR, tienen acceso a una amplia variedad de recursos, redes y oportunidades para compartir su investigación y colaborar con otros investigadores de todo el mundo.</p>
+                            <p class="animated fadeInUp" data-animate="fadeInUp" data-delay=".4" style="visibility: visible; animation-delay: 0.1s;">Un <b>miembro investigador</b> de la Asociación Internacional de Investigación Dental (IADR) es un profesional o estudiante de odontología o ciencias afines que se ha unido a la asociación con el objetivo de desarrollar sus habilidades haciendo investigación científica para así mejorar la salud bucal en todo el mundo.</p>
+                            <p class="animated fadeInUp" data-animate="fadeInUp" data-delay=".4" style="visibility: visible; animation-delay: 0.2s;">Como miembro de la IADR, se brinda el acceso a una amplia variedad de recursos, redes y oportunidades para compartir sus proyectos y colaborar con otros investigadores de todo el mundo.</p>
                             <a href="#beneficios" class="btn btn-outline btn-grad">¡Ver más!</a>
                         </div>
                         <div class="tab-pane fade" id="ico-questions-19" role="tabpanel">
-                            <p class="animated fadeInUp" data-animate="fadeInUp" data-delay=".4" style="visibility: visible; animation-delay: 0.1s;">Un <b>miembro meditante</b> de la Asociación Internacional de Investigación Dental (IADR) es un profesional de la odontología o de ciencias afines que se ha unido a la asociación <b>Sección Bolivia</b> con beneficios proporcionados a nivel nacional.</p>
+                            <p class="animated fadeInUp" data-animate="fadeInUp" data-delay=".4" style="visibility: visible; animation-delay: 0.1s;">Un b>miembro meditante</b> de la Sección Boliviana de la Asociación Internacional de Investigación Dental (IADR-Sección Bolivia) es un profesional o estudiante de odontología o de ciencias afines que se ha unido a nuestra asociación para recibir apoyo en la generación de proyectos de investigación, participar en cursos y eventos nacionales, y entrar crear una red de trabajo con investigadores odontólogos bolivianos.  Se espera que este periodo sea temporal y de motivación para animarse después a ser un miembro investigador.</p>
                             <a href="#beneficios" class="btn btn-outline btn-grad">¡Ver más!</a>
                         </div>
                     </div>

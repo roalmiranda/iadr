@@ -12,8 +12,8 @@
                                 <div class="cpn-head mt-0">
                                     <h1 class="title title-xl-2 animated" data-animate="fadeInUp" data-delay="1.25">International Association for Dental Research</h1>
                                 </div>
-                                <div class="cpn-text cpn-text-s1">
-                                    <p class="lead animated" data-animate="fadeInUp" data-delay="1.35">Bolivian Section</p>
+                                <div class="cpn-head mt-0">
+                                    <h1 class="lead title title-lg-2 animated" data-animate="fadeInUp" data-delay="1.25">Bolivian Section</h1>
                                 </div>
                                 <div class="cpn-btns">
                                     <ul class="btn-grp animated" data-animate="fadeInUp" data-delay="1.45">
@@ -43,13 +43,13 @@
                                 <div class="text-center text-lg-start">
                                     <div class="slider">
                                         <div class="slide">
-                                        <img src="../../imagesiadr/img1.jpg" alt="Imagen 1">
+                                        <img src="../../imagesiadr/init_img1.jpg" alt="Imagen 1">
                                         </div>
                                         <div class="slide">
-                                        <img src="../../imagesiadr/img2.png" alt="Imagen 2">
+                                        <img src="../../imagesiadr/init_img2.jpg" alt="Imagen 2">
                                         </div>
                                         <div class="slide">
-                                        <img src="../../imagesiadr/img3.jpeg" alt="Imagen 3">
+                                        <img src="../../imagesiadr/init_img3.jpg" alt="Imagen 3">
                                         </div>
                                     </div>
                                 </div>
@@ -114,20 +114,20 @@
         <div class="container">
             <div class="nk-block nk-block-text-wrap">
                 <h6 class="title title-xs title-s1 tc-primary animated" data-animate="fadeInUp" data-delay=".2">Únete a IADR Bolivia</h6>
-                <h2 class="title animated" data-animate="fadeInUp" data-delay=".3">Mejore su Conocimiento</h2>
+                <h2 class="title animated" data-animate="fadeInUp" data-delay=".3">Actualidad científica a mentorías</h2>
                 <div class="row align-items-center gutter-vr-30px">
-                    <div class="col-lg-6">
+                    <div class="col-lg-7">
                         <div class="nk-block-text">
                             <ul class="list list-check list-check-s3">
-                                <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.5s;"><b>Conferencias y eventos:</b> Asista a conferencias y eventos organizados por la IADR Bolivia para mantenerse al tanto de las últimas innovaciones y tendencias en el campo dental.</li>
-                                <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".6" style="visibility: visible; animation-delay: 0.6s;"><b>Comunidad de miembros:</b> La comunidad de miembros de la IADR Bolivia brinda la oportunidad de networking con otros profesionales dentales y de discutir temas relevantes en el campo dental.</li>
-                                <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".65" style="visibility: visible; animation-delay: 0.65s;"><b>Mentorías:</b> La IADR Bolivia también puede brindar la oportunidad de participar en programas de mentoría con dentistas experimentados y conocedores de la industria.</li>
+                                <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.5s;"><b>Conferencias y eventos:</b> Asista a conferencias y eventos organizados por la IADR Bolivia para mantenerse al tanto de las últimas innovaciones y tendencias en odontología.</li>
+                                <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".6" style="visibility: visible; animation-delay: 0.6s;"><b>Comunidad de miembros:</b> La comunidad de miembros de la IADR Bolivia brinda la oportunidad de networking con profesionales odontólogos de amplia experiencia clínica de diversas especialidades y de discutir temas relevantes en odontología.</li>
+                                <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".65" style="visibility: visible; animation-delay: 0.65s;"><b>Mentorías:</b> La IADR-Bolivia capacita a futuros investigadores bolivianos a partir de mentorías ofrecidas por investigadores nacionales e internacionales.</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-5">
                         <div class="nk-block-img animated fadeInUp img_move" data-animate="fadeInUp" data-delay=".4" style="visibility: visible; animation-delay: 0.4s;">
-                            <img  loading="lazy" src="{{asset('imagesiadr/jorge1.png')}}" alt="app"
+                            <img  loading="lazy" src="{{asset('imagesiadr/init_img_4.png')}}" alt="app"
                             style="height: 500px;">
                         </div>
                     </div>
@@ -371,7 +371,7 @@
         <div class="container container-xxl">
             <div class="nk-block">
                 <h6 class="title title-xs title-s1 tc-primary animated" data-animate="fadeInUp" data-delay=".1">Eventos</h6>
-                <h2 class="title animated" data-animate="fadeInUp" data-delay=".2">Últimos Eventos</h2>
+                <h2 class="title animated" data-animate="fadeInUp" data-delay=".2">Nuestros Eventos</h2>
                 <div class="row g-gs">
                     @foreach($events as $event)
                         <div class="col-xl-4 col-md-6 order-xl-2 zoom-element">
@@ -413,7 +413,7 @@
 <section class="section bg-light-grad" id="docs">
     <div class="container container-xxl">
         <h6 class="title title-xs title-s1 tc-primary animated" data-animate="fadeInUp" data-delay=".1">Artículos</h6>
-        <h2 class="title animated" data-animate="fadeInUp" data-delay=".2">Últimos Artículos</h2>
+        <h2 class="title animated" data-animate="fadeInUp" data-delay=".2">Producción científica</h2>
         <div class="nk-block">
             <div class="row gutter-vr-50px">
                 @foreach($articles as $article)
@@ -464,7 +464,9 @@
                         <div class="col-xxl-6 col-xl-8 col-lg-9">
                             <div class="pb-1 img_move">
                                 <h2 class="animated" data-animate="fadeInUp" data-delay=".3">¿Listo para comenzar?</h2>
-                                <p class="lead animated" data-animate="fadeInUp" data-delay=".4">Ser miembro puede ayudarlo a impulsar su carrera dental y ha estar al tanto de las innovaciones y avances en el campo dental.</p>
+                                <p class="lead animated" data-animate="fadeInUp" data-delay=".4">“Mira de cerca al presente que estás construyendo, 
+                                    porque debe parecerse al futuro con el que sueñas”</p>
+                                <p>Alice Walker</p>
                                 <ul class="btn-grp animated fadeInUp" data-animate="fadeInUp" data-delay=".6" style="visibility: visible; animation-delay: 0.6s;">
                                     <li><a href="/membresia" class="btn btn-md btn-light btn-round btn-nocap">Ser Miembro</a></li>
                                 </ul>
@@ -503,7 +505,7 @@
                                     <h5 class="accordion-title accordion-title-sm collapsed" data-bs-toggle="collapse" data-bs-target="#acc-1-2">¿Qué puedo realizar en IADR? <span class="accordion-icon"></span></h5>
                                     <div id="acc-1-2" class="collapse" data-bs-parent="#acc-1">
                                         <div class="accordion-content">
-                                            <p>En IADR Bolivia, puedes participar en eventos y actividades relacionados con la investigación dental, como conferencias, simposios y presentaciones de investigaciones. También puedes interactuar con otros profesionales y expertos en el campo de la investigación dental, y acceder a recursos y publicaciones sobre el tema. Además, puedes contribuir a la misión de IADR de promover la investigación dental y mejorar la salud bucal a nivel local y mundial.</p>
+                                            <p>En IADR Bolivia, puedes participar en eventos y actividades de investigación, como conferencias, simposios cursos sobre metodología científica. También puedes interactuar con otros profesionales y expertos de diversas áreas, y acceder a recursos como publicaciones científicas que te interesen. Además, puedes contribuir a la misión de IADR, al promover la investigación en odontología y así mejorar la salud bucal en nuestro país.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -511,7 +513,7 @@
                                     <h5 class="accordion-title accordion-title-sm collapsed" data-bs-toggle="collapse" data-bs-target="#acc-1-3">¿Qué beneficios obtengo como miembro? <span class="accordion-icon"></span></h5>
                                     <div id="acc-1-3" class="collapse" data-bs-parent="#acc-1">
                                         <div class="accordion-content">
-                                            <p>Puedes obtener diversos beneficios en eventos y actividades organizados por la asociación, así como también en publicaciones y recursos relacionados con la investigación dental. También puedes tener acceso a una amplia red de profesionales y expertos en el campo, lo que puede ayudarte a desarrollar tus habilidades y conocimientos en la investigación dental.</p>
+                                            <p>Puedes obtener diversos beneficios en eventos y actividades organizados por la asociación, así como también en publicaciones y recursos relacionados con la investigación en odontología. También puedes tener acceso a una amplia red de profesionales y expertos que podrían ayudarte a desarrollar tus habilidades y conocimientos como investigador.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -523,11 +525,11 @@
                                             <ul class="list list-check list-check-s1">
                                                 <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.2s;"><b>Paso 1:</b> Ir a la página web de IADR Bolivia y buscar la sección de <a class="link" href="/membresia" title="Ir a Membresía">"Membresía"</a>.</li>
                                                 <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.25s;"><b>Paso 2:</b> Leer los requisitos de membresía y verificar si cumples con ellos.</li>
-                                                <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.3s;"><b>Paso 3:</b> Completar un formulario de solicitud de membresía en línea o descargar un formulario de solicitud y enviarlo por correo.</li>
-                                                <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.35s;"><b>Paso 4:</b> Proporcionar información personal y profesional, así como una declaración de interés en la investigación dental.</li>
+                                                <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.3s;"><b>Paso 3:</b> Completar un formulario de solicitud de membresía en línea en el caso de querer ser miembro meditante, o en el caso de ser miembro investigador, nos servirá para ayudarte con la inscripción en IADR global.</li>
+                                                <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.35s;"><b>Paso 4:</b> Proporcionar información personal y profesional.</li>
                                                 <li class="animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.4s;"><b>Paso 5:</b> Pagar la tarifa de membresía correspondiente.</li>
                                             </ul>
-                                            <p class="animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.45s;">Después de completar estos pasos, tu solicitud de membresía será revisada por los oficiales de IADR Bolivia. Si eres aceptado como miembro, recibirás una confirmación y tendrás acceso a todos los recursos y oportunidades disponibles para los miembros.</p>
+                                            <p class="animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.45s;">Después de completar estos pasos, tu solicitud de membresía será revisada por IADR Sección Bolivia. Si eres aceptado como miembro, recibirás una confirmación y tendrás acceso a todos los recursos y oportunidades disponibles para los miembros.</p>
                                         </div>
                                     </div>
                                 </div>

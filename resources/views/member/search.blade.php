@@ -62,7 +62,7 @@
     <div class="container">
         <!-- Section Head @s -->
         <div class="section-head text-center wide-sm animated fadeInUp" data-animate="fadeInUp" data-delay=".1" style="visibility: visible; animation-delay: 0.1s;">
-            <h2 class="title title-dark title-regular">Especialidades</h2>
+            <h2 class="title title-dark title-regular">Formación Académica</h2>
         </div>
         <!-- Section Head @s -->
         <div class="nk-block">

@@ -7,9 +7,9 @@
                         <div class="col-lg-6">
                             <div class="wide-auto-sm">
                                 <h4 class="title-sm">
-                                    No te pierdas nada, mantente actualizado</h4>
-                                <p>
-                                    Regístrese para recibir actualizaciones y noticias del mercado. Suscríbase a nuestro boletín y reciba actualizaciones sobre IADR BOLIVIA y consejos sobre criptomonedas.</p>
+                                    ¿Aún no decidiste ser parte de nosotros?</h4>
+                                <p>Puedes simplemente suscribirte a esta página para mantenerte actualizado.</p>
+                                <p>Para recibir información relevante de nuestra asociación y novedades de actualidad científica, suscríbete ingresando tu email o entra en contacto para disipar cualquier duda que tengas. </p>
                             </div>
                         </div> 
                         <div class="col-lg-6">

@@ -26,7 +26,7 @@ class LandingController extends Controller
                         ->where('state', 1)
                         ->get();
         // Miembro Investigador (1)
-        $members = Member::select('member.*', DB::raw("CONCAT(member.name,' ',member.paternal, ' ', member.maternal) as name_member"))
+        $members = Member::select('member.*', DB::raw("CONCAT(member.name) as name_member"))
                         ->with(['memberSocial' => function($query) {
                             $query->with('social');
                         }])
