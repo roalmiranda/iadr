@@ -22,6 +22,8 @@
     <script src="{!! asset('assets/jquery/jquery.validate.min.js')!!}"></script>
     {{-- SweetAlert --}}
     <script src="{!! asset('assets/sweetAlert/sweetAlert.js')!!}"></script>
+
+    <link href="{!! asset('assets/icon/css/icons.min.css') !!}" rel="stylesheet" type="text/css" />
     <style>
         /* Movimiento de imagenes */
         

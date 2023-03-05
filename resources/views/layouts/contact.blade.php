@@ -58,7 +58,7 @@
                                 </div>
                             </li> --}}
                             <li class="animated fadeInUp zoom-animation" data-animate="fadeInUp" data-delay="0.3" style="visibility: visible; animation-delay: 0.3s; cursor:pointer;">
-                                <em class="contact-icon fas fa-envelope"></em>
+                                <em class="contact-icon fas fa-envelope pt-2"></em>
                                 <div class="contact-text">
                                     <a href="mailto:Boliviaiadr@gmail.com"><span>boliviaiadr@gmail.com</span></a>
                                 </div>

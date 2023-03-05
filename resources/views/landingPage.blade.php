@@ -31,9 +31,21 @@
                                 </div>
                                 <div class="cpn-social">
                                     <ul class="social">
-                                        <li class="animated" data-animate="fadeInUp" data-delay="1.5"><a href="https://www.facebook.com/OPIEBOLIVIA?mibextid=LQQJ4d" target="_blank"><em class="social-icon fab fa-facebook-f"></em></a></li>
-                                        <li class="animated" data-animate="fadeInUp" data-delay="1.55"><a href="https://instagram.com/iadr.bolivia?igshid=YmMyMTA2M2Y=" target="_blank"><em class="social-icon fab fa-instagram bg-warning"></em></a></li>
-                                        <li class="animated" data-animate="fadeInUp" data-delay="1.6"><a href="https://www.youtube.com/@iadrseccionbolivia8734" target="_blank"><em class="social-icon fab fa-youtube bg-danger"></em></a></li>
+                                        <li class="animated" data-animate="fadeInUp" data-delay="1.5">
+                                            <a href="https://www.facebook.com/OPIEBOLIVIA?mibextid=LQQJ4d" target="_blank">
+                                                <em class="social-icon fab fa-facebook-f pt-2"></em>
+                                            </a>
+                                        </li>
+                                        <li class="animated" data-animate="fadeInUp" data-delay="1.55">
+                                            <a href="https://instagram.com/iadr.bolivia?igshid=YmMyMTA2M2Y=" target="_blank">
+                                                <em class="social-icon fab fa-instagram bg-warning pt-2"></em>
+                                            </a>
+                                        </li>
+                                        <li class="animated" data-animate="fadeInUp" data-delay="1.6">
+                                            <a href="https://www.youtube.com/@iadrseccionbolivia8734" target="_blank">
+                                                <em class="social-icon fab fa-youtube bg-danger pt-2"></em>
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -221,7 +233,11 @@
                                 @php($ind=1)
                                 @foreach($staff->staffSocial as $social)
                                     @if($ind<4)
-                                    <li><a href="{{$social->url}}" target="_blank"><em class="fab {{$social->social->icon}}"></em></a></li>
+                                    <li>
+                                        <a href="{{$social->url}}" target="_blank" class="bg-{{$social->social->color}}" title="{{$social->name}}">
+                                            <i class="{{$social->social->icon}}"></i>
+                                        </a>
+                                    </li>
                                     @endif
                                     @php($ind++)
                                 @endforeach
@@ -247,7 +263,7 @@
                 {{-- Lista Miembros Investigadores --}}
                 @foreach($members as $member)                
                     <div class="col-md-3 animated" data-animate="fadeInUp" data-delay=".3">
-                        <div class="team team-s3 team-s3-alt animated fadeInUp" data-animate="fadeInUp" data-delay=".3" style="visibility: visible; animation-delay: 0.3s;">
+                        <div class="team team-s3 team-s3-alt animated">
                             <a href="{{route('member.search', [$member->member_id, $member->name_member])}}">
                                 <div class="team-photo round-full team-photo-bg"
                                 style="
@@ -265,7 +281,7 @@
                                 @php($ind=1)
                                 @foreach($member->memberSocial as $social)
                                     @if($ind<4)
-                                    <li><a href="{{$social->url}}" target="_blank"><em class="fab {{$social->social->icon}}"></em></a></li>
+                                    <li><a href="{{$social->url}}" target="_blank" title="{{$social->name}}"><em class="fab {{$social->social->icon}}"></em></a></li>
                                     @endif
                                     @php($ind++)
                                 @endforeach

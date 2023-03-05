@@ -40,9 +40,21 @@
                     <div class="col">
                         <div class="wgs wgs-text text-center mb-3">
                             <ul class="social pdb-l justify-content-center">
-                                <li title="Facebook IADR - Bolivia" class="animated" data-animate="fadeInUp" data-delay="0.5"><a href="https://www.facebook.com/OPIEBOLIVIA?mibextid=LQQJ4d" target="_blank"><em class="social-icon fab fa-facebook-f"></em></a></li>
-                                <li title="Instagram IADR - Bolivia" class="animated" data-animate="fadeInUp" data-delay="0.55"><a href="https://instagram.com/iadr.bolivia?igshid=YmMyMTA2M2Y=" target="_blank"><em class="social-icon fab fa-instagram bg-warning"></em></a></li>
-                                <li title="Youtube IADR - Bolivia" class="animated" data-animate="fadeInUp" data-delay="0.6"><a href="https://www.youtube.com/@iadrseccionbolivia8734" target="_blank"><em class="social-icon fab fa-youtube bg-danger"></em></a></li>
+                                <li title="Facebook IADR - Bolivia" class="animated" data-animate="fadeInUp" data-delay="0.5">
+                                    <a href="https://www.facebook.com/OPIEBOLIVIA?mibextid=LQQJ4d" target="_blank">
+                                        <em class="social-icon fab fa-facebook-f pt-2"></em>
+                                    </a>
+                                </li>
+                                <li title="Instagram IADR - Bolivia" class="animated" data-animate="fadeInUp" data-delay="0.55">
+                                    <a href="https://instagram.com/iadr.bolivia?igshid=YmMyMTA2M2Y=" target="_blank">
+                                        <em class="social-icon fab fa-instagram bg-warning pt-2"></em>
+                                    </a>
+                                </li>
+                                <li title="Youtube IADR - Bolivia" class="animated" data-animate="fadeInUp" data-delay="0.6">
+                                    <a href="https://www.youtube.com/@iadrseccionbolivia8734" target="_blank">
+                                        <em class="social-icon fab fa-youtube bg-danger pt-2"></em>
+                                    </a>
+                                </li>
                             </ul>
                             <a href="/" class="footer-logo">
                                 <img src="{{ asset('imagesiadr/logo/LogoIADR1.png') }}" srcset="{{ asset('imagesiadr/logo/LogoIADR1.png 2x') }}" alt="logo" width="300">

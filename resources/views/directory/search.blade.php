@@ -41,16 +41,23 @@
                         <h5 class="team-featured-info bg-info p-3">{{$data->name}} {{$data->paternal}} {{$data->maternal}}<span>{{$data->email}}</span></h5>
                     </div>
                 </div>
+                <br>
                 <div class="col-lg-7">
                     <div class="team-featured-cont">
                         <h6 class="title title-xs title-light">{{$data->rol}}</h6>
                         <h2 class="title title-lg title-dark">{{$data->name}} {{$data->paternal}} {{$data->maternal}}</h2>
                         <p>{{$data->bibliography}}</p>
-                        <ul class="social pdb-l justify-content-center">
+                        <div class="row">
                             @foreach($data->staffSocial as $social)
-                                <a href="{{$social->url}}" target="_blank"><li><em class="social-icon fab {{$social->social->icon}}"></em> {{$social->name}}</li></a>
+                                <div class="col-md-6 pb-1">
+                                    <a href="{{$social->url}}" target="_blank" class="title-light">
+                                        <span class="tc-dark">
+                                            <i class="social-icon p-2 bg-{{$social->social->color}} {{$social->social->icon}}"></i></span>
+                                            {{$social->name}}
+                                    </a>
+                                </div>
                             @endforeach
-                        </ul>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -177,7 +177,11 @@
                                 @php($ind=1)
                                 @foreach($staff->staffSocial as $social)
                                     @if($ind<4)
-                                    <li><a href="{{$social->url}}" target="_blank"><em class="fab {{$social->social->icon}}"></em></a></li>
+                                    <li>
+                                        <a href="{{$social->url}}" target="_blank" class="bg-{{$social->social->color}}" title="{{$social->name}}">
+                                            <i class="{{$social->social->icon}}"></i> 
+                                        </a>
+                                    </li>
                                     @endif
                                     @php($ind++)
                                 @endforeach

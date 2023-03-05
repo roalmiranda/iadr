@@ -61,7 +61,8 @@ class LandingController extends Controller
                                                     DATE_FORMAT(events.date,"%Y")) as dateM'))
                         ->where('state', 1)
                         ->with('area')
-                        ->paginate(4);
+                        ->orderby('event_id', 'DESC')
+                        ->paginate(3);
         $articles = Article::select('articles.*', 
                                 DB::raw('DATE_FORMAT(articles.date, "%Y") as year'), 
                                 DB::raw('CONCAT(
@@ -83,7 +84,8 @@ class LandingController extends Controller
                                     DATE_FORMAT(articles.date,"%Y")) as dateM'))
                             ->with('area')
                             ->where('state', 1)
-                            ->paginate(3);
+                            ->orderby('article_id', 'DESC')
+                            ->paginate(4);
         return view('landingPage',[
             'staffs'   => $staffs,
             'members'  => $members,
@@ -120,6 +122,7 @@ class LandingController extends Controller
                             ->name($search)
                             ->description($search)
                             ->resume($search)
+                            ->orderby('article_id', 'DESC')
                             ->get();
         return view('article.list',[
             'articles'  =>  $articles,
