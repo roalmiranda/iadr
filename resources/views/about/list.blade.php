@@ -38,7 +38,7 @@
             <div class="row gutter-vr-30px align-items-center">
                 <div class="col-lg-6">
                     <div class="nk-block-text">
-                        <p><strong>Estimados socios, amigos y colegas, los invitamos a participar activamente de la División Bolivia de la IADR</strong>. <br> Esperamos representarlos en las decisiones y colaborar tanto en la difusión de investigaciones realizadas en nuestro país, como en la concepción y planificación de nuevas ideas. Aspiramos, profundamente, a aportar en la construcción de la evidencia que fundamenta nuevas investigaciones, la práctica clínica, la educación, prevención y la toma de decisiones en Odontología.</p>
+                        <p><strong>Estimados socios, amigos y colegas, los invitamos a participar activamente de la Sección Bolivia de la IADR</strong>. <br> Esperamos representarlos en las decisiones y colaborar tanto en la difusión de investigaciones realizadas en nuestro país, como en la concepción y planificación de nuevas ideas. Aspiramos, profundamente, a aportar en la construcción de la evidencia que fundamenta nuevas investigaciones, la práctica clínica, la educación, prevención y la toma de decisiones en Odontología.</p>
                     </div>
                 </div>
                 <div class="col-lg-6">
