@@ -31,4 +31,10 @@ class Article extends Model
             return $query->orWhere('resume', 'like', "%$search%");
         }
     }
+
+    public function scopeAuthor($query, $search){
+        if(!empty($search)){
+            return $query->orWhere('author', 'like', "%$search%");
+        }
+    }
 }

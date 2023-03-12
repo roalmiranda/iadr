@@ -26,6 +26,9 @@ Route::get('/',[LandingController::class,'index'])->name('landing.index');
 
 Route::get('quienes-somos',[LandingController::class,'about'])->name('about');
 Route::get('articulos/{search?}',[LandingController::class,'article'])->name('article');
+
+Route::get('articulos-test/{search?}',[LandingController::class,'articleTest'])->name('article_test');
+
 Route::get('directorio/{id}/{nombre}',[LandingController::class,'directorySearch'])->name('directory.search');
 Route::get('miembro/{id}/{nombre}',[LandingController::class,'memberSearch'])->name('member.search');
 Route::get('articulos/{id}/{nombre}',[LandingController::class,'articleSearch'])->name('article.search');

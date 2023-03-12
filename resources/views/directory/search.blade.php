@@ -47,17 +47,20 @@
                         <h6 class="title title-xs title-light">{{$data->rol}}</h6>
                         <h2 class="title title-lg title-dark">{{$data->name}} {{$data->paternal}} {{$data->maternal}}</h2>
                         <p>{{$data->bibliography}}</p>
-                        <div class="row">
-                            @foreach($data->staffSocial as $social)
-                                <div class="col-md-6 pb-1">
-                                    <a href="{{$social->url}}" target="_blank" class="title-light">
-                                        <span class="tc-dark">
-                                            <i class="social-icon p-2 bg-{{$social->social->color}} {{$social->social->icon}}"></i></span>
-                                            {{$social->name}}
-                                    </a>
-                                </div>
-                            @endforeach
-                        </div>
+                        @if(count($data->staffSocial))
+                            <div class="row">
+                                <h2 class="title title-lg title-dark">Redes Sociales</h2>
+                                @foreach($data->staffSocial as $social)
+                                    <div class="col-md-6 pb-1">
+                                        <a href="{{$social->url}}" target="_blank" class="title-light  text-center">
+                                            <span class="tc-dark">
+                                                <i class="social-icon p-2 bg-{{$social->social->color}} {{$social->social->icon}}"></i></span>
+                                                {{$social->name}}
+                                        </a>
+                                    </div>
+                                @endforeach
+                            </div>
+                        @endif
                     </div>
                 </div>
             </div>

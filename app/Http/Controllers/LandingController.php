@@ -130,6 +130,42 @@ class LandingController extends Controller
         ]);
     }
     /**
+     * Buscar Articulo (Nuevo diseño) - IADR
+     */
+    public function articleTest(Request $request){
+        $search = empty($request->search) ? '' : $request->search;
+        $articles = Article::select('articles.*' , 
+                            DB::raw('CONCAT(
+                                DATE_FORMAT(articles.date,"%d"), " ",
+                                CASE
+                                    WHEN DATE_FORMAT(articles.date,"%m") = "01" THEN "Ene"
+                                    WHEN DATE_FORMAT(articles.date,"%m") = "02" THEN "Feb"
+                                    WHEN DATE_FORMAT(articles.date,"%m") = "03" THEN "Mar"
+                                    WHEN DATE_FORMAT(articles.date,"%m") = "04" THEN "Abr"
+                                    WHEN DATE_FORMAT(articles.date,"%m") = "05" THEN "May"
+                                    WHEN DATE_FORMAT(articles.date,"%m") = "06" THEN "Jun"
+                                    WHEN DATE_FORMAT(articles.date,"%m") = "07" THEN "Jul"
+                                    WHEN DATE_FORMAT(articles.date,"%m") = "08" THEN "Ago"
+                                    WHEN DATE_FORMAT(articles.date,"%m") = "09" THEN "Sep"
+                                    WHEN DATE_FORMAT(articles.date,"%m") = "10" THEN "Oct"
+                                    WHEN DATE_FORMAT(articles.date,"%m") = "11" THEN "Nov"
+                                    WHEN DATE_FORMAT(articles.date,"%m") = "12" THEN "Dic"
+                                END, " ", 
+                                DATE_FORMAT(articles.date,"%Y")) as dateM'))
+                            ->with('area')
+                            ->where('state', 1)
+                            ->name($search)
+                            ->description($search)
+                            ->resume($search)
+                            ->author($search)
+                            ->orderby('article_id', 'DESC')
+                            ->paginate(20);
+        return view('article.listtest',[
+            'articles'  =>  $articles,
+            'search'    =>  $search
+        ]);
+    }
+    /**
      * Buscar de Articulos - IADR
      */
     public function articleSearch($id = null, $name=''){

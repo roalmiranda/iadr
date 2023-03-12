@@ -55,13 +55,13 @@
                                 <div class="text-center text-lg-start">
                                     <div class="slider">
                                         <div class="slide">
-                                        <img src="../../imagesiadr/init_img1.jpg" alt="Imagen 1">
+                                        <img src="../../imagesiadr/init_img1.jpg" loading="lazy" alt="Imagen 1">
                                         </div>
                                         <div class="slide">
-                                        <img src="../../imagesiadr/init_img2.jpg" alt="Imagen 2">
+                                        <img src="../../imagesiadr/init_img2.jpg" loading="lazy" alt="Imagen 2">
                                         </div>
                                         <div class="slide">
-                                        <img src="../../imagesiadr/init_img3.jpg" alt="Imagen 3">
+                                        <img src="../../imagesiadr/init_img3.jpg" loading="lazy" alt="Imagen 3">
                                         </div>
                                     </div>
                                 </div>
@@ -169,7 +169,7 @@
                             -moz-box-shadow: 32px 38px 71px -44px rgba(163,163,163,1);
                             box-shadow: 32px 38px 71px -44px rgba(163,163,163,1);">
                         <div class="team-photo text-center">
-                            <img src="{{urlGes()}}img_admin/staff/{{empty($staff->photo)?'default_user.png':$staff->photo}}" alt="team"
+                            <img loading="lazy" src="{{urlGes()}}img_admin/staff/{{empty($staff->photo)?'default_user.png':$staff->photo}}" alt="team"
                                 class="round-full"
                                 style="
                                 width: 270px;
@@ -213,7 +213,7 @@
                             box-shadow: 32px 38px 71px -44px rgba(163,163,163,1);">
                             <a href="{{route('directory.search', [$staff->staff_id, $staff->name_staff])}}">
                             <div class="team-photo team-photo-s1 round-full">
-                                <img src="{{urlGes()}}img_admin/staff/{{empty($staff->photo)?'default_user.png':$staff->photo}}" 
+                                <img loading="lazy" src="{{urlGes()}}img_admin/staff/{{empty($staff->photo)?'default_user.png':$staff->photo}}" 
                                     alt="team" 
                                     class="round-full"
                                     style="
@@ -270,7 +270,7 @@
                                 width: 110px;
                                 height: 110px;
                                 ">
-                                    <img src="{{urlGes()}}img_admin/member/{{empty($member->photo)?'default_user.png':$member->photo}}" 
+                                    <img loading="lazy" src="{{urlGes()}}img_admin/member/{{empty($member->photo)?'default_user.png':$member->photo}}" 
                                     alt="team" 
                                     class="round-full"
                                     style="width: 112px;height: 112px;background: #CCC;overflow: hidden;">
@@ -311,7 +311,7 @@
                     <div class="item animated" data-animate="fadeInUp" data-delay="0.3">
                         <div class="team team-s2 team-{{$turn==1?'odd':'even'}}">
                             <div class="team-photo">
-                                <img src="{{urlGes()}}img_admin/member/{{empty($member->photo)?'default_user.png':$member->photo}}" alt="miembros">
+                                <img loading="lazy" src="{{urlGes()}}img_admin/member/{{empty($member->photo)?'default_user.png':$member->photo}}" alt="miembros">
                             </div>
                             <h5 class="team-name title title-md">{{$member->name_member}}</h5>
                             <ul class="team-social team-social-s2">
