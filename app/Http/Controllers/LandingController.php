@@ -95,9 +95,9 @@ class LandingController extends Controller
         ]);
     }
     /**
-     * Buscar Articulo - IADR
+     * Buscar Articulo - IADR - Antiguo
      */
-    public function article(Request $request){
+    public function articleTest(Request $request){
         $search = empty($request->search) ? '' : $request->search;
         $articles = Article::select('articles.*' , 
                             DB::raw('CONCAT(
@@ -130,9 +130,9 @@ class LandingController extends Controller
         ]);
     }
     /**
-     * Buscar Articulo (Nuevo diseño) - IADR
+     * Buscar Articulo (Nuevo diseño) - IADR - OFICIAL
      */
-    public function articleTest(Request $request){
+    public function article(Request $request){
         $search = empty($request->search) ? '' : $request->search;
         $articles = Article::select('articles.*' , 
                             DB::raw('CONCAT(
@@ -160,7 +160,7 @@ class LandingController extends Controller
                             ->author($search)
                             ->orderby('article_id', 'DESC')
                             ->paginate(20);
-        return view('article.listtest',[
+        return view('article.list',[
             'articles'  =>  $articles,
             'search'    =>  $search
         ]);

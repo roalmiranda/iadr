@@ -276,7 +276,7 @@
                                     style="width: 112px;height: 112px;background: #CCC;overflow: hidden;">
                                 </div>
                             </a>
-                            <h5 class="team-name title title-sm">{{$member->name_member}}</h5>
+                            <h5 class="team-name title title-sm">{{$member->name_member}} {{$member->paternal}}</h5>
                             <ul class="team-social team-social-s2">
                                 @php($ind=1)
                                 @foreach($member->memberSocial as $social)

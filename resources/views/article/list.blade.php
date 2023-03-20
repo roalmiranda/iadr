@@ -32,7 +32,7 @@
 <section class="section pb-5" style="padding-top: 50px;">
     <div class="container">
         <h6 class="title title-xs title-s1 tc-primary animated" data-animate="fadeInUp" data-delay=".1">Lista</h6>
-        <h2 class="title animated" data-animate="fadeInUp" data-delay=".2">Artículos</h2>
+        <h2 class="title animated" data-animate="fadeInUp" data-delay=".2">Artículos <p>Total ({{count($articles)}})</p></h2>
         <div class="nk-block">
             <form action="{{route('article')}}" method="GET">
                 @csrf
@@ -47,58 +47,32 @@
                 </div>
                 <div class="form-results"></div>
             </form>
-            {{-- <ul class="row gaps gy-5 pt-5">
+            <ul class="row gaps gy-3 pt-3">
+                @foreach($articles as $article)
                 <li class="col-md-6 col-xl-12">
-                    <div class="border rounded-4 p-5 h-100 animated fadeInUp" data-animate="fadeInUp" data-delay=".75" style="visibility: visible; animation-delay: 0.75s;">
+                    <div class="border rounded-4 p-3 h-100 animated fadeInUp" data-animate="fadeInUp" data-delay=".75" style="visibility: visible; animation-delay: 0.75s;">
                         <div class="d-flex flex-column flex-xl-row align-items-xl-center h-100">
-                            <div class="col-xl-3 pb-2 pb-xl-0">
-                                <h4 class="text-base">Lending Capabilites asdas da  ds sd </h4>
+                            <div class="col-xl-6 pb-2 pb-xl-0">
+                                <h5 class="text-base">{{$article->name}}</h5>
                             </div>
-                            <div class="col-xl-6">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit, urna, consectetur ultrices pharetra mauris. Nunc, id adipiscing lorem amet, porta cras faucibus etiam.</p>
+                            <div class="col-xl-3">
+                                <p class="mb-0"><b>Autor(s): </b> {{$article->author}}</p>
+                                <p><b>Fecha Publicación: </b> {{$article->dateM}}</p>
                             </div>
                             <div class="col-xl-3 d-flex justify-content-xl-end mt-auto mt-xl-0 pt-3 pt-xl-0">
                                 <ul class="btn-grp">
-                                    <li><a href="#" class="btn btn-md btn-outline btn-primary btn-round btn-nocap"><span>Ver más</span> <em class="ms-3 fas fa-arrow-right"></em></a></li>
+                                    <li><a href="{{route('article.search', [$article->article_id, $article->name])}}" class="btn btn-md btn-outline btn-primary btn-round btn-nocap"><span>Ver más</span> <em class="ms-3 fas fa-arrow-right"></em></a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </li>
-            </ul> --}}
+                @endforeach
+            </ul>
+            <div class="card-body text-center">
+                {{$articles->links()}}
+            </div>
         </div>
     </div>
-</section>
-<section class="section bg-white pt-0">
-    <div class="container">
-        <div class="nk-block nk-block-blog">
-            <div class="row">
-                @foreach($articles as $article)
-                    <div class="col-lg-4 col-sm-6 zoom-element">
-                        <div class="blog">
-                            <div class="blog-photo">
-                                <img loading="lazy" src="{{urlGes()}}img_admin/articulos/{{empty($article->photo)?'article_default.png':$article->photo}}" 
-                                alt="blog-thumb"
-                                style="
-                                width: 350px;
-                                height: 250px;
-                                background: #CCC;
-                                overflow: hidden;
-                                cursor:pointer;">
-                            </div>
-                            <div class="blog-text">
-                                <ul class="blog-meta">
-                                    <li><a href="#">{{$article->dateM}}</a></li>
-                                    <li><a href="#">{{strtoupper($article->area->name)}}</a></li>
-                                </ul>
-                                <h4 class="title title-sm"><a href="{{route('article.search', [$article->article_id, $article->name])}}">{{$article->name}}</a></h4>
-                                <p>{{substr($article->description, 0, 120);}}...</p>
-                            </div>
-                        </div><!-- .blog -->
-                    </div>
-                @endforeach
-            </div>
-        </div><!-- .nk-block -->
-    </div><!-- .container -->
 </section>
 @endsection
