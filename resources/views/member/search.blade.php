@@ -119,4 +119,54 @@
     </div>
 </section>
 @endif
+
+@if(count($articles))
+<section class="section bg-light">
+    <div class="container">
+        <div class="section-head section-head-s9 wide-md pb-2">
+            <h6 class="title title-xs title-s1 tc-primary animated" data-animate="fadeInUp" data-delay=".1">Artículos Publicados</h6>
+            <h2 class="title animated" data-animate="fadeInUp" data-delay=".2">Lista de Artículos</h2>
+            <p>Total ({{count($articles)}})</p>
+        </div>
+        <div class="container p-0">
+            <div class="row justify-content-center">
+                <div class="col-lg-12 col-mb-10">
+                    <div class="accordion" id="career">
+                        @php($index=0)
+                        @foreach($articles as $article)
+                        @php($index++)
+                        <div class="accordion-item accordion-item-s3 border-b-none pb-0 current">
+                            <div class="accordion-header">
+                                <div class="row collapsed">
+                                    <div class="col-md-7">
+                                        <b class="tc-dark"><a href="{{route('article.search', [$article->article_id, $article->name])}}">{{$index}}. {{$article->name}}</a></b>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <p><b>Fecha publicación: </b>{{$article->date}}</p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="btn btn-primary btn-sm mt-0 btn-auto collapsed" data-bs-toggle="collapse" data-bs-target="#career{{$index}}" aria-expanded="false">Ver más</div>
+                                    </div>
+                                </div>
+
+                            </div><!-- .accordion-header -->
+                            <div id="career{{$index}}" class="collapse" data-bs-parent="#career" style="">
+                                <div class="accordion-body">
+                                    <div class="text-box accordion-box">
+                                        <h4 class="title title-md">Autor(es)</h4>
+                                        <h5 class="title title-sm tc-primary py-3">{{$article->author}}</h5>
+                                        <h4 class="title title-md">Descripción</h4>
+                                        <p>{{$article->description}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        @endforeach
+                    </div><!-- .accordian -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@endif
 @endsection

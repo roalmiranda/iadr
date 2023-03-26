@@ -214,37 +214,51 @@ class LandingController extends Controller
     /**
      * Buscar directorio - IADR
      */
-    public function directorySearch($id=null, $name=''){
+    public function directorySearch($staff_id=null, $name=''){
         $data = Staff::select('staff.*', DB::raw("CONCAT(staff.name,' ',staff.paternal, ' ', staff.maternal) as name_staff"))
                         ->with(['staffSocial' => function($query) {
                             $query->with('social');
                         }])
-                        ->where('staff_id', $id)
+                        ->where('staff_id', $staff_id)
                         ->where('state', 1)
                         ->first();
 
-        $data_detail = StaffDetail::where('staff_id', $id)->get();
+        $data_detail = StaffDetail::where('staff_id', $staff_id)->get();
+        // Lista de Articulos
+        $articles = DB::table('articles as a')
+                    ->leftJoin('staff_articles as sa', 'a.article_id', '=', 'sa.article_id')
+                    ->select('a.article_id', 'a.name', 'a.description', DB::raw("DATE_FORMAT(a.date, '%d-%m-%Y') as date"), 'a.author')
+                    ->where('sa.staff_id', $staff_id)
+                    ->get();
         return view('directory.search',[
             'data'        => $data,
-            'data_detail' => $data_detail
+            'data_detail' => $data_detail,
+            'articles'    => $articles
         ]);
     }
     /**
      * Buscar Miembro - IADR
      */
-    public function memberSearch($id=null, $name=''){
+    public function memberSearch($member_id=null, $name=''){
         $data = Member::select('member.*', DB::raw("CONCAT(member.name,' ',member.paternal, ' ', member.maternal) as name_member"))
                         ->with(['memberSocial' => function($query) {
                             $query->with('social');
                         }])
-                        ->where('member_id', $id)
+                        ->where('member_id', $member_id)
                         ->where('state', 1)
                         ->first();
 
-        $data_detail = MemberDetail::where('member_id', $id)->get();
+        $data_detail = MemberDetail::where('member_id', $member_id)->get();
+        // Lista de Articulos
+        $articles = DB::table('articles as a')
+                    ->leftJoin('member_articles as sa', 'a.article_id', '=', 'sa.article_id')
+                    ->select('a.article_id', 'a.name', 'a.description', DB::raw("DATE_FORMAT(a.date, '%d-%m-%Y') as date"), 'a.author')
+                    ->where('sa.member_id', $member_id)
+                    ->get();
         return view('member.search',[
             'data'        => $data,
-            'data_detail' => $data_detail
+            'data_detail' => $data_detail,
+            'articles'    => $articles
         ]);
     }
     /**
