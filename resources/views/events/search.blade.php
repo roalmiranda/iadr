@@ -45,6 +45,15 @@
                         <h6 class="title title-xs title-light">{{$data->area->name}}</h6>
                         <h2 class="title title-lg title-dark">{{$data->name}}</h2>
                         <p>{{$data->description}}</p>
+                        @if(!empty($data->url_payment))
+                        {{-- Formulario de Pago --}}
+                        <div class="token-action-box text-center animated fadeInUp" data-animate="fadeInUp" data-delay=".7" style="visibility: visible; animation-delay: 0.7s;">
+                            <div class="token-action-date"><strong>Para realizar el pago, por favor complete el formulario de pago:</strong></div>
+                            <div class="token-action-btn">
+                                <a href="{{$data->url_payment}}" target="_blank" class="btn btn-lg btn-grad">Ir al formulario de pago</a></a>
+                            </div>
+                        </div>
+                        @endif
                     </div>
                 </div>
             </div>
