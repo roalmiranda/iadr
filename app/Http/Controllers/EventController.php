@@ -16,7 +16,7 @@ class EventController extends Controller
      */
     public function eventSearch($id = null, $name = ''){
         $data = Event::select('events.*')
-                        ->with('area')
+                        ->with(['area', 'formularios'])
                         ->where('event_id', $id)
                         ->where('state', 1)
                         ->first();

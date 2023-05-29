@@ -13,4 +13,8 @@ class Event extends Model
     public function area(){
         return $this->belongsTo(Area::class, 'area_id');
     }
+
+    public function formularios(){
+        return $this->hasMany(Formulario::class, 'evento_id');
+    }
 }

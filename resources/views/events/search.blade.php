@@ -54,6 +54,17 @@
                             </div>
                         </div>
                         @endif
+                        @if(count($data->formularios) > 0)
+                        {{-- Formulario de Evento --}}
+                        @foreach($data->formularios as $formulario)
+                            <div class="token-action-box text-center animated fadeInUp" data-animate="fadeInUp" data-delay=".7" style="visibility: visible; animation-delay: 0.7s;">
+                                <div class="token-action-date"><b class="text-danger">Título: </b><strong>{{$formulario->titulo}}</strong></div>
+                                <div class="token-action-btn">
+                                    <a href="{{urlGes().'formulario/'.$formulario->codigo}}" target="_blank" class="btn btn-lg btn-grad">Ir al formulario</a></a>
+                                </div>
+                            </div>
+                        @endforeach
+                        @endif
                     </div>
                 </div>
             </div>
