@@ -50,18 +50,24 @@
                                 </div>
                             </div>
                         </div><!-- .col -->
+                        <style>
+                            .resized-image {
+                                width: 700px; /* Cambia el valor según el ancho deseado */
+                                height: auto; /* Esto asegura que la altura se ajuste proporcionalmente */
+                            }
+                        </style>
                         <div class="col-lg-6">
                             <div class="banner-gfx banner-gfx-re-s3 my-0 animated fadeInUp" data-animate="fadeInUp" data-delay="1.1" style="visibility: visible; animation-delay: 1.1s;">
                                 <div class="text-center text-lg-start">
                                     <div class="slider">
                                         <div class="slide">
-                                        <img src="../../imagesiadr/init_img1.jpg" loading="lazy" alt="Imagen 1">
+                                        <img src="../../imagesiadr/init_img1.png" class="resized-image" loading="lazy" alt="Imagen 1">
                                         </div>
                                         <div class="slide">
-                                        <img src="../../imagesiadr/init_img2.jpg" loading="lazy" alt="Imagen 2">
+                                        <img src="../../imagesiadr/init_img2.png" class="resized-image" loading="lazy" alt="Imagen 2">
                                         </div>
                                         <div class="slide">
-                                        <img src="../../imagesiadr/init_img3.jpg" loading="lazy" alt="Imagen 3">
+                                        <img src="../../imagesiadr/init_img3.png" class="resized-image" loading="lazy" alt="Imagen 3">
                                         </div>
                                     </div>
                                 </div>

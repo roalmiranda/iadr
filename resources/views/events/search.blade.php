@@ -48,9 +48,9 @@
                         @if(!empty($data->url_payment))
                         {{-- Formulario de Pago --}}
                         <div class="token-action-box text-center animated fadeInUp" data-animate="fadeInUp" data-delay=".7" style="visibility: visible; animation-delay: 0.7s;">
-                            <div class="token-action-date"><strong>Para realizar el pago, por favor complete el formulario de pago:</strong></div>
+                            <div class="token-action-date"><strong>Formulario de inscripción y pago</strong></div>
                             <div class="token-action-btn">
-                                <a href="{{$data->url_payment}}" target="_blank" class="btn btn-lg btn-grad">Ir al formulario de pago</a></a>
+                                <a href="{{$data->url_payment}}" target="_blank" class="btn btn-lg btn-grad">Inscripción</a></a>
                             </div>
                         </div>
                         @endif
@@ -58,7 +58,7 @@
                         {{-- Formulario de Evento --}}
                         @foreach($data->formularios as $formulario)
                             <div class="token-action-box text-center animated fadeInUp" data-animate="fadeInUp" data-delay=".7" style="visibility: visible; animation-delay: 0.7s;">
-                                <div class="token-action-date"><b class="text-danger">Título: </b><strong>{{$formulario->titulo}}</strong></div>
+                                <div class="token-action-date"><strong>{{$formulario->titulo}}</strong></div>
                                 <div class="token-action-btn">
                                     <a href="{{urlGes().'formulario/'.$formulario->codigo}}" target="_blank" class="btn btn-lg btn-grad">Ir al formulario</a></a>
                                 </div>
