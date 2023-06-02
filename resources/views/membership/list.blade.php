@@ -215,7 +215,7 @@
                                     <h3>150 Bs.</h3>
                                 </div>
                                 <div class="col-md-12 text-center p-4 p-lg-5 bg-light">
-                                    <a href="https://forms.gle/8chz8uEjy7i8QdB28" target="_blank" class="btn btn-outline btn-grad on-bg-light-alt">¡Inscríbete ahora!</a>
+                                    <a href="https://forms.gle/dVNgwMCj7kbqSsM47" target="_blank" class="btn btn-outline btn-grad on-bg-light-alt">¡Inscríbete ahora!</a>
                                 </div>
                             </div>
                         </div>
