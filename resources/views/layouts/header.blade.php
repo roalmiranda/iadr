@@ -4,8 +4,8 @@
             <!-- Logo @s -->
             <div class="header-logo logo animated" data-animate="fadeInDown" data-delay=".65">
                 <a href="/" class="logo-link">
-                    <img class="logo-dark" src="{{ asset('imagesiadr/logo/LogoIADR1.png') }}" style="height: 70px" srcset="{{ asset('imagesiadr/logo/LogoIADR1.png') }}" alt="logo">
-                    <img class="logo-light" src="{{ asset('imagesiadr/logo/LogoIADR1.png') }}" style="height: 70px" srcset="{{ asset('imagesiadr/logo/LogoIADR1.png') }}" alt="logo">
+                    <img class="logo-dark" src="{{ asset('imagesiadr/logo/logo_iadr_2024.png') }}" style="height: 40px" srcset="{{ asset('imagesiadr/logo/logo_iadr_2024.png') }}" alt="logo">
+                    <img class="logo-light" src="{{ asset('imagesiadr/logo/logo_iadr_2024.png') }}" style="height: 40px" srcset="{{ asset('imagesiadr/logo/logo_iadr_2024.png') }}" alt="logo">
                 </a>
             </div>
             <!-- Menu Toogle @s -->

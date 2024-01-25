@@ -10,7 +10,7 @@
                         <div class="col-lg-6 col-xl-5 text-center text-lg-start">
                             <div class="banner-caption wide-auto text-center text-lg-start">
                                 <div class="cpn-head mt-0">
-                                    <h1 class="title title-xl-2 animated" data-animate="fadeInUp" data-delay="1.25">International Association for Dental Research</h1>
+                                    <h1 class="title title-xl-2 animated" data-animate="fadeInUp" data-delay="1.25">International Association for Dental, Oral and Craniofacial Research</h1>
                                 </div>
                                 <div class="cpn-head mt-0">
                                     <h1 class="lead title title-lg-2 animated" data-animate="fadeInUp" data-delay="1.25">Bolivian Section</h1>

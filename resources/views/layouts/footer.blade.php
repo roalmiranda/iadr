@@ -57,7 +57,7 @@
                                 </li>
                             </ul>
                             <a href="/" class="footer-logo">
-                                <img src="{{ asset('imagesiadr/logo/LogoIADR1.png') }}" srcset="{{ asset('imagesiadr/logo/LogoIADR1.png 2x') }}" alt="logo" width="300">
+                                <img src="{{ asset('imagesiadr/logo/logo_iadr_2024.png') }}" srcset="{{ asset('imagesiadr/logo/logo_iadr_2024.png 2x') }}" alt="logo" width="400">
                             </a>
                             <div class="copyright-text copyright-text-s3 pdt-m">
                                 <p><span class="d-sm-block">Copyright &copy; {{date('Y')}} Todos los derechos reservados</p>
