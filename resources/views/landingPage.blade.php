@@ -1,5 +1,101 @@
 @extends('layouts.app')
 @section('banner')
+<style>
+    .container-carousel {
+        position: relative;
+        width: 720px;
+        height: 432px;
+        background-color: #e0e0e0;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    
+    .carruseles {
+        display: flex;
+        transition: transform 0.6s ease; /* Transición suave para el desplazamiento */
+    }
+    
+    .slider-section {
+        flex: 0 0 100%; /* Ajuste del ancho de cada slide */
+        height: 100%;
+    }
+    
+    .slider-section img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+    
+    .btn-left,
+    .btn-right {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1.5rem;
+        background-color: rgba(0, 0, 0, 0.5); /* Color de fondo del botón */
+        color: #fff; /* Color del icono */
+        border: none;
+        border-radius: 50%;
+        padding: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        user-select: none;
+    }
+    
+    .btn-left {
+        left: 10px;
+    }
+    
+    .btn-right {
+        right: 10px;
+    }
+    
+    .btn-left:hover,
+    .btn-right:hover {
+        background-color: rgba(0, 0, 0, 0.8); /* Color de fondo del botón al pasar el mouse */
+    }
+    .image-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .button-img {
+        position: absolute;
+        bottom: 20%; /* Ajusta la distancia desde la parte inferior según sea necesario */
+        left: 20%;
+        transform: translateX(-50%);
+    }
+    @media screen and (max-width: 767px) {
+        .container-carousel {
+            width: calc(100% - 20px);
+            height: auto;
+            max-width: 720px;
+            max-height: 80vh;
+        }
+
+        .slider-section {
+            flex: 0 0 100%; 
+            height: auto;
+        }
+
+        .slider-section img {
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .button-img {
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+</style>
 <div class="header-banner bg-light ov-h header-banner-jasmine pb-3">
     <div class="background-shape"></div>
     <div class="nk-banner">
@@ -57,7 +153,34 @@
                             }
                         </style>
                         <div class="col-lg-6">
-                            <div class="banner-gfx banner-gfx-re-s3 my-0 animated fadeInUp" data-animate="fadeInUp" data-delay="1.1" style="visibility: visible; animation-delay: 1.1s;">
+                            <div class="container-carousel">
+                                <div class="carruseles" id="slider">
+                                    
+                                    @foreach($sliders as $slider)
+                                        <section class="slider-section">
+                                            <div class="image-container">
+                                                <img src="{{ urlGes().$slider->img }}" alt="{{ $slider->btn_descripcion }}">
+                                                @if (!empty($slider->btn_url) && !empty($slider->btn_descripcion))
+                                                    <a href="{{ $slider->btn_url }}" class="btn btn-md btn-grad button-img" target="_blank">
+                                                        <q>{{ $slider->btn_descripcion }}</q>
+                                                    </a>
+                                                @endif
+                                            </div>
+                                        </section>
+                                    @endforeach
+                                    
+                                    @if($sliders->isEmpty())
+                                        <section class="slider-section">
+                                            <img src="../../imagesiadr/img1.jpg" alt="Imagen predeterminada">
+                                        </section>
+                                    @endif
+                                
+                                </div>
+                                @php($btn_show = $sliders->count() > 1 ? '' : 'hidden')
+                                <button class="btn-left" {{$btn_show}}><i class="fas fa-chevron-left"></i></button>
+                                <button class="btn-right" {{$btn_show}}><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                            {{-- <div class="banner-gfx banner-gfx-re-s3 my-0 animated fadeInUp" data-animate="fadeInUp" data-delay="1.1" style="visibility: visible; animation-delay: 1.1s;">
                                 <div class="text-center text-lg-start">
                                     <div class="slider">
                                         <div class="slide">
@@ -71,7 +194,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                             {{-- <div class="text-center text-lg-start">
                                 <div class="slider">
                                     <div class="slide">
@@ -565,5 +688,41 @@
 </section>
 @endsection
 @section('script_dev')
-<script src="{!! asset('assets/js/gralSlider.js') !!}"></script>
+<script>
+    const slider = document.querySelector("#slider");
+    const sliderSections = document.querySelectorAll(".slider-section");
+    const btnLeft = document.querySelector(".btn-left");
+    const btnRight = document.querySelector(".btn-right");
+
+    let counter = 0;
+    const slideWidth = sliderSections[0].clientWidth;
+
+    // Función para mover los slides a la derecha
+    function moveRight() {
+        counter++;
+        if (counter >= sliderSections.length) counter = 0;
+        moveSlides();
+    }
+
+    // Función para mover los slides
+    function moveSlides() {
+        slider.style.transform = `translateX(${-slideWidth * counter}px)`;
+    }
+
+    // Agregar evento de click al botón izquierdo (btnLeft)
+    btnLeft.addEventListener("click", () => {
+        counter--;
+        if (counter < 0) counter = sliderSections.length - 1;
+        moveSlides();
+    });
+
+    // Agregar evento de click al botón derecho (btnRight)
+    btnRight.addEventListener("click", () => {
+        moveRight();
+    });
+
+    // Ejecutar la función moveRight automáticamente cada 3 segundos
+    setInterval(moveRight, 5000);
+</script>
+{{-- <script src="{!! asset('assets/js/gralSlider.js') !!}"></script> --}}
 @endsection

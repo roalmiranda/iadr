@@ -11,6 +11,7 @@ use App\Models\Member;
 use App\Models\MemberDetail;
 use App\Models\Article;
 use App\Models\ArticleDetail;
+use App\Models\Slider;
 use DB;
 
 class LandingController extends Controller
@@ -86,12 +87,15 @@ class LandingController extends Controller
                             ->where('state', 1)
                             ->orderby('article_id', 'DESC')
                             ->paginate(4);
+                            
+        $sliders = Slider::where('state', 1)->get();
         return view('landingPage',[
             'staffs'   => $staffs,
             'members'  => $members,
             'membersM' => $membersM,
             'events'   => $events,
-            'articles' => $articles
+            'articles' => $articles,
+            'sliders'  => $sliders
         ]);
     }
     /**

@@ -1,6 +1,9 @@
 <?php
+use App\Models\Config;
 
 function urlGes(){
-    return "https://ges.iadr-bolivia.com/";
+    $config = Config::findOrFail(1);
+    return $config->action;
+    // return "https://ges.iadr-bolivia.com/";
     // return "http://iadr-admin.test/";
 }
